@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24807c5a-e593-44b9-9239-5501e57a4204" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DBConnector.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DBServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ServletProcessor1.java" afterPath="$PROJECT_DIR$/src/ServletProcessor1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PageServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="proj_01_basic_http_server.iws" />
@@ -27,6 +25,7 @@
     <file path="/HttpConnecter.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394519035468" ignored="false" />
     <file path="/DBConnector.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394519931287" ignored="false" />
     <file path="/DBServlet.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394520499582" ignored="false" />
+    <file path="/PageServlet.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394521432466" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,50 +86,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ServletProcessor1.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ServletProcessor1.java">
+      <file leaf-file-name="PageServlet.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/PageServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="30" selection-start="1513" selection-end="1513" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DBConnector.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DBConnector.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="24" selection-start="498" selection-end="498" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DBServlet.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/DBServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="1" selection-start="1935" selection-end="1935" vertical-scroll-proportion="0.8292011">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DatabaseMetaData.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/sql/DatabaseMetaData.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="309" column="23" selection-start="10791" selection-end="10791" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HelloSqlite.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/HelloSqlite.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="25" selection-start="2093" selection-end="2093" vertical-scroll-proportion="0.0">
+            <state line="35" column="31" selection-start="1143" selection-end="1143" vertical-scroll-proportion="0.661157">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -156,7 +115,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/old/HttpServer.java" />
         <option value="$PROJECT_DIR$/src/HttpServer1.java" />
         <option value="$PROJECT_DIR$/src/Request.java" />
         <option value="$PROJECT_DIR$/src/Constants.java" />
@@ -172,6 +130,7 @@
         <option value="$PROJECT_DIR$/src/db/DBServlet.java" />
         <option value="$PROJECT_DIR$/src/ServletProcessor1.java" />
         <option value="$PROJECT_DIR$/src/DBServlet.java" />
+        <option value="$PROJECT_DIR$/src/PageServlet.java" />
       </list>
     </option>
   </component>
@@ -239,20 +198,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="proj_102_web_ftp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proj_102_web_ftp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proj_102_web_ftp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -540,11 +485,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/io/File.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="78" selection-start="612" selection-end="612" vertical-scroll-proportion="0.0" />
@@ -647,7 +587,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DBServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="1" selection-start="1935" selection-end="1935" vertical-scroll-proportion="0.8292011">
+        <state line="32" column="43" selection-start="1062" selection-end="1062" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PageServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="31" selection-start="1143" selection-end="1143" vertical-scroll-proportion="0.661157">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
