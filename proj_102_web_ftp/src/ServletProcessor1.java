@@ -1,6 +1,4 @@
 import javax.servlet.Servlet;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
@@ -45,15 +43,14 @@ public class ServletProcessor1 {
             System.out.println(e.toString());
         }
 
-        Servlet servlet = null;
+        Servlet servlet;
         try {
             servlet = (Servlet) myClass.newInstance();
-            servlet.service((ServletRequest) request, (ServletResponse) response);
+            servlet.service(request, response);
         } catch (Exception e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         } catch (Throwable e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         }
-        ;
     }
 }
