@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24807c5a-e593-44b9-9239-5501e57a4204" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PageServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AjaxServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/JSServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PageServlet.java" afterPath="$PROJECT_DIR$/src/PageServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="proj_01_basic_http_server.iws" />
@@ -10,7 +12,7 @@
     <file path="/HttpServer.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1393842427535" ignored="false" />
     <file path="/a.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1393900705289" ignored="false" />
     <file path="/Dummy.txt" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394518540145" ignored="false" />
-    <file path="/fragment.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394519109084" ignored="false" />
+    <file path="/fragment.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394524176848" ignored="false" />
     <file path="/Request.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1393855254219" ignored="false" />
     <file path="/Response.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1393855949947" ignored="false" />
     <file path="/index.html" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1393993242600" ignored="false" />
@@ -26,6 +28,7 @@
     <file path="/DBConnector.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394519931287" ignored="false" />
     <file path="/DBServlet.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394520499582" ignored="false" />
     <file path="/PageServlet.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394521432466" ignored="false" />
+    <file path="/JSServlet.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394524215677" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,13 +89,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PageServlet.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="PageServlet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PageServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="31" selection-start="1143" selection-end="1143" vertical-scroll-proportion="0.661157">
+            <state line="51" column="39" selection-start="1698" selection-end="1698" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JSServlet.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/JSServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="42" column="26" selection-start="1665" selection-end="1665" vertical-scroll-proportion="0.46280992">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AjaxServlet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AjaxServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="13" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -115,8 +138,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/HttpServer1.java" />
-        <option value="$PROJECT_DIR$/src/Request.java" />
         <option value="$PROJECT_DIR$/src/Constants.java" />
         <option value="$PROJECT_DIR$/src/Response.java" />
         <option value="$PROJECT_DIR$/src/StaticResourceProcessor.java" />
@@ -131,6 +152,8 @@
         <option value="$PROJECT_DIR$/src/ServletProcessor1.java" />
         <option value="$PROJECT_DIR$/src/DBServlet.java" />
         <option value="$PROJECT_DIR$/src/PageServlet.java" />
+        <option value="$PROJECT_DIR$/src/AjaxServlet.java" />
+        <option value="$PROJECT_DIR$/src/JSServlet.java" />
       </list>
     </option>
   </component>
@@ -198,6 +221,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="proj_102_web_ftp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="proj_102_web_ftp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="proj_102_web_ftp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -485,18 +522,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/io/File.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="78" selection-start="612" selection-end="612" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webroot/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="100" selection-start="303" selection-end="303" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/StaticResourceProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="8" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0">
@@ -546,13 +571,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HttpConnecter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="29" selection-start="1848" selection-end="1848" vertical-scroll-proportion="0.8413598">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ServletProcessor1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="49" column="30" selection-start="1513" selection-end="1513" vertical-scroll-proportion="0.0">
@@ -596,7 +614,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PageServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="31" selection-start="1143" selection-end="1143" vertical-scroll-proportion="0.661157">
+        <state line="51" column="39" selection-start="1698" selection-end="1698" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HttpConnecter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="53" selection-start="1626" selection-end="1626" vertical-scroll-proportion="0.41223404">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AjaxServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="13" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JSServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="26" selection-start="1665" selection-end="1665" vertical-scroll-proportion="0.46280992">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
