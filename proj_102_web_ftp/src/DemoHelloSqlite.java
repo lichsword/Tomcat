@@ -11,7 +11,7 @@ import java.sql.Statement;
  * Time: 下午2:20
  * To change this template use File | Settings | File Templates.
  */
-public class HelloSqlite {
+public class DemoHelloSqlite {
 
         public static void main(String[] args) {
             // 加载驱动

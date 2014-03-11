@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="24807c5a-e593-44b9-9239-5501e57a4204" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/test.db-journal" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.db" afterPath="$PROJECT_DIR$/test.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AjaxGetServlet.java" afterPath="$PROJECT_DIR$/src/AjaxGetServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DBServlet.java" afterPath="$PROJECT_DIR$/src/DBServlet.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/HelloSqlite.java" afterPath="$PROJECT_DIR$/src/DemoHelloSqlite.java" />
     </list>
     <ignored path="proj_01_basic_http_server.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -153,7 +151,19 @@
     <favorites_list name="proj_01_basic_http_server" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="DemoHelloSqlite.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/DemoHelloSqlite.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="56" column="13" selection-start="2097" selection-end="2097" vertical-scroll-proportion="0.58677685">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -171,7 +181,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/webroot/css/a.css" />
         <option value="$PROJECT_DIR$/webroot/index.html" />
         <option value="$PROJECT_DIR$/src/HelloSqlite.java" />
         <option value="$PROJECT_DIR$/src/HttpConnecter.java" />
@@ -187,6 +196,7 @@
         <option value="$PROJECT_DIR$/src/AjaxLoadServlet.java" />
         <option value="$PROJECT_DIR$/src/AjaxGetServlet.java" />
         <option value="$PROJECT_DIR$/src/DBServlet.java" />
+        <option value="$PROJECT_DIR$/src/DemoHelloSqlite.java" />
       </list>
     </option>
   </component>
@@ -268,24 +278,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="webroot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proj_102_web_ftp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proj_102_web_ftp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webroot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -621,15 +613,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HelloSqlite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="25" selection-start="2093" selection-end="2093" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/sql/DatabaseMetaData.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="309" column="23" selection-start="10791" selection-end="10791" vertical-scroll-proportion="0.0">
@@ -709,6 +692,15 @@
     <entry file="file://$PROJECT_DIR$/src/ServletProcessor1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="48" column="0" selection-start="1435" selection-end="1435" vertical-scroll-proportion="0.38235295">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DemoHelloSqlite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="13" selection-start="2097" selection-end="2097" vertical-scroll-proportion="0.58677685">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
