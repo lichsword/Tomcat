@@ -9,7 +9,7 @@ import java.io.PrintWriter;
  * Time: 下午3:14
  * To change this template use File | Settings | File Templates.
  */
-public class AjaxServlet implements Servlet {
+public class AjaxGetServlet implements Servlet {
     @Override
     public void init(ServletConfig servletConfig) throws ServletException {
         //To change body of implemented methods use File | Settings | File Templates.
