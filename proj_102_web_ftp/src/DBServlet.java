@@ -36,7 +36,7 @@ public class DBServlet implements Servlet {
         // build connect and do sql work.
         Connection conn;
         try {
-            conn = DriverManager.getConnection("jdbc:sqlite:test.db", null, null);
+            conn = DriverManager.getConnection("jdbc:sqlite:test.sqlite", null, null);
             // 设置自动提交为false
             conn.setAutoCommit(false);
             Statement stmt = conn.createStatement();

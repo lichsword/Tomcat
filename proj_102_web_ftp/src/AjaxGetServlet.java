@@ -37,14 +37,7 @@ public class AjaxGetServlet implements Servlet {
 
         out.println("$(document).ready(function(){");
         out.println("$(\"#get\").click(function(){");
-        out.println("alert(\"Java Script弹出对话框，这里是消息内容\");");
-        out.println("});");
-        // alert
-        out.println("$(\"#hide\").click(function(){");
-        out.println("$(\"p\").hide();");
-        out.println("});");
-        out.println("$(\"#show\").click(function(){");
-        out.println("$(\"p\").show();");
+        out.println("$.get(\"/servlet/DBServlet\", null);");
         out.println("});");
         out.println("});");
         out.println("</script>");
@@ -52,11 +45,8 @@ public class AjaxGetServlet implements Servlet {
         out.println("</head>");
         // header--end
         out.println("<body>");
-//        out.println("<div>");
-        out.println("<button id=\"get\" type=\"button\">点击弹出对话框</button>");
-        out.println("<p id=\"p1\">如果点击“隐藏”按钮，我就会消失。</p>");
-        out.println("<button id=\"hide\" type=\"button\">隐藏</button>");
-        out.println("<button id=\"show\" type=\"button\">显示</button>");
+        out.println("<button id=\"get\" type=\"button\">get请求数据</button>");
+        out.println("<div id=\"div1\"></div>");
         // button --- end
         // body--end
         out.println("</body>");
