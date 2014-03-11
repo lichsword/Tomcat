@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24807c5a-e593-44b9-9239-5501e57a4204" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AjaxGetServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AjaxServlet.java" afterPath="$PROJECT_DIR$/src/AjaxServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AjaxLoadServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webroot/res/string.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="proj_01_basic_http_server.iws" />
@@ -11,7 +11,7 @@
     <file path="/HttpServer.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1393842427535" ignored="false" />
     <file path="/a.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1393900705289" ignored="false" />
     <file path="/Dummy.txt" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394518540145" ignored="false" />
-    <file path="/fragment.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394527448738" ignored="false" />
+    <file path="/fragment.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394527677094" ignored="false" />
     <file path="/Request.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1393855254219" ignored="false" />
     <file path="/Response.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1393855949947" ignored="false" />
     <file path="/index.html" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1393993242600" ignored="false" />
@@ -29,6 +29,8 @@
     <file path="/PageServlet.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394521432466" ignored="false" />
     <file path="/JSServlet.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394524215677" ignored="false" />
     <file path="/AjaxServlet.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394527414062" ignored="false" />
+    <file path="/AjaxLoadServlet.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394527840228" ignored="false" />
+    <file path="/string.txt" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394527828509" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,52 +91,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ServletProcessor1.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ServletProcessor1.java">
+      <file leaf-file-name="AjaxGetServlet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AjaxGetServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="0" selection-start="1380" selection-end="1380" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PageServlet.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PageServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="39" selection-start="1698" selection-end="1698" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JSServlet.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/JSServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="34" selection-start="1420" selection-end="1420" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AjaxServlet.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AjaxServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="22" selection-start="1662" selection-end="1662" vertical-scroll-proportion="0.0">
+            <state line="30" column="35" selection-start="1089" selection-end="1089" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AjaxGetServlet.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/AjaxGetServlet.java">
+      <file leaf-file-name="AjaxLoadServlet.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/AjaxLoadServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="49" selection-start="285" selection-end="285" vertical-scroll-proportion="0.33333334">
+            <state line="38" column="30" selection-start="1537" selection-end="1537" vertical-scroll-proportion="0.29752067">
               <folding />
             </state>
           </provider>
@@ -158,8 +127,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/StaticResourceProcessor.java" />
-        <option value="$PROJECT_DIR$/src/PrimitiveServlet.java" />
         <option value="$PROJECT_DIR$/webroot/css/a.css" />
         <option value="$PROJECT_DIR$/webroot/index.html" />
         <option value="$PROJECT_DIR$/src/HelloSqlite.java" />
@@ -174,6 +141,8 @@
         <option value="$PROJECT_DIR$/src/AjaxPostServlet.java" />
         <option value="$PROJECT_DIR$/src/AjaxServlet.java" />
         <option value="$PROJECT_DIR$/src/AjaxGetServlet.java" />
+        <option value="$PROJECT_DIR$/webroot/res/string.txt" />
+        <option value="$PROJECT_DIR$/src/AjaxLoadServlet.java" />
       </list>
     </option>
   </component>
@@ -254,7 +223,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="webroot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="proj_102_web_ftp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="proj_102_web_ftp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webroot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -453,7 +440,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="45" y="22" width="1235" height="722" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32781458" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -468,7 +455,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24978974" sideWeight="0.6710963" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24978974" sideWeight="0.6710963" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24978974" sideWeight="0.6710963" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32890365" sideWeight="0.4995795" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -542,20 +529,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Response.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="44" selection-start="450" selection-end="450" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="57" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Bootstrap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="31" selection-start="34" selection-end="34" vertical-scroll-proportion="0.039893616">
@@ -659,7 +632,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AjaxGetServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="49" selection-start="285" selection-end="285" vertical-scroll-proportion="0.33333334">
+        <state line="30" column="35" selection-start="1089" selection-end="1089" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webroot/res/string.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="11" selection-start="11" selection-end="11" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AjaxLoadServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="30" selection-start="1537" selection-end="1537" vertical-scroll-proportion="0.29752067">
           <folding />
         </state>
       </provider>
