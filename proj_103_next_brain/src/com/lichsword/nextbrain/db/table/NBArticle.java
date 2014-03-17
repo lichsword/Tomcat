@@ -12,7 +12,6 @@ import java.sql.SQLException;
  */
 public class NBArticle {
 
-
     private static final String TABLE_NAME = "article";
 
     private class Column {
@@ -29,25 +28,6 @@ public class NBArticle {
             + Column.LABELS + " text,"
             + ")";
 
-    public NBArticle fillArticle(ResultSet cursor) {
-        if (null == cursor)
-            return null;
-
-        NBArticle result = new NBArticle();
-        try {
-            result.id = cursor.getInt(Column.ID);
-            result.title = cursor.getString(Column.TITLE);
-            result.summary = cursor.getString(Column.SUMMARY);
-            result.labels = cursor.getString(Column.LABELS);
-
-            // more
-        } catch (SQLException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-        }
-        return result;
-    }
-
-
     private int id;
     private String title;
     private String summary;
@@ -63,7 +43,6 @@ public class NBArticle {
 
     public NBArticle() {
     }
-
 
     public NBArticle(ResultSet cursor) {
         try {
