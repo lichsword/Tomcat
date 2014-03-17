@@ -14,11 +14,11 @@ public class NBArticle {
 
     private static final String TABLE_NAME = "article";
 
-    private class Column {
-        static final String ID = "_id";
-        static final String TITLE = "title";
-        static final String SUMMARY = "summary";
-        static final String LABELS = "labels";
+    public class Column {
+        public static final String ID = "_id";
+        public static final String TITLE = "title";
+        public static final String SUMMARY = "summary";
+        public static final String LABELS = "labels";
     }
 
     static final String Sql_Create = "create table " + TABLE_NAME + "("
@@ -53,6 +53,23 @@ public class NBArticle {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
+
+
+    public int getId() {
+        return id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getSummary() {
+        return summary;
+    }
+
+    public String getLabels(){
+        return labels;
     }
 
     public String dump() {
