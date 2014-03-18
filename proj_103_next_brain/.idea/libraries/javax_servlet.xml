@@ -4,6 +4,9 @@
       <root url="jar://$PROJECT_DIR$/../libs/javax.servlet.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="file://$USER_HOME$/Downloads/servlet源码" />
+      <root url="file://$PROJECT_DIR$/../libs/servlet-source" />
+    </SOURCES>
   </library>
 </component>

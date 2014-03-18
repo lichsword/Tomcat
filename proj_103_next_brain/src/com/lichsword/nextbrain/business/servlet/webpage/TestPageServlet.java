@@ -22,7 +22,6 @@ public class TestPageServlet implements Servlet {
 
     @Override
     public ServletConfig getServletConfig() {
-
         return null;  // TODO
     }
 
@@ -32,13 +31,13 @@ public class TestPageServlet implements Servlet {
         String type = response.getContentType();
 //        out.println("type=" + type);
 //        response.setContentType("text/html");
-//        response.setContentType("text/html;charset=UTF-8");
+        response.setContentType("text/html;charset=UTF-8");
         // html struct
         out.println("<!DOCTYPE HTML>");
         out.println("<html>");
         out.println("<head>");
         out.println("<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\" >");
-//        out.println("<title>测试页面</title>");
+        out.println("<title>测试页面</title>");
         out.println("</head>");
         // header--end
         out.println("<body>");
@@ -47,6 +46,7 @@ public class TestPageServlet implements Servlet {
         // body--end
         out.println("</body>");
         out.println("</html>");
+
         out.flush();
         out.close();
     }

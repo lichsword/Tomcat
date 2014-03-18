@@ -2,28 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24807c5a-e593-44b9-9239-5501e57a4204" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/business/servlet/webpage/MainPageServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/business/servlet/webpage/TestPageServlet.java" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/DBServlet.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/webpage/MainPage.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/webpage/RenderBase.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/webpage/view/TableView.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/webpage/MainPage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/webpage/RenderBase.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/DBServlet.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/business/servlet/DBServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/webpage/view/TableView.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/view/TableView.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/webpage/view/View.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/view/View.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/db/table/NBArticle$Column.class" afterPath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/db/table/NBArticle$Column.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/db/table/NBArticle.class" afterPath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/db/table/NBArticle.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/startup/Request.class" afterPath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/startup/Request.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/startup/ServletProcessor.class" afterPath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/startup/ServletProcessor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/startup/WebappClassLoader.class" afterPath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/startup/WebappClassLoader.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/startup/HttpConnecter.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/startup/HttpConnecter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/startup/Request.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/startup/Request.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/startup/Response.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/startup/Response.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/startup/ServletProcessor.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/startup/ServletProcessor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/startup/WebappClassLoader.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/startup/WebappClassLoader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/proj_103_next_brain.iml" afterPath="$PROJECT_DIR$/../proj_103_next_brain/proj_103_next_brain.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/business/servlet/webpage/TestPageServlet.class" afterPath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/business/servlet/webpage/TestPageServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/business/servlet/webpage/TestPageServlet.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/business/servlet/webpage/TestPageServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/.idea/libraries/javax_servlet.xml" afterPath="$PROJECT_DIR$/../proj_103_next_brain/.idea/libraries/javax_servlet.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../proj_103_next_brain/.idea/workspace.xml" />
     </list>
@@ -56,7 +41,7 @@
     <file path="/WebappClassLoader.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395130527429" ignored="false" />
     <file path="/ServletProcessor.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395134166461" ignored="false" />
     <file path="/MainPageServlet.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395124597644" ignored="false" />
-    <file path="/TestPageServlet.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395134901272" ignored="false" />
+    <file path="/TestPageServlet.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395136206048" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -576,7 +561,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="61" y="59" width="1235" height="722" extended-state="1" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32781458" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
