@@ -1,5 +1,9 @@
 package com.lichsword.nextbrain.startup;
 
+import com.lichsword.nextbrain.business.servlet.DBServlet;
+import com.lichsword.nextbrain.business.servlet.webpage.MainPageServlet;
+import com.lichsword.nextbrain.business.servlet.webpage.TestPageServlet;
+
 import java.util.HashMap;
 
 /**
@@ -7,11 +11,37 @@ import java.util.HashMap;
  * User: lichsword
  * Date: 14-3-17
  * Time: 下午12:16
- * To change this template use File | Settings | File Templates.
  */
-public class WebappClassLoader {
+public class WebappClassLoader extends ClassLoader {
 
     private HashMap<String, String> servletMapping = new HashMap<String, String>();
+
+    private static WebappClassLoader sInstance;
+
+    private WebappClassLoader() {
+        addServeletMapping("/servlet/db", DBServlet.class.getCanonicalName());
+        addServeletMapping("/servlet/home", MainPageServlet.class.getCanonicalName());
+        addServeletMapping("/servlet/test", TestPageServlet.class.getCanonicalName());
+    }
+
+    public static WebappClassLoader getInstance() {
+        if (null == sInstance) {
+            sInstance = new WebappClassLoader();
+        }// end if
+        return sInstance;
+    }
+
+    /**
+     * @param uri
+     * @return
+     */
+    public Class loadServletClass(String uri) throws ClassNotFoundException {
+        String servletName = servletMapping.get(uri);
+        System.out.println("[INFO]servletName=" + servletName);
+        Class result = loadClass(servletName);
+        return result;
+    }
+
 
     private void addServeletMapping(String path, String servletName) {
         servletMapping.put(path, servletName);
@@ -20,5 +50,6 @@ public class WebappClassLoader {
     private void removeServletMapping(String path) {
         servletMapping.remove(path);
     }
+
 
 }

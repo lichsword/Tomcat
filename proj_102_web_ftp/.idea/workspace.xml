@@ -2,21 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24807c5a-e593-44b9-9239-5501e57a4204" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ShowHtmlServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/.idea/dictionaries/lichsword.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/proj_103_next_brain.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proj_102_web_ftp.iml" afterPath="$PROJECT_DIR$/proj_102_web_ftp.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/business/servlet/webpage/MainPageServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/business/servlet/webpage/TestPageServlet.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/DBServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/webpage/MainPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/webpage/RenderBase.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/webpage/view/TableView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/webpage/MainPage.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/webpage/RenderBase.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/DBServlet.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/business/servlet/DBServlet.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/webpage/view/TableView.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/view/TableView.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/webpage/view/View.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/view/View.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/db/table/NBArticle$Column.class" afterPath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/db/table/NBArticle$Column.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/db/table/NBArticle.class" afterPath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/db/table/NBArticle.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/startup/Request.class" afterPath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/startup/Request.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/startup/ServletProcessor.class" afterPath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/startup/ServletProcessor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/startup/WebappClassLoader.class" afterPath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/startup/WebappClassLoader.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/startup/HttpConnecter.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/startup/HttpConnecter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/startup/Request.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/startup/Request.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/startup/Response.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/startup/Response.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/startup/ServletProcessor.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/startup/ServletProcessor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/startup/WebappClassLoader.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/startup/WebappClassLoader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/proj_103_next_brain.iml" afterPath="$PROJECT_DIR$/../proj_103_next_brain/proj_103_next_brain.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../proj_103_next_brain/.idea/workspace.xml" />
     </list>
     <ignored path="proj_01_basic_http_server.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/HttpServer.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1393842427535" ignored="false" />
-    <file path="/a.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1393900705289" ignored="false" />
-    <file path="/Dummy.txt" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394618271187" ignored="false" />
-    <file path="/fragment.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394538756718" ignored="false" />
-    <file path="/Request.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1393855254219" ignored="false" />
-    <file path="/Response.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394538175886" ignored="false" />
+    <file path="/a.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395113349621" ignored="false" />
+    <file path="/Dummy.txt" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395129399048" ignored="false" />
+    <file path="/fragment.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395125277621" ignored="false" />
+    <file path="/Request.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395110511986" ignored="false" />
+    <file path="/Response.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395135482052" ignored="false" />
     <file path="/index.html" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1393993242600" ignored="false" />
     <file path="/HttpServer1.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1393855190547" ignored="false" />
     <file path="/ServletProcessor1.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394520219458" ignored="false" />
@@ -26,7 +44,7 @@
     <file path="/PrimitiveServlet.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1393922132389" ignored="false" />
     <file path="/a.css" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1393993125282" ignored="false" />
     <file path="/Bootstrap.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394519318862" ignored="false" />
-    <file path="/HttpConnecter.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394519035468" ignored="false" />
+    <file path="/HttpConnecter.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395133727736" ignored="false" />
     <file path="/DBConnector.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394519931287" ignored="false" />
     <file path="/DBServlet.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394520499582" ignored="false" />
     <file path="/PageServlet.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394521432466" ignored="false" />
@@ -35,6 +53,10 @@
     <file path="/AjaxLoadServlet.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394538365685" ignored="false" />
     <file path="/string.txt" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394527828509" ignored="false" />
     <file path="/ShowHtmlServlet.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394540363181" ignored="false" />
+    <file path="/WebappClassLoader.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395130527429" ignored="false" />
+    <file path="/ServletProcessor.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395134166461" ignored="false" />
+    <file path="/MainPageServlet.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395124597644" ignored="false" />
+    <file path="/TestPageServlet.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395134901272" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,43 +71,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint>
-        <option name="NOTIFY_CAUGHT" value="true" />
-        <option name="NOTIFY_UNCAUGHT" value="true" />
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint>
-        <option name="NOTIFY_CAUGHT" value="true" />
-        <option name="NOTIFY_UNCAUGHT" value="true" />
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint url="file://$PROJECT_DIR$/src/HttpConnecter.java" line="54" class="HttpConnecter" package="">
         <option name="ENABLED" value="true" />
@@ -148,6 +133,43 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </line_breakpoints>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -157,19 +179,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ServletProcessor1.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ServletProcessor1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="27" selection-start="1455" selection-end="1462" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Servlet.class" pinned="false" current="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/../libs/javax.servlet.jar!/javax/servlet/Servlet.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="9" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0">
+            <state line="11" column="9" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -178,7 +191,7 @@
       <file leaf-file-name="PrimitiveServlet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PrimitiveServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="6" selection-start="933" selection-end="933" vertical-scroll-proportion="0.0">
+            <state line="30" column="5" selection-start="933" selection-end="933" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -187,16 +200,25 @@
       <file leaf-file-name="PageServlet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PageServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="39" selection-start="1698" selection-end="1698" vertical-scroll-proportion="0.0">
+            <state line="51" column="20" selection-start="1698" selection-end="1698" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShowHtmlServlet.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ShowHtmlServlet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ShowHtmlServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="33" selection-start="1546" selection-end="1546" vertical-scroll-proportion="0.03888889">
+            <state line="44" column="30" selection-start="1546" selection-end="1546" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AjaxGetServlet.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/AjaxGetServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="36" selection-start="1676" selection-end="1676" vertical-scroll-proportion="0.2063197">
               <folding />
             </state>
           </provider>
@@ -232,7 +254,7 @@
       <file leaf-file-name="Response.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Response.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="39" selection-start="2018" selection-end="2018" vertical-scroll-proportion="0.0">
+            <state line="67" column="36" selection-start="2018" selection-end="2018" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -285,8 +307,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1331" />
-    <option name="y" value="-251" />
+    <option name="x" value="61" />
+    <option name="y" value="59" />
     <option name="width" value="1235" />
     <option name="height" value="722" />
   </component>
@@ -366,8 +388,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -553,7 +575,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1331" y="-251" width="1235" height="722" extended-state="0" />
+    <frame x="61" y="59" width="1235" height="722" extended-state="1" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32781458" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -669,13 +691,6 @@
         <state line="6" column="17" selection-start="160" selection-end="160" vertical-scroll-proportion="-0.5714286" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AjaxGetServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="51" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DemoHelloSqlite.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="26" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0">
@@ -694,7 +709,7 @@
     </entry>
     <entry file="jar://$PROJECT_DIR$/../libs/javax.servlet.jar!/javax/servlet/Servlet.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="9" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0">
+        <state line="11" column="9" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -715,14 +730,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PrimitiveServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="6" selection-start="933" selection-end="933" vertical-scroll-proportion="0.0">
+        <state line="30" column="5" selection-start="933" selection-end="933" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PageServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="39" selection-start="1698" selection-end="1698" vertical-scroll-proportion="0.0">
+        <state line="51" column="20" selection-start="1698" selection-end="1698" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -743,14 +758,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Response.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="39" selection-start="2018" selection-end="2018" vertical-scroll-proportion="0.0">
+        <state line="67" column="36" selection-start="2018" selection-end="2018" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ShowHtmlServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="33" selection-start="1546" selection-end="1546" vertical-scroll-proportion="0.03888889">
+        <state line="44" column="30" selection-start="1546" selection-end="1546" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AjaxGetServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="36" selection-start="1676" selection-end="1676" vertical-scroll-proportion="0.2063197">
           <folding />
         </state>
       </provider>

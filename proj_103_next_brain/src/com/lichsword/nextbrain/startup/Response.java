@@ -62,17 +62,19 @@ public class Response implements ServletResponse {
 
     @Override
     public String getCharacterEncoding() {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+//        return "utf-8";
+        return null;
     }
 
     @Override
     public String getContentType() {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+//        return "application/xhtml+xml";
+        return null;
     }
 
     @Override
     public ServletOutputStream getOutputStream() throws IOException {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        return null;
     }
 
     @Override
@@ -84,56 +86,48 @@ public class Response implements ServletResponse {
 
     @Override
     public void setCharacterEncoding(String s) {
-        //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override
     public void setContentLength(int i) {
-        //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override
     public void setContentType(String s) {
-        //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override
     public void setBufferSize(int i) {
-        //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override
     public int getBufferSize() {
-        return 0;  //To change body of implemented methods use File | Settings | File Templates.
+        return 0;
     }
 
     @Override
     public void flushBuffer() throws IOException {
-        //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override
     public void resetBuffer() {
-        //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override
     public boolean isCommitted() {
-        return false;  //To change body of implemented methods use File | Settings | File Templates.
+        return false;
     }
 
     @Override
     public void reset() {
-        //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override
     public void setLocale(Locale locale) {
-        //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override
     public Locale getLocale() {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        return null;
     }
 }

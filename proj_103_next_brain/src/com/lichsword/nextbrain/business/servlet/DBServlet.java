@@ -1,6 +1,7 @@
+package com.lichsword.nextbrain.business.servlet;
+
 import com.lichsword.nextbrain.business.ArticleManager;
 import com.lichsword.nextbrain.db.table.NBArticle;
-import com.lichsword.nextbrain.webpage.MainPage;
 
 import javax.servlet.*;
 import java.io.IOException;
@@ -39,7 +40,7 @@ public class DBServlet implements Servlet {
             out.println(item.dump());
         }
 
-        MainPage page = new MainPage(servletResponse);
+//        MainPageServlet page = new MainPageServlet(servletResponse);
         // TODO
     }
 

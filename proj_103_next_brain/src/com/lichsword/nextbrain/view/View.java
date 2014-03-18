@@ -1,4 +1,4 @@
-package com.lichsword.nextbrain.webpage.view;
+package com.lichsword.nextbrain.view;
 
 /**
  * Created with IntelliJ IDEA.

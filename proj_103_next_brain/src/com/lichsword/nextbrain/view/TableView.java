@@ -1,4 +1,4 @@
-package com.lichsword.nextbrain.webpage.view;
+package com.lichsword.nextbrain.view;
 
 import com.lichsword.nextbrain.db.table.NBArticle;
 import com.lichsword.nextbrain.db.table.NBArticle.Column;

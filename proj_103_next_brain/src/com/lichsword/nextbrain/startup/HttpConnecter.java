@@ -13,7 +13,7 @@ import java.net.Socket;
  * Time: 下午9:46
  * To change this template use File | Settings | File Templates.
  */
-public class HttpConnecter implements  Runnable {
+public class HttpConnecter implements Runnable {
 
     /**
      * 关闭命令的uri
@@ -25,11 +25,14 @@ public class HttpConnecter implements  Runnable {
      */
     private boolean shutdown = false;
 
+//    private final String HOST = "10.68.179.135";
+    private final String HOST = "127.0.0.1";
+
     private void await() {
         ServerSocket serverSocket = null;
         int port = 8080;
         try {
-            serverSocket = new ServerSocket(port, 1, InetAddress.getByName("127.0.0.1"));
+            serverSocket = new ServerSocket(port, 1, InetAddress.getByName(HOST));
         } catch (Exception e) {
             e.printStackTrace();
             System.exit(1);
