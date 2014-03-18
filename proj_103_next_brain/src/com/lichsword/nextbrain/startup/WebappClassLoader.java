@@ -1,6 +1,7 @@
 package com.lichsword.nextbrain.startup;
 
 import com.lichsword.nextbrain.business.servlet.DBServlet;
+import com.lichsword.nextbrain.business.servlet.webpage.ArticlePageServlet;
 import com.lichsword.nextbrain.business.servlet.webpage.MainPageServlet;
 import com.lichsword.nextbrain.business.servlet.webpage.TestPageServlet;
 
@@ -19,9 +20,12 @@ public class WebappClassLoader extends ClassLoader {
     private static WebappClassLoader sInstance;
 
     private WebappClassLoader() {
+        // test pages
+        addServeletMapping("/servlet/test", TestPageServlet.class.getCanonicalName());
+        // real pages
         addServeletMapping("/servlet/db", DBServlet.class.getCanonicalName());
         addServeletMapping("/servlet/home", MainPageServlet.class.getCanonicalName());
-        addServeletMapping("/servlet/test", TestPageServlet.class.getCanonicalName());
+        addServeletMapping("/servlet/article", ArticlePageServlet.class.getCanonicalName());
     }
 
     public static WebappClassLoader getInstance() {

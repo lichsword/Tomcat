@@ -8,13 +8,13 @@ import java.io.PrintWriter;
  * Created with IntelliJ IDEA.
  * User: lichsword
  * Date: 14-3-18
- * Time: 下午2:35
+ * Time: 下午6:23
  * <p/>
  * TODO
  */
-public class MainPageServlet implements Servlet {
+public class ArticlePageServlet implements Servlet {
     @Override
-    public void init(ServletConfig servletConfig) throws ServletException {
+    public void init(ServletConfig config) throws ServletException {
         // TODO
     }
 
@@ -24,8 +24,8 @@ public class MainPageServlet implements Servlet {
     }
 
     @Override
-    public void service(ServletRequest servletRequest, ServletResponse response) throws ServletException, IOException {
-        PrintWriter out = response.getWriter();
+    public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
+        PrintWriter out = res.getWriter();
         // html struct
         out.println("<!DOCTYPE html>");
         out.println("<html>");
@@ -39,9 +39,17 @@ public class MainPageServlet implements Servlet {
         out.println("<script type=\"text/javascript\">");
 
         out.println("$(document).ready(function(){");
-        out.println("$(\"#get\").click(function(){");
-        out.println("$.get(\"/servlet/db\", null);");
-        out.println("});");
+        out.println("\t$(\"#get\").click(function(){");
+        out.println("\t\t$.get(\"/servlet/db\", \nfunction(data,status){\n"
+//                + "var node = data;"
+                + "\t\t\tvar element=document.getElementById(\"div1\");\n"
+                //+ "\t\t\telement.appendChild(data);\n"
+                + "element.innerHTML = data.documentElement.outerHTML;"
+                + "console.log(data);"
+                // dialog
+                + "\t\t\talert(\"Data: \" + data + \"\\nStatus: \" + status);\n" +
+                "\t\t});");
+        out.println("\t});");
         out.println("});");
         out.println("</script>");
         // js fun define.

@@ -2,6 +2,7 @@ package com.lichsword.nextbrain.business.servlet;
 
 import com.lichsword.nextbrain.business.ArticleManager;
 import com.lichsword.nextbrain.db.table.NBArticle;
+import com.lichsword.nextbrain.view.TableView;
 
 import javax.servlet.*;
 import java.io.IOException;
@@ -34,14 +35,17 @@ public class DBServlet implements Servlet {
         ArrayList<NBArticle> list = ArticleManager.getInstance().queryAllArticle();
         if (null == list || 0 == list.size()) return;
 
-        out.println("size=" + list.size());
+//        out.println("size=" + list.size());
         for (NBArticle item : list) {
             System.out.println(item.dump());
-            out.println(item.dump());
+//            out.println(item.dump());
+            System.out.println("[INFO]row=" + item.dump() + "\n");
         }
 
-//        MainPageServlet page = new MainPageServlet(servletResponse);
-        // TODO
+        TableView<NBArticle> tableView = new TableView<NBArticle>(list);
+        out.print(tableView.html());
+        out.flush();
+        out.close();
     }
 
     @Override
