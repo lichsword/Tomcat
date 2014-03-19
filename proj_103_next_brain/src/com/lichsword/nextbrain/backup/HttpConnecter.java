@@ -1,6 +1,5 @@
-package com.lichsword.nextbrain;
+package com.lichsword.nextbrain.backup;
 
-import javax.servlet.http.HttpServletResponse;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.InetAddress;

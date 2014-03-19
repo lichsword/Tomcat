@@ -1,9 +1,11 @@
 package com.lichsword.nextbrain.connector.http;
 
-import com.lichsword.nextbrain.Request;
-import com.lichsword.nextbrain.Response;
-import com.lichsword.nextbrain.ServletProcessor;
-import com.lichsword.nextbrain.StaticResourceProcessor;
+import com.lichsword.nextbrain.IConnector;
+import com.lichsword.nextbrain.IRequest;
+import com.lichsword.nextbrain.IResponse;
+import com.lichsword.nextbrain.backup.Response;
+import com.lichsword.nextbrain.backup.ServletProcessor;
+import com.lichsword.nextbrain.backup.StaticResourceProcessor;
 
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -18,7 +20,7 @@ import java.net.Socket;
  * Time: 下午9:46
  * To change this template use File | Settings | File Templates.
  */
-public class HttpConnecter implements Runnable {
+public class HttpConnecter implements IConnector, Runnable {
 
     /**
      * 关闭命令的uri
@@ -30,8 +32,15 @@ public class HttpConnecter implements Runnable {
      */
     private boolean shutdown = false;
 
-//    private final String HOST = "10.68.179.135";
+    //    private final String HOST = "10.68.179.135";
     private final String HOST = "127.0.0.1";
+
+    private int port = 8080;
+
+    /**
+     * The input buffer size we should create on input streams.
+     */
+    private int bufferSize = 2048;
 
     private void await() {
         ServerSocket serverSocket = null;
@@ -50,6 +59,20 @@ public class HttpConnecter implements Runnable {
             OutputStream output = null;
             try {
                 socket = serverSocket.accept();
+
+                HttpProcessor processor = createProcessor();
+                if (null == processor) {
+                    System.out.println("HttpConnector.noProcessor");
+                    socket.close();
+                }// end if
+
+                continue;
+
+                processor.assign(socket);
+                processor.process();
+                // end ----
+
+
                 input = socket.getInputStream();
                 output = socket.getOutputStream();
 
@@ -81,10 +104,32 @@ public class HttpConnecter implements Runnable {
         }// end while
     }
 
+    private HttpProcessor createProcessor() {
+        return new HttpProcessor(this);
+    }
 
+    public IRequest createRequest() {
+        HttpRequestImpl request = new HttpRequestImpl();
+        request.setConnector(this);
+        return request;
+    }
+
+    public IResponse createResponse() {
+        HttpResponseImpl response = new HttpResponseImpl();
+        response.setConnector(this);
+        return response;
+    }
 
     @Override
     public void run() {
         await();
+    }
+
+    public int getBufferSize() {
+        return bufferSize;
+    }
+
+    public int getPort() {
+        return this.port;
     }
 }

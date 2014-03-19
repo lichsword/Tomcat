@@ -1,9 +1,9 @@
 package com.lichsword.nextbrain.connector.http.back;
 
-import com.lichsword.nextbrain.Request;
-import com.lichsword.nextbrain.Response;
-import com.lichsword.nextbrain.ServletProcessor;
-import com.lichsword.nextbrain.StaticResourceProcessor;
+import com.lichsword.nextbrain.backup.Request;
+import com.lichsword.nextbrain.backup.Response;
+import com.lichsword.nextbrain.backup.ServletProcessor;
+import com.lichsword.nextbrain.backup.StaticResourceProcessor;
 
 import java.io.InputStream;
 import java.io.OutputStream;

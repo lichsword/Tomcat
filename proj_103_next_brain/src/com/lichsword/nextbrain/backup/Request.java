@@ -1,4 +1,4 @@
-package com.lichsword.nextbrain;
+package com.lichsword.nextbrain.backup;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletInputStream;

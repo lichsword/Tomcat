@@ -2,417 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24807c5a-e593-44b9-9239-5501e57a4204" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/users/AbstractGroup.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/users/AbstractRole.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/users/AbstractUser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/valves/AccessLogValve.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/core/ApplicationContext.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/core/ApplicationContextFacade.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/core/ApplicationDispatcher.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/core/ApplicationFilterChain.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/core/ApplicationFilterConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/core/ApplicationHttpRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/core/ApplicationHttpResponse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/deploy/ApplicationParameter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/core/ApplicationRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/core/ApplicationResponse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/Authenticator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/authenticator/AuthenticatorBase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/startup/Authenticators.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/util/Base64.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/naming/resources/BaseDirContext.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/authenticator/BasicAuthenticator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/startup/Bootstrap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/startup/BootstrapService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/startup/BootstrapServiceContext.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/ssi/ByteArrayServletOutputStream.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/util/CGIProcessEnvironment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/servlets/CGIServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/startup/Catalina.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/startup/CatalinaManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/startup/CatalinaManagerMBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/startup/CatalinaService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/valves/CertificatesValve.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/util/CharsetMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/util/CharsetMapperDefault.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/startup/ClassLoaderFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/mbeans/ClassNameMBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/Cluster.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/cluster/ClusterMemberInfo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/cluster/ClusterReceiver.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/cluster/ClusterSender.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/cluster/ClusterSessionBase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/Connector.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/mbeans/ConnectorMBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/a/book/ref/code/connector/http/Constants.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/authenticator/Constants.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/cluster/Constants.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/connector/Constants.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/connector/http/Constants.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/connector/http10/Constants.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/core/Constants.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/loader/Constants.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/logger/Constants.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/realm/Constants.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/servlets/Constants.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/session/Constants.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/startup/Constants.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/users/Constants.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/valves/Constants.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/naming/Constants.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/naming/resources/Constants.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/Contained.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/Container.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/core/ContainerBase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/ContainerEvent.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/ContainerListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/ContainerServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/Context.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/naming/ContextAccessController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/naming/ContextBindings.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/startup/ContextConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/deploy/ContextEjb.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/deploy/ContextEnvironment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/mbeans/ContextEnvironmentMBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/deploy/ContextLocalEjb.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/deploy/ContextResource.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/deploy/ContextResourceLink.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/mbeans/ContextResourceLinkMBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/mbeans/ContextResourceMBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/startup/ContextRuleSet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/util/CookieTools.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/startup/CopyParentClassLoaderRule.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/util/CustomObjectInputStream.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/util/DOMWriter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/util/DateTool.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/DefaultContext.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/mbeans/DefaultContextMBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/connector/http/DefaultHeaders.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/net/DefaultServerSocketFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/servlets/DefaultServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/Deployer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/authenticator/DigestAuthenticator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/naming/resources/DirContextURLConnection.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/naming/resources/DirContextURLStreamHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/naming/resources/DirContextURLStreamHandlerFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/session/DistributedManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/naming/EjbRef.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/startup/Embedded.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/startup/EmbeddedManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/startup/EmbeddedManagerMBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/Engine.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/startup/EngineConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/startup/EngineRuleSet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/util/Enumerator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/valves/ErrorDispatcherValve.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/deploy/ErrorPage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/valves/ErrorReportValve.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/loader/Extension.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/util/FastDateFormat.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/core/FastEngineMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/util/FastHttpDateFormat.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/naming/resources/FileDirContext.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/logger/FileLogger.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/session/FileStore.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/deploy/FilterDef.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/deploy/FilterMap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/authenticator/FormAuthenticator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/realm/GenericPrincipal.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/mbeans/GlobalResourcesLifecycleListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/Globals.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/Group.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/mbeans/GroupMBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/servlets/HTMLManagerServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/naming/resources/jndi/Handler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/util/HexUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/startup/HomesUserDatabase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/Host.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/startup/HostConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/startup/HostRuleSet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/connector/http/HttpConnecter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/connector/http/back/HttpConnecter2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/connector/http/back/HttpConnecter2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/a/book/ref/code/connector/http/HttpConnector.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/connector/http/HttpConnector.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/connector/http10/HttpConnector.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/a/book/ref/code/connector/http/HttpHeader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/connector/http/HttpHeader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/a/book/ref/code/connector/http/HttpProcessor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/connector/http/HttpProcessor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/connector/http/HttpProcessor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/connector/http10/HttpProcessor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/a/book/ref/code/connector/http/HttpRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/HttpRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/connector/HttpRequestBase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/a/book/ref/code/connector/http/HttpRequestFacade.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/connector/HttpRequestFacade.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/connector/http/HttpRequestImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/connector/http10/HttpRequestImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/a/book/ref/code/connector/http/HttpRequestLine.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/connector/http/HttpRequestLine.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/connector/http/HttpRequestStream.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/connector/HttpRequestWrapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/a/book/ref/code/connector/http/HttpResponse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/HttpResponse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/connector/HttpResponseBase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/a/book/ref/code/connector/http/HttpResponseFacade.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/connector/HttpResponseFacade.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/connector/http/HttpResponseImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/connector/http10/HttpResponseImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/connector/http/HttpResponseStream.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/connector/HttpResponseWrapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/util/IOTools.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/InstanceEvent.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/InstanceListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/util/InstanceSupport.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/servlets/InvokerHttpRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/servlets/InvokerServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/realm/JAASCallbackHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/realm/JAASMemoryLoginModule.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/realm/JAASRealm.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/valves/JDBCAccessLogValve.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/realm/JDBCRealm.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/session/JDBCStore.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/realm/JNDIRealm.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/naming/JndiPermission.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/Lifecycle.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/LifecycleEvent.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/LifecycleException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/LifecycleListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/startup/LifecycleListenerRule.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/util/LifecycleSupport.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/Loader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/authenticator/LocalStrings.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/cluster/LocalStrings.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/connector/LocalStrings.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/connector/http/LocalStrings.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/connector/http10/LocalStrings.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/core/LocalStrings.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/loader/LocalStrings.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/logger/LocalStrings.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/realm/LocalStrings.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/servlets/LocalStrings.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/session/LocalStrings.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/startup/LocalStrings.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/users/LocalStrings.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/util/LocalStrings.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/valves/LocalStrings.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/naming/LocalStrings.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/naming/resources/LocalStrings.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/authenticator/LocalStrings_es.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/connector/LocalStrings_es.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/connector/http/LocalStrings_es.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/logger/LocalStrings_es.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/realm/LocalStrings_es.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/util/LocalStrings_es.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/valves/LocalStrings_es.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/naming/LocalStrings_es.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/authenticator/LocalStrings_ja.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/cluster/LocalStrings_ja.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/connector/LocalStrings_ja.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/connector/http/LocalStrings_ja.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/connector/http10/LocalStrings_ja.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/core/LocalStrings_ja.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/loader/LocalStrings_ja.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/logger/LocalStrings_ja.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/realm/LocalStrings_ja.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/servlets/LocalStrings_ja.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/session/LocalStrings_ja.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/startup/LocalStrings_ja.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/util/LocalStrings_ja.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/valves/LocalStrings_ja.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/naming/LocalStrings_ja.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/naming/resources/LocalStrings_ja.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/Logger.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/logger/LoggerBase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/deploy/LoginConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/mbeans/MBeanFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/mbeans/MBeanUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/util/MD5Encoder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/util/MIME2Java.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/Manager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/session/ManagerBase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/servlets/ManagerServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/Mapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/core/MappingRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/users/MemoryGroup.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/realm/MemoryRealm.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/users/MemoryRole.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/realm/MemoryRuleSet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/users/MemoryUser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/users/MemoryUserDatabase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/users/MemoryUserDatabaseFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/mbeans/MemoryUserDatabaseMBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/cluster/MulticastReceiver.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/cluster/MulticastSender.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/naming/NameParserImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/naming/NamingContext.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/naming/NamingContextBindingsEnumeration.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/naming/NamingContextEnumeration.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/core/NamingContextListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/naming/NamingEntry.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/deploy/NamingResources.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/mbeans/NamingResourcesMBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/startup/NamingRuleSet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/naming/NamingService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/naming/NamingServiceMBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/authenticator/NonLoginAuthenticator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/util/ParameterMap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/startup/PasswdUserDatabase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/session/PersistentManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/session/PersistentManagerBase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/Pipeline.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/util/ProcessEnvironment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/util/ProcessHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/naming/resources/ProxyDirContext.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/util/Queue.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/Realm.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/realm/RealmBase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/naming/resources/RecyclableNamingEnumeration.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/loader/Reloader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/valves/RemoteAddrValve.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/valves/RemoteHostValve.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/cluster/ReplicationWrapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/Request.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/connector/RequestBase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/valves/RequestDumperValve.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/connector/RequestFacade.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/valves/RequestFilterValve.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/a/book/ref/code/connector/RequestStream.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/connector/RequestStream.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/util/RequestUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/connector/RequestWrapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/naming/resources/Resource.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/naming/resources/ResourceAttributes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/loader/ResourceEntry.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/naming/ResourceEnvRef.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/naming/ResourceLinkRef.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/deploy/ResourceParams.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/naming/ResourceRef.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/util/ResourceSet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/Response.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/connector/ResponseBase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/connector/ResponseFacade.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/ssi/ResponseIncludeWrapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/connector/ResponseStream.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/connector/ResponseWrapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/connector/ResponseWriter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/Role.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/mbeans/RoleMBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/ssi/SSICommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/ssi/SSIConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/ssi/SSIEcho.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/ssi/SSIExec.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/ssi/SSIExternalResolver.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/ssi/SSIFlastmod.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/ssi/SSIFsize.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/ssi/SSIInclude.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/ssi/SSIMediator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/ssi/SSIPrintenv.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/ssi/SSIProcessor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/ssi/SSIServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/ssi/SSIServletExternalResolver.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/ssi/SSIServletRequestUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/ssi/SSISet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/ssi/SSIStopProcessingException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/authenticator/SSLAuthenticator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/net/SSLServerSocketFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/authenticator/SavedRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/startup/SecurityClassLoad.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/deploy/SecurityCollection.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/deploy/SecurityConstraint.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/naming/SelectorContext.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/Server.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/ServerFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/util/ServerInfo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/util/ServerInfo.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/mbeans/ServerLifecycleListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/net/ServerSocketFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/Service.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/Session.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/SessionEvent.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/SessionListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/authenticator/SingleSignOn.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/a/book/ref/code/connector/http/SocketInputStream.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/connector/http/SocketInputStream.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/loader/StandardClassLoader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/cluster/StandardCluster.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/core/StandardContext.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/mbeans/StandardContextMBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/core/StandardContextMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/core/StandardContextValve.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/core/StandardDefaultContext.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/core/StandardEngine.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/mbeans/StandardEngineMBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/core/StandardEngineMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/core/StandardEngineValve.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/core/StandardHost.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/core/StandardHostDeployer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/mbeans/StandardHostMBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/core/StandardHostMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/core/StandardHostValve.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/session/StandardManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/core/StandardPipeline.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/core/StandardServer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/mbeans/StandardServerMBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/core/StandardService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/mbeans/StandardServiceMBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/session/StandardSession.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/session/StandardSessionFacade.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/core/StandardWrapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/core/StandardWrapperFacade.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/core/StandardWrapperValve.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/Store.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/session/StoreBase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/util/Strftime.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/util/StringManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/naming/StringManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/util/StringParser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/logger/SystemErrLogger.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/logger/SystemOutLogger.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/deploy/Test.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/startup/TldRuleSet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/startup/Tool.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/naming/TransactionRef.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/util/URL.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/util/URLEncoder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/User.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/startup/UserConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/UserDatabase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/startup/UserDatabase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/realm/UserDatabaseRealm.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/mbeans/UserMBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/Valve.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/valves/ValveBase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/ValveContext.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/naming/resources/WARDirContext.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/startup/WebRuleSet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/loader/WebappClassLoader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/loader/WebappLoader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/servlets/WebdavServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/Wrapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/util/XMLWriter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/naming/java/javaURLContextFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/org/apache/catalina/mbeans/mbeans-descriptors.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/business/servlet/webpage/ArticlePageServlet.class" afterPath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/business/servlet/webpage/ArticlePageServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/HttpConnecter.class" afterPath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/HttpConnecter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/Response.class" afterPath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/Response.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/WebappClassLoader.class" afterPath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/WebappClassLoader.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/connector/http/HttpRequestBase.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/connector/http/HttpRequestImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/connector/http/HttpResponseBase.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/connector/http/HttpResponseImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/IConnector.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/IRequest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/IResponse.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/connector/RequestBase.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/connector/RequestFacade.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/connector/ResponseBase.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/connector/ResponseFacade.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/connector/http/SocketInputStream.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/RequestStream.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/Constants.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/backup/Constants.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/HttpConnecter.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/backup/HttpConnecter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/Request.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/backup/Request.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/Response.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/backup/Response.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/ServletProcessor.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/backup/ServletProcessor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/StaticResourceProcessor.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/backup/StaticResourceProcessor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/WebappClassLoader.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/backup/WebappClassLoader.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/business/servlet/webpage/ArticlePageServlet.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/business/servlet/webpage/ArticlePageServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/HttpConnecter.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/HttpConnecter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/Response.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/Response.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/WebappClassLoader.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/WebappClassLoader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/webroot/js/myscript.js" afterPath="$PROJECT_DIR$/../proj_103_next_brain/webroot/js/myscript.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_02_simple_servlet/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../proj_02_simple_servlet/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_102_web_ftp/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../proj_102_web_ftp/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/Bootstrap.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/Bootstrap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/connector/http/HttpConnecter.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/connector/http/HttpConnecter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/connector/http/back/HttpConnecter2.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/connector/http/back/HttpConnecter2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/connector/http/HttpProcessor.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/connector/http/HttpProcessor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../proj_103_next_brain/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="proj_01_basic_http_server.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/HttpServer.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1393842427535" ignored="false" />
     <file path="/a.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395113349621" ignored="false" />
     <file path="/Dummy.txt" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395220339892" ignored="false" />
-    <file path="/fragment.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395221274013" ignored="false" />
+    <file path="/fragment.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395228686449" ignored="false" />
     <file path="/Request.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395110511986" ignored="false" />
     <file path="/Response.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395214313920" ignored="false" />
     <file path="/index.html" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1393993242600" ignored="false" />
@@ -424,7 +48,7 @@
     <file path="/PrimitiveServlet.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1393922132389" ignored="false" />
     <file path="/a.css" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1393993125282" ignored="false" />
     <file path="/Bootstrap.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394519318862" ignored="false" />
-    <file path="/HttpConnecter.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395220896442" ignored="false" />
+    <file path="/HttpConnecter.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395229566480" ignored="false" />
     <file path="/DBConnector.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395044498249" ignored="false" />
     <file path="/DBServlet.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395200934755" ignored="false" />
     <file path="/PageServlet.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394521432466" ignored="false" />
@@ -457,6 +81,17 @@
     <file path="/LinearLayout.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395200777449" ignored="false" />
     <file path="/myscript.js" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395209924813" ignored="false" />
     <file path="/HttpConnector.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395215423748" ignored="false" />
+    <file path="/HttpProcessor.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395230132745" ignored="false" />
+    <file path="/SocketInputStream.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395222956023" ignored="false" />
+    <file path="/RequestBase.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395229978696" ignored="false" />
+    <file path="/HttpRequestBase.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395223874505" ignored="false" />
+    <file path="/HttpRequestImpl.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395226891302" ignored="false" />
+    <file path="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/Request.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395228692292" ignored="false" />
+    <file path="/ResponseBase.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395230077276" ignored="false" />
+    <file path="/HttpResponseImpl.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395229425432" ignored="false" />
+    <file path="/HttpResponseBase.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395230260701" ignored="false" />
+    <file path="/ResponseFacade.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395230312490" ignored="false" />
+    <file path="/RequestFacade.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395230331208" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -523,10 +158,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="HttpConnector.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="HttpConnector.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/connector/http/HttpConnector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="998" column="32" selection-start="24540" selection-end="24540" vertical-scroll-proportion="0.68604654">
+            <state line="574" column="5" selection-start="11576" selection-end="11576" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResponseBase.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/connector/ResponseBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="328" column="16" selection-start="6764" selection-end="6764" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -535,7 +179,61 @@
       <file leaf-file-name="HttpProcessor.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/connector/http/HttpProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="24" selection-start="2202" selection-end="2215" vertical-scroll-proportion="0.0">
+            <state line="904" column="51" selection-start="29406" selection-end="29406" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HttpResponseBase.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/connector/HttpResponseBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="91" column="25" selection-start="2454" selection-end="2454" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResponseFacade.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/connector/ResponseFacade.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="83" column="29" selection-start="3417" selection-end="3417" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HttpResponseFacade.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/connector/HttpResponseFacade.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="31" selection-start="448" selection-end="448" vertical-scroll-proportion="0.7090909">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RequestBase.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/connector/RequestBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="153" column="23" selection-start="3640" selection-end="3640" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HttpRequestImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/connector/http/HttpRequestImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="27" selection-start="557" selection-end="572" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HttpRequestBase.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/connector/HttpRequestBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="13" selection-start="1420" selection-end="1420" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -579,8 +277,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1445" />
-    <option name="y" value="-243" />
+    <option name="x" value="1403" />
+    <option name="y" value="-263" />
     <option name="width" value="1218" />
     <option name="height" value="695" />
   </component>
@@ -774,6 +472,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="proj_200_catalina" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="proj_200_catalina" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="connector" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="proj_200_catalina" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="proj_200_catalina" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="catalina" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -781,10 +515,14 @@
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
   <component name="RecentsManager">
@@ -1007,7 +745,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1445" y="-243" width="1218" height="695" extended-state="0" />
+    <frame x="1403" y="-263" width="1218" height="695" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32781458" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1020,11 +758,11 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299389" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23634812" sideWeight="0.6672444" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23634812" sideWeight="0.6672444" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27730376" sideWeight="0.6672444" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3020478" sideWeight="0.6672444" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3020478" sideWeight="0.6672444" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3269565" sideWeight="0.4995795" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1101,114 +839,114 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/connector/http/HttpRequestLine.java">
+    <entry file="file://$PROJECT_DIR$/../../../android_sdk_kernel_4.2/sources/android-16/java/io/InputStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="12" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0">
+        <state line="53" column="22" selection-start="2260" selection-end="2260" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/connector/Constants.java">
+    <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/connector/http/SocketInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="19" selection-start="3027" selection-end="3027" vertical-scroll-proportion="0.0">
+        <state line="90" column="11" selection-start="1565" selection-end="1565" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/connector/http/HttpRequestStream.java">
+    <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/HttpRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0">
+        <state line="101" column="16" selection-start="3826" selection-end="3826" vertical-scroll-proportion="0.33221477">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/connector/http/HttpResponseImpl.java">
+    <entry file="file://$PROJECT_DIR$/../../../android_sdk_kernel_4.2/sources/android-16/java/util/Enumeration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="28" selection-start="542" selection-end="558" vertical-scroll-proportion="0.0">
+        <state line="34" column="17" selection-start="1383" selection-end="1383" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/connector/HttpResponseBase.java">
+    <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/Request.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="24" selection-start="2136" selection-end="2136" vertical-scroll-proportion="0.0">
+        <state line="85" column="30" selection-start="3436" selection-end="3436" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/Response.java">
+    <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/connector/http/HttpRequestImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="223" column="16" selection-start="5333" selection-end="5333" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../libs/servlet-source/javax/servlet/ServletResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="216" column="16" selection-start="8015" selection-end="8015" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/connector/ResponseBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="22" selection-start="1176" selection-end="1176" vertical-scroll-proportion="0.0">
+        <state line="22" column="27" selection-start="557" selection-end="572" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/Connector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="181" column="32" selection-start="5898" selection-end="5911" vertical-scroll-proportion="0.0">
+        <state line="176" column="22" selection-start="5719" selection-end="5719" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Bootstrap.java">
+    <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/connector/RequestWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="45" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0">
+        <state line="287" column="25" selection-start="7746" selection-end="7755" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/startup/Bootstrap.java">
+    <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/connector/HttpRequestBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="24" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../android_sdk_kernel_4.2/sources/android-16/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="362" column="22" selection-start="15761" selection-end="15761" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../android_sdk_kernel_4.2/sources/android-16/java/net/Socket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="13" selection-start="1077" selection-end="1077" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/connector/http/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="28" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/connector/http/HttpProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="24" selection-start="2202" selection-end="2215" vertical-scroll-proportion="0.0">
+        <state line="44" column="13" selection-start="1420" selection-end="1420" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/connector/http/HttpConnector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="998" column="32" selection-start="24540" selection-end="24540" vertical-scroll-proportion="0.68604654">
+        <state line="574" column="5" selection-start="11576" selection-end="11576" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/connector/RequestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="153" column="23" selection-start="3640" selection-end="3640" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/connector/ResponseBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="328" column="16" selection-start="6764" selection-end="6764" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/connector/http/HttpProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="904" column="51" selection-start="29406" selection-end="29406" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/connector/HttpResponseBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="25" selection-start="2454" selection-end="2454" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/connector/ResponseFacade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="29" selection-start="3417" selection-end="3417" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/connector/HttpResponseFacade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="31" selection-start="448" selection-end="448" vertical-scroll-proportion="0.7090909">
           <folding />
         </state>
       </provider>
