@@ -1,4 +1,4 @@
-package com.lichsword.nextbrain.startup;
+package com.lichsword.nextbrain;
 
 import com.lichsword.nextbrain.business.servlet.DBServlet;
 import com.lichsword.nextbrain.business.servlet.webpage.ArticlePageServlet;
@@ -20,6 +20,21 @@ public class WebappClassLoader extends ClassLoader {
     private static WebappClassLoader sInstance;
 
     private WebappClassLoader() {
+//        try {
+//            // 创建一个 Class loader
+//            URL[] urls = new URL[1];
+//            URLStreamHandler streamHandler = null;
+//            File classPath = new File(Constants.WEB_ROOT);
+//
+//            // 格式化url字符
+//            String repository = (new URL("file", null, classPath.getCanonicalPath() + File.separator)).toString();
+//
+//            urls[0] = new URL(null, repository, streamHandler);
+//        } catch (MalformedURLException e) {
+//            e.printStackTrace(); // TODO
+//
+//        }
+
         // test pages
         addServeletMapping("/servlet/test", TestPageServlet.class.getCanonicalName());
         // real pages

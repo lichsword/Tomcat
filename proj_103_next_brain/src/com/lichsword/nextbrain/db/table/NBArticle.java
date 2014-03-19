@@ -12,7 +12,7 @@ import java.sql.SQLException;
  */
 public class NBArticle {
 
-    private static final String TABLE_NAME = "article";
+    public static final String TABLE_NAME = "article";
 
     public class Column {
         public static final String ID = "_id";
@@ -54,7 +54,6 @@ public class NBArticle {
             e.printStackTrace();
         }
     }
-
 
     public int getId() {
         return id;

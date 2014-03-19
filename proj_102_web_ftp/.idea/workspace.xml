@@ -2,15 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24807c5a-e593-44b9-9239-5501e57a4204" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/business/servlet/webpage/ArticlePageServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/dialog/AddArticleDialog.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/view/LinearLayout.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/webroot/js/myscript.js" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/DBServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/startup/Constants.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/startup/HttpConnecter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/startup/Request.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/startup/Response.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/startup/ServletProcessor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/startup/StaticResourceProcessor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/startup/WebappClassLoader.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/webpage/MainPage.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/webpage/RenderBase.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/webpage/view/TableView.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/business/servlet/webpage/MainPageServlet.class" afterPath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/business/servlet/webpage/MainPageServlet.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/startup/Constants.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/Constants.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/startup/HttpConnecter.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/HttpConnecter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/startup/Request.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/Request.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/startup/Response.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/Response.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/startup/ServletProcessor.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/ServletProcessor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/startup/StaticResourceProcessor.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/StaticResourceProcessor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/startup/WebappClassLoader.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/WebappClassLoader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/business/ArticleManager.class" afterPath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/business/ArticleManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/business/servlet/webpage/ArticlePageServlet.class" afterPath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/business/servlet/webpage/ArticlePageServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/Bootstrap.class" afterPath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/Bootstrap.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/business/servlet/DBServlet.class" afterPath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/business/servlet/DBServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/db/table/NBArticle.class" afterPath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/db/table/NBArticle.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/view/TableView.class" afterPath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/view/TableView.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/business/ArticleManager.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/business/ArticleManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/business/servlet/webpage/ArticlePageServlet.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/business/servlet/webpage/ArticlePageServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/Bootstrap.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/Bootstrap.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/business/servlet/DBServlet.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/business/servlet/DBServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/business/servlet/webpage/MainPageServlet.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/business/servlet/webpage/MainPageServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/startup/WebappClassLoader.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/startup/WebappClassLoader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/db/table/NBArticle.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/db/table/NBArticle.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ServletProcessor1.java" afterPath="$PROJECT_DIR$/src/ServletProcessor1.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/view/TableView.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/view/TableView.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../proj_103_next_brain/.idea/workspace.xml" />
     </list>
@@ -18,8 +43,8 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/HttpServer.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1393842427535" ignored="false" />
     <file path="/a.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395113349621" ignored="false" />
-    <file path="/Dummy.txt" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395129399048" ignored="false" />
-    <file path="/fragment.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395125277621" ignored="false" />
+    <file path="/Dummy.txt" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395198901916" ignored="false" />
+    <file path="/fragment.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395152704936" ignored="false" />
     <file path="/Request.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395110511986" ignored="false" />
     <file path="/Response.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395135482052" ignored="false" />
     <file path="/index.html" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1393993242600" ignored="false" />
@@ -33,19 +58,25 @@
     <file path="/Bootstrap.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394519318862" ignored="false" />
     <file path="/HttpConnecter.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395133727736" ignored="false" />
     <file path="/DBConnector.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394519931287" ignored="false" />
-    <file path="/DBServlet.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395140476715" ignored="false" />
+    <file path="/DBServlet.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395200934755" ignored="false" />
     <file path="/PageServlet.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394521432466" ignored="false" />
     <file path="/JSServlet.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394524215677" ignored="false" />
     <file path="/AjaxServlet.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394527414062" ignored="false" />
     <file path="/AjaxLoadServlet.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394538365685" ignored="false" />
     <file path="/string.txt" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394527828509" ignored="false" />
     <file path="/ShowHtmlServlet.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1394540363181" ignored="false" />
-    <file path="/WebappClassLoader.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395138253088" ignored="false" />
+    <file path="/WebappClassLoader.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395208456150" ignored="false" />
     <file path="/ServletProcessor.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395134166461" ignored="false" />
     <file path="/MainPageServlet.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395124597644" ignored="false" />
     <file path="/TestPageServlet.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395136206048" ignored="false" />
-    <file path="/ArticlePageServlet.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395140025584" ignored="false" />
+    <file path="/ArticlePageServlet.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395202330275" ignored="false" />
     <file path="/a.dummy" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395140927412" ignored="false" />
+    <file path="/ArticleManager.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395150022306" ignored="false" />
+    <file path="/NBArticle.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395149304644" ignored="false" />
+    <file path="/AddArticleDialog.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395155034714" ignored="false" />
+    <file path="/TableView.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395198986210" ignored="false" />
+    <file path="/LinearLayout.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395200777449" ignored="false" />
+    <file path="/myscript.js" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395202452476" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,33 +199,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Servlet.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../libs/javax.servlet.jar!/javax/servlet/Servlet.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="9" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PrimitiveServlet.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PrimitiveServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="5" selection-start="933" selection-end="933" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PageServlet.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PageServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="20" selection-start="1698" selection-end="1698" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ShowHtmlServlet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ShowHtmlServlet.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -204,10 +208,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AjaxGetServlet.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AjaxGetServlet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AjaxGetServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="36" selection-start="1676" selection-end="1676" vertical-scroll-proportion="0.2063197">
+            <state line="11" column="13" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServletProcessor1.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ServletProcessor1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="12" selection-start="664" selection-end="688" vertical-scroll-proportion="0.23774955">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StaticResourceProcessor.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/StaticResourceProcessor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="13" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webroot/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -280,7 +311,6 @@
         <option value="$PROJECT_DIR$/src/Bootstrap.java" />
         <option value="$PROJECT_DIR$/src/db/DBConnector.java" />
         <option value="$PROJECT_DIR$/src/db/DBServlet.java" />
-        <option value="$PROJECT_DIR$/src/ServletProcessor1.java" />
         <option value="$PROJECT_DIR$/src/PageServlet.java" />
         <option value="$PROJECT_DIR$/src/JSServlet.java" />
         <option value="$PROJECT_DIR$/src/AjaxPostServlet.java" />
@@ -292,12 +322,13 @@
         <option value="$PROJECT_DIR$/src/Response.java" />
         <option value="$PROJECT_DIR$/src/AjaxLoadServlet.java" />
         <option value="$PROJECT_DIR$/src/ShowHtmlServlet.java" />
+        <option value="$PROJECT_DIR$/src/ServletProcessor1.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="61" />
-    <option name="y" value="59" />
+    <option name="x" value="123" />
+    <option name="y" value="123" />
     <option name="width" value="1235" />
     <option name="height" value="722" />
   </component>
@@ -371,22 +402,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="webroot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="proj_102_web_ftp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="proj_102_web_ftp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
@@ -411,19 +457,6 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -451,6 +484,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -564,8 +610,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="61" y="59" width="1235" height="722" extended-state="1" />
-    <editor active="false" />
+    <frame x="123" y="123" width="1235" height="722" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32781458" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -654,20 +700,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/JSServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="34" selection-start="1420" selection-end="1420" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webroot/res/string.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="11" selection-start="11" selection-end="11" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AjaxServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="56" selection-start="828" selection-end="828" vertical-scroll-proportion="0.55588233">
@@ -689,30 +721,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ServletProcessor1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="27" selection-start="1455" selection-end="1462" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../libs/javax.servlet.jar!/javax/servlet/Servlet.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="9" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DBServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="43" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AjaxLoadServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="39" selection-start="895" selection-end="895" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -731,6 +742,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShowHtmlServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="30" selection-start="1546" selection-end="1546" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Bootstrap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="15" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0">
@@ -738,9 +756,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HttpConnecter.java">
+    <entry file="file://$PROJECT_DIR$/src/DBServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="18" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0">
+        <state line="12" column="43" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AjaxLoadServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="39" selection-start="895" selection-end="895" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -752,16 +777,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ShowHtmlServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/HttpConnecter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="30" selection-start="1546" selection-end="1546" vertical-scroll-proportion="0.0">
+        <state line="25" column="18" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StaticResourceProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="13" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webroot/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AjaxGetServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="36" selection-start="1676" selection-end="1676" vertical-scroll-proportion="0.2063197">
+        <state line="11" column="13" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ServletProcessor1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="12" selection-start="664" selection-end="688" vertical-scroll-proportion="0.23774955">
           <folding />
         </state>
       </provider>

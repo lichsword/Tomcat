@@ -39,24 +39,25 @@ public class ArticlePageServlet implements Servlet {
         out.println("<script type=\"text/javascript\">");
 
         out.println("$(document).ready(function(){");
-        out.println("\t$(\"#get\").click(function(){");
+        out.println("\t$(\"#btn_get\").click(function(){");
         out.println("\t\t$.get(\"/servlet/db\", \nfunction(data,status){\n"
-//                + "var node = data;"
                 + "\t\t\tvar element=document.getElementById(\"div1\");\n"
-                //+ "\t\t\telement.appendChild(data);\n"
                 + "element.innerHTML = data.documentElement.outerHTML;"
                 + "console.log(data);"
-                // dialog
-                + "\t\t\talert(\"Data: \" + data + \"\\nStatus: \" + status);\n" +
-                "\t\t});");
+                + "console.log(status);"
+//                + "\t\t\talert(\"Data: \" + data + \"\\nStatus: \" + status);\n"
+                + "\t\t});");
         out.println("\t});");
         out.println("});");
         out.println("</script>");
+        out.print("<script src=\"./js/myscript.js\"></script>");
         // js fun define.
         out.println("</head>");
         // header--end
         out.println("<body>");
-        out.println("<button id=\"get\" type=\"button\">get请求数据</button>");
+        out.println("<button id=\"btn_get\" type=\"button\">查询</button>");
+        out.println("<button id=\"btn_add\" type=\"button\">新增</button>");
+        out.println("<button id=\"btn_delete\" type=\"button\">删除</button>");
         out.println("<div id=\"div1\"></div>");
         // button --- end
         // body--end

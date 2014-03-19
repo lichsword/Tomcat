@@ -1,4 +1,4 @@
-import com.lichsword.nextbrain.startup.HttpConnecter;
+import com.lichsword.nextbrain.HttpConnecter;
 
 /**
  * Created with IntelliJ IDEA.

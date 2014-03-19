@@ -2,6 +2,7 @@ package com.lichsword.nextbrain.business;
 
 import com.lichsword.nextbrain.db.SqliteDatabase;
 import com.lichsword.nextbrain.db.table.NBArticle;
+import com.lichsword.nextbrain.db.table.NBArticle.Column;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -47,6 +48,15 @@ public class ArticleManager {
             e.printStackTrace();
         }
 
+        return result;
+    }
+
+    public boolean addArticle(NBArticle article) {
+        boolean result = false;
+        String sql = "insert into " + NBArticle.TABLE_NAME + " (" + Column.TITLE + ", " + Column.SUMMARY + ", " + Column.LABELS + ")"
+                + " into " + "(" + article.getTitle() + ", " + article.getSummary() + ", " + article.getLabels() + ")";
+        System.out.println(sql);
+        mDatabase.insert(sql);
         return result;
     }
 }

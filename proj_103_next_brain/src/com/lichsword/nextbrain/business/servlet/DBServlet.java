@@ -2,6 +2,8 @@ package com.lichsword.nextbrain.business.servlet;
 
 import com.lichsword.nextbrain.business.ArticleManager;
 import com.lichsword.nextbrain.db.table.NBArticle;
+import com.lichsword.nextbrain.dialog.AddArticleDialog;
+import com.lichsword.nextbrain.view.LinearLayout;
 import com.lichsword.nextbrain.view.TableView;
 
 import javax.servlet.*;
@@ -41,9 +43,16 @@ public class DBServlet implements Servlet {
 //            out.println(item.dump());
             System.out.println("[INFO]row=" + item.dump() + "\n");
         }
-
+        // set layout
+        LinearLayout linearLayout = new LinearLayout();
+        // add dialog
+        AddArticleDialog dialog = new AddArticleDialog();
+        linearLayout.addChildView(dialog);
+        // add table
         TableView<NBArticle> tableView = new TableView<NBArticle>(list);
-        out.print(tableView.html());
+        linearLayout.addChildView(tableView);
+        // out html
+        out.print(linearLayout.html());
         out.flush();
         out.close();
     }

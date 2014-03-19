@@ -1,4 +1,4 @@
-package com.lichsword.nextbrain.startup;
+package com.lichsword.nextbrain;
 
 import javax.servlet.ServletOutputStream;
 import javax.servlet.ServletResponse;

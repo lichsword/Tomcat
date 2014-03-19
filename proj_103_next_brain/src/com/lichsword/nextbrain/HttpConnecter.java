@@ -1,4 +1,4 @@
-package com.lichsword.nextbrain.startup;
+package com.lichsword.nextbrain;
 
 import java.io.InputStream;
 import java.io.OutputStream;

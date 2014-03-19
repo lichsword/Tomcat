@@ -2,6 +2,7 @@ package com.lichsword.nextbrain.view;
 
 import com.lichsword.nextbrain.db.table.NBArticle;
 import com.lichsword.nextbrain.db.table.NBArticle.Column;
+import com.lichsword.nextbrain.dialog.AddArticleDialog;
 
 import java.util.ArrayList;
 
