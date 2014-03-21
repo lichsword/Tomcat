@@ -25,8 +25,28 @@ import java.util.Map;
  */
 public class RequestBase implements ServletRequest, IRequest {
 
+    /**
+     * The Connector through which this Request was received.
+     */
+    protected IConnector connector = null;
+
+    /**
+     * The protocol name and version associated with this Request.
+     */
+    protected String protocol = null;
+
     public void setConnector(IConnector connector) {
-        // TODO
+        this.connector = connector;
+    }
+
+    /**
+     * Set the protocol name and version associated with this Request.
+     *
+     * @param protocol Protocol name and version
+     */
+    public void setProtocol(String protocol) {
+
+        this.protocol = protocol;
     }
 
     @Override

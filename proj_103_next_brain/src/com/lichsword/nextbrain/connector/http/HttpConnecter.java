@@ -3,7 +3,6 @@ package com.lichsword.nextbrain.connector.http;
 import com.lichsword.nextbrain.IConnector;
 import com.lichsword.nextbrain.IRequest;
 import com.lichsword.nextbrain.IResponse;
-import com.lichsword.nextbrain.backup.Response;
 import com.lichsword.nextbrain.backup.ServletProcessor;
 import com.lichsword.nextbrain.backup.StaticResourceProcessor;
 

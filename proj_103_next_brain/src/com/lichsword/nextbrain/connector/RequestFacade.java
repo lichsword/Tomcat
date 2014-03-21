@@ -1,5 +1,7 @@
 package com.lichsword.nextbrain.connector;
 
+import com.lichsword.nextbrain.IRequest;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletInputStream;
 import javax.servlet.ServletRequest;
@@ -19,6 +21,23 @@ import java.util.Map;
  * TODO
  */
 public class RequestFacade implements ServletRequest {
+
+    /**
+     * The wrapped request.
+     */
+    protected ServletRequest request = null;
+
+    /**
+     * Construct a wrapper for the specified request.
+     *
+     * @param request The request to be wrapped
+     */
+    public RequestFacade(IRequest request) {
+        super();
+        this.request = (ServletRequest) request;
+    }
+
+
     @Override
     public Object getAttribute(String name) {
         return null;  // TODO
