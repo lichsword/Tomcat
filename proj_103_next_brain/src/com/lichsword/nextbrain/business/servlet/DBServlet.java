@@ -52,6 +52,7 @@ public class DBServlet implements Servlet {
         TableView<NBArticle> tableView = new TableView<NBArticle>(list);
         linearLayout.addChildView(tableView);
         // out html
+        out.print(TempHeader.dumpHeaderString());
         out.print(linearLayout.html());
         out.flush();
         out.close();

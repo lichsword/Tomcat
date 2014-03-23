@@ -121,7 +121,7 @@ public class HttpRequestBase extends RequestBase implements IHttpRequest, HttpSe
      * Therefore, application level access to the parameters need not be
      * synchronized.
      */
-    protected ParameterMap parameters = null;
+//    protected ParameterMap parameters = null;
 
 
     /**

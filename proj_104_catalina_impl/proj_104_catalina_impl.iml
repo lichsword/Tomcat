@@ -9,6 +9,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="javax.servlet" level="project" />
     <orderEntry type="library" name="sqlitejdbc" level="project" />
+    <orderEntry type="library" name="commons-digester3-3.2" level="project" />
   </component>
 </module>
 
