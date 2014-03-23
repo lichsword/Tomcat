@@ -1,5 +1,6 @@
 package com.lichsword.nextbrain.business.servlet;
 
+import com.lichsword.nextbrain.backup.Response;
 import com.lichsword.nextbrain.business.ArticleManager;
 import com.lichsword.nextbrain.db.table.NBArticle;
 import com.lichsword.nextbrain.dialog.AddArticleDialog;
@@ -8,6 +9,7 @@ import com.lichsword.nextbrain.view.TableView;
 
 import javax.servlet.*;
 import java.io.IOException;
+import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 
@@ -31,9 +33,17 @@ public class DBServlet implements Servlet {
     }
 
     @Override
-    public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
+    public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
+
+//        Response response = (Response)res;
+//        OutputStream outputStream = response.getOutputStreamOrigin();
+//        if (null != outputStream) {
+//            byte[] bytes = TempHeader.dumpResponseHeaderBytes();
+//            outputStream.write(bytes, 0, bytes.length);
+//        }// end if
+
         System.out.println("[INFO]from service");
-        PrintWriter out = servletResponse.getWriter();
+        PrintWriter out = res.getWriter();
         ArrayList<NBArticle> list = ArticleManager.getInstance().queryAllArticle();
         if (null == list || 0 == list.size()) return;
 
@@ -52,7 +62,7 @@ public class DBServlet implements Servlet {
         TableView<NBArticle> tableView = new TableView<NBArticle>(list);
         linearLayout.addChildView(tableView);
         // out html
-        out.print(TempHeader.dumpHeaderString());
+        out.print(TempHeader.dumpResponseHeaderString());
         out.print(linearLayout.html());
         out.flush();
         out.close();

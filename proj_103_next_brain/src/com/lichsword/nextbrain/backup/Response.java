@@ -72,9 +72,13 @@ public class Response implements ServletResponse {
 //        return null;
     }
 
+    public OutputStream getOutputStreamOrigin(){
+        return output;
+    }
+
     @Override
     public ServletOutputStream getOutputStream() throws IOException {
-        return (ServletOutputStream) output;
+        return null;
     }
 
     @Override

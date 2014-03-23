@@ -10,19 +10,24 @@ package com.lichsword.nextbrain.business.servlet;
  */
 public class TempHeader {
 
-    public static String dumpHeaderString() {
+    public static String dumpResponseHeaderString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Host: www.zhihu.com");
-        sb.append("User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:27.0) Gecko/20100101 Firefox/27.0");
-        sb.append("Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
-        sb.append("Accept-Language: zh-cn,en-us;q=0.7,en;q=0.3");
-        sb.append("Accept-Encoding: gzip, deflate");
-        sb.append("Cookie:");
-        sb.append("Connection: keep-alive");
-        sb.append("Cache-Control: max-age=0");
-        sb.append("\n\n");
-        sb.append("");
-        sb.append("");
+        sb.append("HTTP/1.1 200 OK");
+        sb.append('\n');
+        sb.append("Server: Apache/1.3/11 BSafe-SSL/1.38 (Unix)");
+        sb.append('\n');
+        sb.append("Last-modified: Tue, 04 Jul 2000 09:46:21 GMT");
+        sb.append('\n');
+        sb.append("Content-length: 2403");
+        sb.append('\n');
+        sb.append("Content-Type: text/html; charset=UTF-8");
+        sb.append('\n');
+        sb.append('\n');
         return sb.toString();
+    }
+
+    public static byte[] dumpResponseHeaderBytes() {
+        String string = dumpResponseHeaderString();
+        return string.getBytes();
     }
 }

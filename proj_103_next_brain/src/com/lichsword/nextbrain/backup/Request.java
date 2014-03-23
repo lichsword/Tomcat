@@ -31,19 +31,25 @@ public class Request implements ServletRequest {
         StringBuffer requestStringBuffer = new StringBuffer(2048);
         int i;
         byte[] buffer = new byte[2048];
+
+        //----- start read -----
+
         try {
             i = input.read(buffer);
-
         } catch (Exception e) {
             e.printStackTrace();
             i = -1;
         }
 
+        //----- end read -----
+
         for (int j = 0; j < i; j++) {
             requestStringBuffer.append((char) buffer[j]);
         }
 
+        System.out.println("[INFO]-----request data start----------");
         System.out.print(requestStringBuffer.toString());
+        System.out.println("[INFO]-----request data end----------");
 
         uri = parseUri(requestStringBuffer.toString());
     }
