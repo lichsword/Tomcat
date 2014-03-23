@@ -1,11 +1,5 @@
-package com.lichsword.nextbrain.business.servlet.webpage;
+package com.lichsword.nextbrain.business.servlet.page;
 
-import com.lichsword.nextbrain.backup.Response;
-import com.lichsword.nextbrain.business.servlet.TempHeader;
-
-import javax.servlet.*;
-import java.io.IOException;
-import java.io.OutputStream;
 import java.io.PrintWriter;
 
 /**
@@ -16,28 +10,15 @@ import java.io.PrintWriter;
  * <p/>
  * TODO
  */
-public class ArticlePageServlet implements Servlet {
-    @Override
-    public void init(ServletConfig config) throws ServletException {
-        // TODO
+public class ArticlePageServlet extends HttpPage {
+
+    public ArticlePageServlet() {
+        setContentLength(1000); // TODO must be right real count.
+        setContentType("text/html");
     }
 
     @Override
-    public ServletConfig getServletConfig() {
-        return null;  // TODO
-    }
-
-    @Override
-    public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
-        Response response = (Response)res;
-        OutputStream outputStream = response.getOutputStreamOrigin();
-        if (null != outputStream) {
-            byte[] bytes = TempHeader.dumpResponseHeaderBytes();
-            outputStream.write(bytes, 0, bytes.length);
-        }// end if
-
-        // write html
-        PrintWriter out = res.getWriter();
+    public void renderPage(PrintWriter out) {
         // html struct
         out.println("<!DOCTYPE html>");
         out.println("<html>");
@@ -80,16 +61,6 @@ public class ArticlePageServlet implements Servlet {
         out.println("</body>");
         out.println("</html>");
 
-        res.flushBuffer();
-    }
-
-    @Override
-    public String getServletInfo() {
-        return null;  // TODO
-    }
-
-    @Override
-    public void destroy() {
-        // TODO
+        out.flush();
     }
 }

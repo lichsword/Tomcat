@@ -1,4 +1,4 @@
-package com.lichsword.nextbrain.business.servlet.webpage;
+package com.lichsword.nextbrain.business.servlet.page;
 
 import javax.servlet.*;
 import java.io.IOException;

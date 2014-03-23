@@ -1,4 +1,4 @@
-package com.lichsword.nextbrain.business.servlet.webpage;
+package com.lichsword.nextbrain.business.servlet.page;
 
 
 import com.lichsword.nextbrain.backup.Response;
