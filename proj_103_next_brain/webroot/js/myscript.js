@@ -32,4 +32,17 @@ $(document).ready(function(){
         console.log("clicked btn_cancel_in_dialog.");
         $("#dialog").hide();
     });
+
+    $("#btn_commit_in_dialog").click(function(){
+        // hide dialog first.
+        $("#dialog").hide();
+        // refresh list.
+        $.get("/servlet/db",
+        function(data,status){
+            var element=document.getElementById("div1");
+            $(".div2").append(data);
+            console.log(data);
+            console.log(status);
+        });
+    });
 });

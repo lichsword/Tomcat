@@ -48,7 +48,7 @@
     <file path="/SqliteDatabase.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395048638753" ignored="false" />
     <file path="/DatabaseBase.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395055159022" ignored="false" />
     <file path="/MainPage.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395066357341" ignored="false" />
-    <file path="/home.html" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395659909679" ignored="false" />
+    <file path="/home.html" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395660396636" ignored="false" />
     <file path="/View.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395067222839" ignored="false" />
     <file path="/TableView.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395198986210" ignored="false" />
     <file path="/MainPageServlet.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395124597644" ignored="false" />
@@ -56,7 +56,7 @@
     <file path="/ArticlePageServlet.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395589115633" ignored="false" />
     <file path="/AddArticleDialog.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395155034715" ignored="false" />
     <file path="/LinearLayout.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395200777449" ignored="false" />
-    <file path="/myscript.js" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395660182488" ignored="false" />
+    <file path="/myscript.js" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395660457833" ignored="false" />
     <file path="/HttpConnector.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395215423748" ignored="false" />
     <file path="$PROJECT_DIR$/../proj_200_catalina/src/Bootstrap.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395220370999" ignored="false" />
     <file path="/HttpProcessor.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395396707483" ignored="false" />
@@ -161,13 +161,13 @@
     <favorites_list name="proj_01_basic_http_server" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.46097815">
       <split-first>
         <leaf>
           <file leaf-file-name="home.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/webroot/html/home.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="24" column="48" selection-start="881" selection-end="881" vertical-scroll-proportion="0.3846154">
+                <state line="27" column="10" selection-start="963" selection-end="963" vertical-scroll-proportion="0.51282054">
                   <folding />
                 </state>
               </provider>
@@ -189,7 +189,7 @@
           <file leaf-file-name="myscript.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/webroot/js/myscript.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="20" column="32" selection-start="536" selection-end="536" vertical-scroll-proportion="0.36">
+                <state line="33" column="7" selection-start="893" selection-end="893" vertical-scroll-proportion="0.28">
                   <folding />
                 </state>
               </provider>
@@ -711,7 +711,7 @@
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.06700594" sideWeight="0.6753247" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11789652" sideWeight="0.6753247" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19253604" sideWeight="0.6753247" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3019508" sideWeight="0.6672078" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32467532" sideWeight="0.4995795" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -896,14 +896,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webroot/html/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="48" selection-start="881" selection-end="881" vertical-scroll-proportion="0.3846154">
+        <state line="27" column="10" selection-start="963" selection-end="963" vertical-scroll-proportion="0.51282054">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webroot/js/myscript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="32" selection-start="536" selection-end="536" vertical-scroll-proportion="0.36">
+        <state line="33" column="7" selection-start="893" selection-end="893" vertical-scroll-proportion="0.28">
           <folding />
         </state>
       </provider>
