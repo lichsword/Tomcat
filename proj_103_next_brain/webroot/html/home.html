@@ -5,30 +5,10 @@
     <title>调研跟踪系统</title>
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js">
     </script>
-    <!--<script type="text/javascript" src="./js/myscript.js"></script>-->
-    <script type="text/javaccript">
-        $(document).ready(function(){
-            $("#btn_add").click(function(){
-                console.log("clicked.");
-                alert("outside js");
-            });
-        });
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $("#btn_get").click(function(){
-                $.get("/servlet/db",
-                function(data,status){
-                    var element=document.getElementById("div1");
-                    $(".div2").append(data);
-                    console.log(data);
-                    console.log(status);
-                });
-            });
-        });
-    </script>
+    <script type="text/javascript" src="./js/myscript.js"></script>
 </head>
 <body>
+<button id="btn_refresh" type="button">刷新</button>
 <button id="btn_get" type="button">查询</button>
 <button id="btn_add" type="button">新增</button>
 <button id="btn_delete" type="button">删除</button>
