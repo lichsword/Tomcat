@@ -1,4 +1,4 @@
-package com.lichsword.nextbrain.core.http;
+package com.lichsword.nextbrain.core.connector.http;
 
 /**
  * Created with IntelliJ IDEA.

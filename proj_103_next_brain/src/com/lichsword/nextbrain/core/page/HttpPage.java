@@ -2,7 +2,7 @@ package com.lichsword.nextbrain.core.page;
 
 import com.lichsword.nextbrain.backup.Response;
 import com.lichsword.nextbrain.core.connector.HttpHeader;
-import com.lichsword.nextbrain.core.http.ServerInfo;
+import com.lichsword.nextbrain.core.connector.http.ServerInfo;
 
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;

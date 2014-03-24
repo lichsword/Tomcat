@@ -1,4 +1,4 @@
-package com.lichsword.nextbrain.core.http;
+package com.lichsword.nextbrain.core.connector.http;
 
 import com.lichsword.nextbrain.core.connector.HttpHeader;
 import com.lichsword.nextbrain.core.connector.IHttpResponse;
