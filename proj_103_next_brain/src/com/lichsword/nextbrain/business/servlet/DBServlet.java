@@ -1,15 +1,13 @@
 package com.lichsword.nextbrain.business.servlet;
 
-import com.lichsword.nextbrain.backup.Response;
 import com.lichsword.nextbrain.business.ArticleManager;
-import com.lichsword.nextbrain.db.table.NBArticle;
-import com.lichsword.nextbrain.dialog.AddArticleDialog;
-import com.lichsword.nextbrain.view.LinearLayout;
-import com.lichsword.nextbrain.view.TableView;
+import com.lichsword.nextbrain.nb.table.NBArticle;
+import com.lichsword.nextbrain.nb.dialog.AddArticleDialog;
+import com.lichsword.nextbrain.core.view.LinearLayout;
+import com.lichsword.nextbrain.core.view.TableView;
 
 import javax.servlet.*;
 import java.io.IOException;
-import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 
@@ -18,7 +16,7 @@ import java.util.ArrayList;
  * User: lichsword
  * Date: 14-3-11
  * Time: 下午2:36
- * To change this template use File | Settings | File Templates.
+ * To change this res use File | Settings | File Templates.
  */
 public class DBServlet implements Servlet {
 

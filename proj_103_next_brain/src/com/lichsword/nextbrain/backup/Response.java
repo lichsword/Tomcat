@@ -10,7 +10,7 @@ import java.util.Locale;
  * User: lichsword
  * Date: 14-3-3
  * Time: 下午6:07
- * To change this template use File | Settings | File Templates.
+ * To change this res use File | Settings | File Templates.
  */
 public class Response implements ServletResponse {
 

@@ -7,7 +7,7 @@ import javax.servlet.Servlet;
  * User: lichsword
  * Date: 14-3-3
  * Time: 下午9:56
- * To change this template use File | Settings | File Templates.
+ * To change this res use File | Settings | File Templates.
  */
 public class ServletProcessor {
 

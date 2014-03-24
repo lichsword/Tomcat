@@ -5,7 +5,7 @@ package com.lichsword.nextbrain.backup;
  * User: lichsword
  * Date: 14-3-3
  * Time: 下午9:58
- * To change this template use File | Settings | File Templates.
+ * To change this res use File | Settings | File Templates.
  */
 public class StaticResourceProcessor {
 

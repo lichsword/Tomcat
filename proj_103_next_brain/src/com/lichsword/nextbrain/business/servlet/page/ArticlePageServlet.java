@@ -1,5 +1,7 @@
 package com.lichsword.nextbrain.business.servlet.page;
 
+import com.lichsword.nextbrain.core.page.HttpPage;
+
 import java.io.PrintWriter;
 
 /**
@@ -19,6 +21,7 @@ public class ArticlePageServlet extends HttpPage {
 
     @Override
     public void renderPage(PrintWriter out) {
+
         // html struct
         out.println("<!DOCTYPE html>");
         out.println("<html>");

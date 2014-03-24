@@ -1,8 +1,8 @@
 package com.lichsword.nextbrain.business;
 
-import com.lichsword.nextbrain.db.SqliteDatabase;
-import com.lichsword.nextbrain.db.table.NBArticle;
-import com.lichsword.nextbrain.db.table.NBArticle.Column;
+import com.lichsword.nextbrain.core.db.SqliteDatabase;
+import com.lichsword.nextbrain.nb.table.NBArticle;
+import com.lichsword.nextbrain.nb.table.NBArticle.Column;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -13,7 +13,7 @@ import java.util.ArrayList;
  * User: lichsword
  * Date: 14-3-17
  * Time: 下午3:44
- * To change this template use File | Settings | File Templates.
+ * To change this res use File | Settings | File Templates.
  */
 public class ArticleManager {
 
