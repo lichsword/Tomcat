@@ -20,14 +20,16 @@
 }
 
 #dialog-body {
+    opacity: 1.0;
     position:absolute;
-    width:400px;
-    height:100px;
+    width:550px;
+    height:200px;
 
-    top:50%;
+    top:20%;
     left:50%;
-    margin-top:-50px;
-    margin-left:-200px;
+    /*margin-top:50px;*/
+    margin-left:-275px;
+    background-color: white;
      /*
         margin-left: auto;
         margin-right: auto;

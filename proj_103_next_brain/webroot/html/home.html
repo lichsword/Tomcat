@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>调研跟踪系统</title>
+    <title>首页 - 调研跟踪系统</title>
     <!-- css -->
     <link href="./css/home.css" rel="stylesheet" type="text/css">
     <!-- java script -->
@@ -14,7 +14,16 @@
 <div id="floater">
     <div id="dialog">
         <div id="dialog-body">
-            <p>This is a dialog</p>
+            <div>
+                <h3>添加记录</h3>
+                <form>
+                    标题<input name="tv_title" type="text"><br>
+                    简介<input name="tv_summary" type="text"><br>
+                    标签<input name="tv_labels" type="text"><br>
+                </form>
+                <button id="btn_commit" type="button">提交</button>
+                <button id="btn_cancel_in_dialog" type="button">取消</button>
+            </div>
         </div>
     </div>
     <div id="layout">

@@ -33,6 +33,8 @@ public class AddArticleDialog extends View {
         sb.append("<input type=\"text\" name=\"tv_labels\" />");
         sb.append("<br />");
         sb.append("<input type=\"submit\" value=\"提交\" />");
+        sb.append("<br />");
+        sb.append("<input type=\"submit\" value=\"取消\" />");
         sb.append("</form>");
         sb.append("<hr></hr>");
         sb.append("</div>");
