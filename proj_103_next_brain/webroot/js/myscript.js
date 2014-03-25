@@ -37,7 +37,7 @@ $(document).ready(function(){
         // hide dialog first.
         $("#dialog").hide();
         // refresh list.
-        $.get("/servlet/db",
+        $.post("/servlet/db", { name: "John lichsword 1  2   3\nkernel,hello-world", time: "2pm" },
         function(data,status){
             var element=document.getElementById("div1");
             $(".div2").append(data);

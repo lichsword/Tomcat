@@ -1,6 +1,7 @@
 package com.lichsword.nextbrain.core.connector.http;
 
 import com.lichsword.nextbrain.core.Log;
+import com.lichsword.nextbrain.core.connector.HttpHeader;
 import com.lichsword.nextbrain.core.connector.http.model.HttpRequestLine;
 
 import java.io.EOFException;
@@ -247,5 +248,233 @@ public class SocketInputStream extends InputStream {
         Log.d(TAG, "[INFO]==request message==");
         Log.d(TAG, "[INFO]\n" + new String(buffer, 0, nRead));
         Log.d(TAG, "[INFO]===================");
+    }
+
+    public void readHeader(HttpHeader httpHeader)
+            throws IOException {
+        // Recycling check
+        if (httpHeader.nameEnd != 0) {
+            httpHeader.recycle();
+        }// end if
+
+        // Checking for a blank line
+        int chr = read();
+        if ((chr == CR) || (chr == LF)) { // Skipping CR
+            if (chr == CR)
+                read(); // Skipping LF
+            httpHeader.nameEnd = 0;
+            httpHeader.valueEnd = 0;
+            return;
+        } else {
+            pos--;
+        }
+
+        /**
+         * Reading the header name
+         */
+        int maxRead = httpHeader.name.length;
+        int readStart = pos;
+        int readCount = 0;
+
+        /** colon : 冒号 */
+        boolean colon = false;
+
+        while (!colon) {
+            // if the buffer is full, extend it
+            if (readCount >= maxRead) {
+                if ((2 * maxRead) <= HttpHeader.MAX_NAME_SIZE) {
+                    char[] newBuffer = new char[2 * maxRead];
+                    System.arraycopy(httpHeader.name, 0, newBuffer, 0, maxRead);
+                    httpHeader.name = newBuffer;
+                    maxRead = httpHeader.name.length;
+                } else {
+                    throw new IOException
+                            ("requestStream.readline.toolong");
+                }
+            }
+
+            // We're at the end of the internal buffer
+            if (pos >= count) {
+                int val = read();
+                if (-1 == val) {
+                    throw new IOException
+                            ("requestStream.readline.error");
+                }
+                pos = 0;
+                readStart = 0;
+            }// end if
+
+            if (buffer[pos] == COLON) {
+                colon = true;
+            }// end if
+
+            char val = (char) buffer[pos];
+            if ((val >= 'A') && (val <= 'Z')) {
+                // 全部小写
+                val = (char) (val - LC_OFFSET);
+            }// end if
+
+            httpHeader.name[readCount] = val;
+            readCount++;
+            pos++;
+        }// end while
+
+        httpHeader.nameEnd = readCount - 1;
+
+
+        /**
+         * Reading the header value (which can be spanned over multiple lines)
+         */
+        maxRead = httpHeader.value.length;
+        readStart = pos;
+        readCount = 0;
+
+        int crPos = -2;
+
+        boolean eol = false;
+        boolean validLine = true;
+
+        while (validLine) {
+
+            boolean space = true;
+
+            // Skipping spaces
+            // Note : Only leading white spaces are removed. Trailing white
+            // spaces are not.
+            while (space) {
+                // We're at the end of the internal buffer
+                if (pos >= count) {
+                    // Copying part (or all) of the internal buffer to the line
+                    // buffer
+                    int val = read();
+                    if (val == -1)
+                        throw new IOException
+                                ("requestStream.readline.error");
+                    pos = 0;
+                    readStart = 0;
+                }
+                if ((buffer[pos] == SP) || (buffer[pos] == HT)) {
+                    pos++;
+                } else {
+                    space = false;
+                }
+            }
+
+            while (!eol) {
+                // if the buffer is full, extend it
+                if (readCount >= maxRead) {
+                    if ((2 * maxRead) <= HttpHeader.MAX_VALUE_SIZE) {
+                        char[] newBuffer = new char[2 * maxRead];
+                        System.arraycopy(httpHeader.value, 0, newBuffer, 0,
+                                maxRead);
+                        httpHeader.value = newBuffer;
+                        maxRead = httpHeader.value.length;
+                    } else {
+                        throw new IOException
+                                ("requestStream.readline.toolong");
+                    }
+                }// end if
+
+                // We're at the end of the internal buffer
+                if (pos >= count) {
+                    // Copying part (or all) of the internal buffer to the line
+                    // buffer
+                    int val = read();
+                    if (val == -1)
+                        throw new IOException
+                                ("requestStream.readline.error");
+                    pos = 0;
+                    readStart = 0;
+                }// end if
+
+                if (buffer[pos] == CR) {
+                } else if (buffer[pos] == LF) {
+                    eol = true;
+                } else {
+                    // FIXME : Check if binary conversion is working fine
+                    int ch = buffer[pos] & 0xff;
+                    httpHeader.value[readCount] = (char) ch;
+                    readCount++;
+                }
+                pos++;
+            }
+
+            int nextChr = read();
+
+            if ((nextChr != SP) && (nextChr != HT)) {
+                pos--;
+                validLine = false;
+            } else {
+                eol = false;
+                // if the buffer is full, extend it
+                if (readCount >= maxRead) {
+                    if ((2 * maxRead) <= HttpHeader.MAX_VALUE_SIZE) {
+                        char[] newBuffer = new char[2 * maxRead];
+                        System.arraycopy(httpHeader.value, 0, newBuffer, 0,
+                                maxRead);
+                        httpHeader.value = newBuffer;
+                        maxRead = httpHeader.value.length;
+                    } else {
+                        throw new IOException
+                                ("requestStream.readline.toolong");
+                    }
+                }// end if
+                httpHeader.value[readCount] = ' ';
+                readCount++;
+            }
+
+        }
+
+        httpHeader.valueEnd = readCount;
+    }
+
+    public void parseRequestHeader(HttpHeader[] httpHeaders) {
+        httpHeaders = new HttpHeader[2];
+        // TODO
+
+    }
+
+    /**
+     * Parse parameters.
+     * GET ?***
+     * POST name:value&name:value
+     */
+    public void parseParameters(HttpRequestLine httpRequestLine, int contentLength) {
+        if (null == httpRequestLine) {
+            Log.e(TAG, "parseParameters.param.httpRequestLine.null");
+            return;
+        }// end if
+
+        String method = new String(httpRequestLine.method, 0, httpRequestLine.methodEnd);
+        if (!"POST".equals(method) || contentLength > 0) {
+            Log.d(TAG, "parseParameters.httpRequestLine.method not POST");
+            Log.d(TAG, "Or");
+            Log.d(TAG, "parseParameters.contenLength <= 0");
+            return;
+        }// end if
+
+        try {
+            int max = contentLength;
+            int len = 0;
+            byte buf[] = new byte[contentLength];
+            while (len < max) {
+                int next = 0;
+                next = inputStream.read(buf, len, max - len);
+                if (next < 0) {
+                    break;
+                }// end if
+                len += next;
+            }// end while
+            inputStream.close();
+            if (len < max) {
+                throw new RuntimeException("Content length mismatch");
+            }// end if
+            // TODO
+//            RequestUtil.parseParameters(results, buf, encoding);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        // TODO
     }
 }

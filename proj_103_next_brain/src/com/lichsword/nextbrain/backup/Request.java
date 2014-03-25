@@ -1,18 +1,18 @@
 package com.lichsword.nextbrain.backup;
 
+import com.lichsword.nextbrain.core.connector.HttpHeader;
 import com.lichsword.nextbrain.core.connector.http.SocketInputStream;
 import com.lichsword.nextbrain.core.connector.http.model.HttpRequestLine;
 
 import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
 import javax.servlet.ServletInputStream;
 import javax.servlet.ServletRequest;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
-import java.util.Enumeration;
-import java.util.Locale;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -27,14 +27,69 @@ public class Request implements ServletRequest {
     private SocketInputStream socketInputStream;
 
     private String uri;
+
+    /**
+     * Content Length(byte)
+     */
+    private int contentLength;
+    /**
+     * Content-Type
+     */
+    private String contentType;
     /**
      * Request line buffer.
      */
     private HttpRequestLine httpRequestLine = new HttpRequestLine();
+    private HttpHeader[] httpHeaders;
+
+    private HashMap httpHeaderMap = new HashMap();
 
     public Request(InputStream input) {
         this.inputStream = input;
         this.socketInputStream = new SocketInputStream(input, 2048);
+    }
+
+    public void parseRequestHeader() throws ServletException {
+        // TODO
+        try {
+            /**
+             * while loop break by finding no more header.
+             */
+            while (true) {
+                HttpHeader httpHeader = new HttpHeader();
+
+                socketInputStream.readHeader(httpHeader);
+
+                if (0 == httpHeader.nameEnd) {
+                    if (0 == httpHeader.valueEnd) {
+                        return;
+                    } else {
+                        throw new ServletException("Request.parseHttpHeaders.colon");
+                    }
+                }// end if
+
+                // save to hash map.
+                String name = new String(httpHeader.name, 0, httpHeader.nameEnd);
+                String value = new String(httpHeader.value, 0, httpHeader.valueEnd);
+                addHeader(name, value);
+
+                // save value to members.
+                if (name.equals("content-length")) {
+                    int n = -1;
+                    try {
+                        n = Integer.parseInt(value);
+                        contentLength = n;
+                    } catch (NumberFormatException e) {
+                        throw new ServletException("Request.parseHttpHeader.contentLength");
+                    }
+                } else if (name.equals("content-type")) {
+                    contentType = value;
+                }
+            }// end while
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public void parse() {
@@ -52,7 +107,22 @@ public class Request implements ServletRequest {
 
         // Read request line.
         try {
+            /**
+             * Parse request line.
+             */
             socketInputStream.readRequestLine(httpRequestLine);
+            /**
+             * Parse request header.
+             */
+            try {
+                parseRequestHeader();
+            } catch (ServletException e) {
+                e.printStackTrace();
+            }
+            /**
+             * Parse request parameters(contain post parameters).
+             */
+            socketInputStream.parseParameters(httpRequestLine, getContentLength());
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -91,6 +161,18 @@ public class Request implements ServletRequest {
 //        System.out.println("uriEnd=" + httpRequestLine.uriEnd);
         uri = new String(httpRequestLine.uri, 0, httpRequestLine.uriEnd);
 
+    }
+
+    private void addHeader(String name, String value) {
+        name = name.toLowerCase();
+        synchronized (httpHeaderMap) {
+            ArrayList values = (ArrayList) httpHeaderMap.get(name);
+            if (values == null) {
+                values = new ArrayList();
+                httpHeaderMap.put(name, values);
+            }
+            values.add(value);
+        }
     }
 
     private String parseUri(String requestString) {
@@ -134,7 +216,7 @@ public class Request implements ServletRequest {
 
     @Override
     public int getContentLength() {
-        return 0;
+        return contentLength;
     }
 
     @Override
