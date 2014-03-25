@@ -2,17 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24807c5a-e593-44b9-9239-5501e57a4204" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/core/connector/http/RequestUtil.java" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/db/table/NBArticle$Column.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../proj_103_next_brain/out/production/proj_103_next_brain/com/lichsword/nextbrain/db/table/NBArticle$ExtraData.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/backup/Request.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/backup/Request.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/core/connector/http/SocketInputStream.java" afterPath="$PROJECT_DIR$/../proj_103_next_brain/src/com/lichsword/nextbrain/core/connector/http/SocketInputStream.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/webroot/js/myscript.js" afterPath="$PROJECT_DIR$/../proj_103_next_brain/webroot/js/myscript.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_103_next_brain/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../proj_103_next_brain/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="proj_01_basic_http_server.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/HttpServer.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1393842427535" ignored="false" />
     <file path="/a.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395113349621" ignored="false" />
-    <file path="/Dummy.txt" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395716649798" ignored="false" />
+    <file path="/Dummy.txt" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395742568037" ignored="false" />
     <file path="/fragment.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395733092999" ignored="false" />
     <file path="/Request.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395740037818" ignored="false" />
     <file path="/Response.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395561872631" ignored="false" />
@@ -59,7 +60,7 @@
     <file path="/myscript.js" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395734434945" ignored="false" />
     <file path="/HttpConnector.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395215423748" ignored="false" />
     <file path="/HttpProcessor.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395396707483" ignored="false" />
-    <file path="/SocketInputStream.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395738667770" ignored="false" />
+    <file path="/SocketInputStream.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395746927469" ignored="false" />
     <file path="/RequestBase.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395396431488" ignored="false" />
     <file path="/HttpRequestBase.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395395750882" ignored="false" />
     <file path="/HttpRequestImpl.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395226891302" ignored="false" />
@@ -143,28 +144,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SocketInputStream.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/connector/http/SocketInputStream.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="285" column="23" selection-start="7881" selection-end="7881" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HttpRequest.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="HttpRequest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/a/book/ref/code/connector/http/HttpRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="16" selection-start="3906" selection-end="3906" vertical-scroll-proportion="0.0">
+            <state line="199" column="3" selection-start="6200" selection-end="6222" vertical-scroll-proportion="0.8909575">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HttpProcessor.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="HttpProcessor.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/a/book/ref/code/connector/http/HttpProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="14" selection-start="3251" selection-end="3251" vertical-scroll-proportion="-0.34844193">
+            <state line="105" column="14" selection-start="3251" selection-end="3251" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -173,7 +165,7 @@
       <file leaf-file-name="SocketInputStream.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/a/book/ref/code/connector/http/SocketInputStream.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="295" column="16" selection-start="8292" selection-end="8292" vertical-scroll-proportion="0.0">
+            <state line="174" column="46" selection-start="4271" selection-end="4271" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -182,7 +174,7 @@
       <file leaf-file-name="RequestUtil.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/util/RequestUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="498" column="25" selection-start="16678" selection-end="16678" vertical-scroll-proportion="0.0">
+            <state line="486" column="29" selection-start="16252" selection-end="16252" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -768,9 +760,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/connector/http/HttpProcessor.java">
+    <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/connector/HttpRequestBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="754" column="49" selection-start="24335" selection-end="24348" vertical-scroll-proportion="0.0">
+        <state line="141" column="26" selection-start="3997" selection-end="4009" vertical-scroll-proportion="-2.838527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/connector/http/SocketInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="285" column="23" selection-start="7881" selection-end="7881" vertical-scroll-proportion="3.5184135">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/a/book/ref/code/connector/http/HttpProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="14" selection-start="3251" selection-end="3251" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -782,51 +788,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/util/RequestUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/connector/http/HttpProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="498" column="25" selection-start="16678" selection-end="16678" vertical-scroll-proportion="0.0">
+        <state line="754" column="49" selection-start="24335" selection-end="24348" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/a/book/ref/code/connector/http/SocketInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="295" column="16" selection-start="8292" selection-end="8292" vertical-scroll-proportion="0.0">
+        <state line="174" column="46" selection-start="4271" selection-end="4271" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/util/RequestUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="486" column="29" selection-start="16252" selection-end="16252" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/util/ParameterMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="26" selection-start="3476" selection-end="3476" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/connector/HttpRequestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="141" column="26" selection-start="3997" selection-end="4009" vertical-scroll-proportion="-2.838527">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/apache/catalina/connector/http/SocketInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="285" column="23" selection-start="7881" selection-end="7881" vertical-scroll-proportion="0.0">
+        <state line="105" column="11" selection-start="3946" selection-end="3946" vertical-scroll-proportion="0.16147308">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/a/book/ref/code/connector/http/HttpRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="16" selection-start="3906" selection-end="3906" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/a/book/ref/code/connector/http/HttpProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="14" selection-start="3251" selection-end="3251" vertical-scroll-proportion="-0.34844193">
+        <state line="199" column="3" selection-start="6200" selection-end="6222" vertical-scroll-proportion="0.8909575">
           <folding />
         </state>
       </provider>

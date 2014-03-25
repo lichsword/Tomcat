@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24807c5a-e593-44b9-9239-5501e57a4204" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lichsword/nextbrain/backup/Request.java" afterPath="$PROJECT_DIR$/src/com/lichsword/nextbrain/backup/Request.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/connector/http/RequestUtil.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/connector/http/SocketInputStream.java" afterPath="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/connector/http/SocketInputStream.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webroot/js/myscript.js" afterPath="$PROJECT_DIR$/webroot/js/myscript.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../proj_200_catalina/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../proj_200_catalina/.idea/workspace.xml" />
     </list>
     <ignored path="proj_01_basic_http_server.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/HttpServer.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1393842427535" ignored="false" />
     <file path="/a.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395579724251" ignored="false" />
-    <file path="/Dummy.txt" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395716649798" ignored="false" />
+    <file path="/Dummy.txt" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395742568073" ignored="false" />
     <file path="/fragment.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395733092999" ignored="false" />
     <file path="/Request.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395740037818" ignored="false" />
     <file path="/Response.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395562423489" ignored="false" />
@@ -58,7 +59,7 @@
     <file path="/HttpConnector.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395215423748" ignored="false" />
     <file path="$PROJECT_DIR$/../proj_200_catalina/src/Bootstrap.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395220370999" ignored="false" />
     <file path="/HttpProcessor.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395396707483" ignored="false" />
-    <file path="/SocketInputStream.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395738667770" ignored="false" />
+    <file path="/SocketInputStream.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395746927469" ignored="false" />
     <file path="/RequestBase.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395396431488" ignored="false" />
     <file path="/HttpRequestBase.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395395750882" ignored="false" />
     <file path="/HttpRequestImpl.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395226891302" ignored="false" />
@@ -154,23 +155,8 @@
       </breakpoint>
     </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/backup/Request.java" line="76" class="com.lichsword.nextbrain.backup.Request" package="com.lichsword.nextbrain.backup">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
       <breakpoint url="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/backup/Request.java" line="73" class="com.lichsword.nextbrain.backup.Request" package="com.lichsword.nextbrain.backup">
-        <option name="ENABLED" value="true" />
+        <option name="ENABLED" value="false" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
         <option name="REMOVE_AFTER_HIT" value="false" />
@@ -181,11 +167,11 @@
         <option name="CONDITION_ENABLED" value="true" />
         <option name="CLASS_FILTERS_ENABLED" value="false" />
         <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
+        <option name="CONDITION" value="&#13;&#13;JAVA" />
+        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/backup/Request.java" line="60" class="com.lichsword.nextbrain.backup.Request" package="com.lichsword.nextbrain.backup">
-        <option name="ENABLED" value="true" />
+      <breakpoint url="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/backup/Request.java" line="79" class="com.lichsword.nextbrain.backup.Request" package="com.lichsword.nextbrain.backup">
+        <option name="ENABLED" value="false" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
         <option name="REMOVE_AFTER_HIT" value="false" />
@@ -196,10 +182,10 @@
         <option name="CONDITION_ENABLED" value="true" />
         <option name="CLASS_FILTERS_ENABLED" value="false" />
         <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
+        <option name="CONDITION" value="&#13;&#13;JAVA" />
+        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/core/connector/http/SocketInputStream.java" line="260" class="com.lichsword.nextbrain.core.connector.http.SocketInputStream" package="com.lichsword.nextbrain.core.connector.http">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/core/connector/http/SocketInputStream.java" line="493" class="com.lichsword.nextbrain.core.connector.http.SocketInputStream" package="com.lichsword.nextbrain.core.connector.http">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -211,38 +197,8 @@
         <option name="CONDITION_ENABLED" value="true" />
         <option name="CLASS_FILTERS_ENABLED" value="false" />
         <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/core/connector/http/SocketInputStream.java" line="206" class="com.lichsword.nextbrain.core.connector.http.SocketInputStream" package="com.lichsword.nextbrain.core.connector.http">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/core/connector/http/SocketInputStream.java" line="318" class="com.lichsword.nextbrain.core.connector.http.SocketInputStream" package="com.lichsword.nextbrain.core.connector.http">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
+        <option name="CONDITION" value="&#13;&#13;JAVA" />
+        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
       </breakpoint>
     </line_breakpoints>
     <breakpoint_rules />
@@ -254,19 +210,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="HttpConnecter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/backup/HttpConnecter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="34" selection-start="1588" selection-end="1594" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SocketInputStream.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SocketInputStream.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/core/connector/http/SocketInputStream.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="318" column="0" selection-start="8736" selection-end="8736" vertical-scroll-proportion="1.8012233">
+            <state line="554" column="28" selection-start="16813" selection-end="16813" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -274,22 +221,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HttpRequest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/core/connector/http/HttpRequest.java">
+      <file leaf-file-name="Map.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../android_sdk_kernel_4.2/sources/android-16/java/util/Map.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="19" selection-start="566" selection-end="571" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HttpHeader.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/core/connector/HttpHeader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="16" selection-start="1222" selection-end="1222" vertical-scroll-proportion="0.0">
+            <state line="61" column="17" selection-start="2246" selection-end="2246" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RequestUtil.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/core/connector/http/RequestUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="68" column="23" selection-start="2355" selection-end="2355" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -297,7 +244,7 @@
       <file leaf-file-name="Request.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/backup/Request.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="44" selection-start="1667" selection-end="1677" vertical-scroll-proportion="0.0">
+            <state line="124" column="0" selection-start="3762" selection-end="3762" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -306,7 +253,7 @@
       <file leaf-file-name="HttpRequestLine.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/core/connector/http/model/HttpRequestLine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="13" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0">
+            <state line="23" column="18" selection-start="632" selection-end="632" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -321,10 +268,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myscript.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="myscript.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webroot/js/myscript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="16" selection-start="1340" selection-end="1340" vertical-scroll-proportion="0.0">
+            <state line="47" column="16" selection-start="1340" selection-end="1340" vertical-scroll-proportion="0.77952754">
               <folding />
             </state>
           </provider>
@@ -348,7 +295,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/page/HttpPage.java" />
         <option value="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/page/StaticHttpPage.java" />
         <option value="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/res/HtmlResource.java" />
         <option value="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/res/TextResource.java" />
@@ -362,13 +308,14 @@
         <option value="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/connector/http/model/HttpRequestLine.java" />
         <option value="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/Log.java" />
         <option value="$PROJECT_DIR$/webroot/js/myscript.js" />
-        <option value="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/connector/http/SocketInputStream.java" />
         <option value="$PROJECT_DIR$/src/com/lichsword/nextbrain/backup/Request.java" />
+        <option value="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/connector/http/RequestUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/connector/http/SocketInputStream.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="70" />
+    <option name="x" value="47" />
     <option name="y" value="22" />
     <option name="width" value="1225" />
     <option name="height" value="765" />
@@ -827,26 +774,26 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="70" y="22" width="1225" height="765" extended-state="0" />
+    <frame x="47" y="22" width="1225" height="765" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3262987" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33178294" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33178294" sideWeight="0.4995759" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39379844" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5004205" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3364341" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31007752" sideWeight="0.5004241" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299389" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32093024" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32093024" sideWeight="0.4995759" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32792208" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22731128" sideWeight="0.6062015" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22731128" sideWeight="0.68992245" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24766752" sideWeight="0.6062015" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31382528" sideWeight="0.68992245" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3019508" sideWeight="0.68992245" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31007752" sideWeight="0.4995795" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31007752" sideWeight="0.4995759" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -921,41 +868,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/core/connector/http/HttpResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="25" selection-start="362" selection-end="374" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../libs/servlet-source/javax/servlet/ServletInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="22" selection-start="1410" selection-end="1410" vertical-scroll-proportion="-1.3021582">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/net/SocketInputStream.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="54" selection-start="192" selection-end="192" vertical-scroll-proportion="0.24038461">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../android_sdk_kernel_4.2/sources/android-16/java/io/FileInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="34" selection-start="182" selection-end="182" vertical-scroll-proportion="0.11940298">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/sun/rmi/transport/tcp/MultiplexInputStream.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="21" selection-start="533" selection-end="533" vertical-scroll-proportion="0.6268657">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../android_sdk_kernel_4.2/sources/android-16/java/io/InputStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="130" column="16" selection-start="5735" selection-end="5735" vertical-scroll-proportion="0.33240223">
@@ -977,6 +889,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/core/connector/HttpHeader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="16" selection-start="1222" selection-end="1222" vertical-scroll-proportion="0.65228426">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/backup/HttpConnecter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="62" selection-start="1622" selection-end="1622" vertical-scroll-proportion="0.30456853">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/core/connector/http/HttpRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="50" selection-start="237" selection-end="237" vertical-scroll-proportion="0.030456852">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../android_sdk_kernel_4.2/sources/android-16/java/util/Set.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="129" column="23" selection-start="4391" selection-end="4391" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/backup/Request.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="0" selection-start="3762" selection-end="3762" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/webroot/html/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="10" selection-start="963" selection-end="963" vertical-scroll-proportion="-4.5833335">
@@ -984,56 +933,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webroot/js/myscript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="16" selection-start="1340" selection-end="1340" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/core/connector/http/model/HttpRequestLine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0">
+        <state line="23" column="18" selection-start="632" selection-end="632" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/core/connector/HttpHeader.java">
+    <entry file="file://$PROJECT_DIR$/../../../android_sdk_kernel_4.2/sources/android-16/java/lang/System.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="16" selection-start="1222" selection-end="1222" vertical-scroll-proportion="0.0">
+        <state line="148" column="30" selection-start="4897" selection-end="4897" vertical-scroll-proportion="0.3044693">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/backup/HttpConnecter.java">
+    <entry file="file://$PROJECT_DIR$/../../../android_sdk_kernel_4.2/sources/android-16/java/util/HashMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="34" selection-start="1588" selection-end="1594" vertical-scroll-proportion="0.0">
+        <state line="124" column="11" selection-start="4783" selection-end="4783" vertical-scroll-proportion="0.61154854">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/core/connector/http/HttpRequest.java">
+    <entry file="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/core/connector/http/RequestUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="19" selection-start="566" selection-end="571" vertical-scroll-proportion="0.0">
+        <state line="68" column="23" selection-start="2355" selection-end="2355" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/backup/Request.java">
+    <entry file="file://$PROJECT_DIR$/../../../android_sdk_kernel_4.2/sources/android-16/java/util/Map.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="44" selection-start="1667" selection-end="1677" vertical-scroll-proportion="0.0">
+        <state line="61" column="17" selection-start="2246" selection-end="2246" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/core/connector/http/SocketInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="318" column="0" selection-start="8736" selection-end="8736" vertical-scroll-proportion="1.8012233">
+        <state line="554" column="28" selection-start="16813" selection-end="16813" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webroot/js/myscript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="16" selection-start="1340" selection-end="1340" vertical-scroll-proportion="0.77952754">
+          <folding />
         </state>
       </provider>
     </entry>

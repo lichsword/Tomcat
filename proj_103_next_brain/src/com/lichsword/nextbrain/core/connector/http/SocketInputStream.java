@@ -7,6 +7,10 @@ import com.lichsword.nextbrain.core.connector.http.model.HttpRequestLine;
 import java.io.EOFException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map.Entry;
+import java.util.Set;
 
 /**
  * Created with IntelliJ IDEA.
@@ -72,11 +76,15 @@ public class SocketInputStream extends InputStream {
      */
     protected int count;
 
-
     /**
      * Position in the buffer.
      */
     protected int pos;
+
+    /**
+     * Position result.
+     */
+    private HashMap<String, String[]> parameters = null;
 
     public SocketInputStream(InputStream inputStream, int bufferSize) {
         this.inputStream = inputStream;
@@ -188,66 +196,53 @@ public class SocketInputStream extends InputStream {
 
         httpRequestLine.uriEnd = readCount - 1;
 
-        Log.d(TAG, "[INFO]method=" + new String(httpRequestLine.method, 0, httpRequestLine.methodEnd));
-        Log.d(TAG, "[INFO]uri=" + new String(httpRequestLine.uri, 0, httpRequestLine.uriEnd));
 
         // Reading protocol
-        // TODO can copy SocketInputStream.java line 238-th.
-    }
+        maxRead = httpRequestLine.protocol.length;
+        readStart = pos;
+        readCount = 0;
 
-
-    /**
-     * fill() && check first byte.
-     *
-     * @return 首字节 的值
-     * @throws IOException
-     */
-    @Override
-    public int read() throws IOException {
-        if (pos >= count) {
-            fill();
-            if (pos >= count)
-                return -1;
+        while (!eol) {
+            // if the buffer is full, extend it
+            if (readCount >= maxRead) {
+                if ((2 * maxRead) <= HttpRequestLine.MAX_PROTOCOL_SIZE) {
+                    char[] newBuffer = new char[2 * maxRead];
+                    System.arraycopy(httpRequestLine.protocol, 0, newBuffer, 0,
+                            maxRead);
+                    httpRequestLine.protocol = newBuffer;
+                    maxRead = httpRequestLine.protocol.length;
+                } else {
+                    throw new IOException
+                            ("requestStream.readline.toolong");
+                }
+            }
+            // We're at the end of the internal buffer
+            if (pos >= count) {
+                // Copying part (or all) of the internal buffer to the line
+                // buffer
+                int val = read();
+                if (val == -1)
+                    throw new IOException
+                            ("requestStream.readline.error");
+                pos = 0;
+                readStart = 0;
+            }
+            if (buffer[pos] == CR) {
+                // Skip CR.
+            } else if (buffer[pos] == LF) {
+                eol = true;
+            } else {
+                httpRequestLine.protocol[readCount] = (char) buffer[pos];
+                readCount++;
+            }
+            pos++;
         }
-        // First byte not empty.
-        return buffer[pos++] & 0xff;
-    }
 
-    public int available() throws IOException {
-        return (count - pos) + inputStream.available();
-    }
-
-    /**
-     * Close the input stream.
-     */
-    public void close()
-            throws IOException {
-        if (inputStream == null)
-            return;
-
-        inputStream.close();
-        inputStream = null;
-        buffer = null;
-    }
-
-
-    /**
-     * 把 inputStream 的全部字节转存于内部的 buffer.
-     * pos = 0
-     * count = readCount.
-     */
-    protected void fill()
-            throws IOException {
-        pos = 0;
-        count = 0;
-        int nRead = inputStream.read(buffer, 0, buffer.length);
-        if (nRead > 0) {
-            count = nRead;
-        }// end if
-
-        Log.d(TAG, "[INFO]==request message==");
-        Log.d(TAG, "[INFO]\n" + new String(buffer, 0, nRead));
-        Log.d(TAG, "[INFO]===================");
+        httpRequestLine.protocolEnd = readCount;
+        // print info
+        Log.d(TAG, "[INFO]method=" + new String(httpRequestLine.method, 0, httpRequestLine.methodEnd));
+        Log.d(TAG, "[INFO]uri=" + new String(httpRequestLine.uri, 0, httpRequestLine.uriEnd));
+        Log.d(TAG, "[INFO]protocol=" + new String(httpRequestLine.protocol, 0, httpRequestLine.protocolEnd));
     }
 
     public void readHeader(HttpHeader httpHeader)
@@ -291,7 +286,7 @@ public class SocketInputStream extends InputStream {
                     throw new IOException
                             ("requestStream.readline.toolong");
                 }
-            }
+            }// end if
 
             // We're at the end of the internal buffer
             if (pos >= count) {
@@ -428,11 +423,67 @@ public class SocketInputStream extends InputStream {
         httpHeader.valueEnd = readCount;
     }
 
+    /**
+     * fill() && check first byte.
+     *
+     * @return 首字节 的值
+     * @throws IOException
+     */
+    @Override
+    public int read() throws IOException {
+        if (pos >= count) {
+            fill();
+            if (pos >= count)
+                return -1;
+        }
+        // First byte not empty.
+        return buffer[pos++] & 0xff;
+    }
+
+    public int available() throws IOException {
+        return (count - pos) + inputStream.available();
+    }
+
+    /**
+     * Close the input stream.
+     */
+    public void close()
+            throws IOException {
+        if (inputStream == null)
+            return;
+
+        inputStream.close();
+        inputStream = null;
+        buffer = null;
+    }
+
+
+    /**
+     * 把 inputStream 的全部字节转存于内部的 buffer.
+     * pos = 0
+     * count = readCount.
+     */
+    protected void fill()
+            throws IOException {
+        pos = 0;
+        count = 0;
+        int nRead = inputStream.read(buffer, 0, buffer.length);
+        if (nRead > 0) {
+            count = nRead;
+        }// end if
+
+        Log.d(TAG, "[INFO]==request message==");
+        Log.d(TAG, "[INFO]\n" + new String(buffer, 0, nRead));
+        Log.d(TAG, "[INFO]===================");
+    }
+
+
     public void parseRequestHeader(HttpHeader[] httpHeaders) {
         httpHeaders = new HttpHeader[2];
         // TODO
 
     }
+
 
     /**
      * Parse parameters.
@@ -445,13 +496,21 @@ public class SocketInputStream extends InputStream {
             return;
         }// end if
 
+        // Parse parameters from content.
         String method = new String(httpRequestLine.method, 0, httpRequestLine.methodEnd);
-        if (!"POST".equals(method) || contentLength > 0) {
+        if (!"POST".equals(method) || contentLength <= 0) {
             Log.d(TAG, "parseParameters.httpRequestLine.method not POST");
             Log.d(TAG, "Or");
             Log.d(TAG, "parseParameters.contenLength <= 0");
             return;
         }// end if
+
+        HashMap<String, String[]> results = parameters;
+        if (null == results) {
+            results = new HashMap<String, String[]>();
+        }// end if
+
+        String encoding = "utf-8";
 
         try {
             int max = contentLength;
@@ -459,20 +518,46 @@ public class SocketInputStream extends InputStream {
             byte buf[] = new byte[contentLength];
             while (len < max) {
                 int next = 0;
-                next = inputStream.read(buf, len, max - len);
+                System.arraycopy(buffer, pos, buf, 0, contentLength);
+                next = max - len;
+//                next = inputStream.read(buf, len, max - len);
                 if (next < 0) {
                     break;
                 }// end if
                 len += next;
             }// end while
-            inputStream.close();
+//            inputStream.close();
             if (len < max) {
                 throw new RuntimeException("Content length mismatch");
             }// end if
-            // TODO
-//            RequestUtil.parseParameters(results, buf, encoding);
+
+            // format element.
+            RequestUtil.parseParameters(results, buf, encoding);
         } catch (IOException e) {
             e.printStackTrace();
+        }
+
+        // save back.
+        parameters = results;
+
+        Set set = parameters.entrySet();
+        Iterator<Entry> iterator = set.iterator();
+        Entry<String, String[]> entry;
+        String entryKey;
+        String[] entryValues;
+        StringBuilder sb;
+        while (iterator.hasNext()) {
+            entry = iterator.next();
+            entryKey = entry.getKey();
+            entryValues = entry.getValue();
+            sb = new StringBuilder();
+            sb.append("\n{\nkey=" + entryKey);
+            sb.append('\n');
+            for (String string : entryValues) {
+                sb.append("value=" + string);
+            }
+            sb.append("\n}");
+            Log.d(TAG, sb.toString());
         }
 
         // TODO
