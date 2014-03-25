@@ -1,4 +1,4 @@
-package com.lichsword.nextbrain.business;
+package com.lichsword.nextbrain.nb.business;
 
 import com.lichsword.nextbrain.core.db.SqliteDatabase;
 import com.lichsword.nextbrain.nb.table.NBArticle;

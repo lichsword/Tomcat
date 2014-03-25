@@ -1,8 +1,8 @@
-package com.lichsword.nextbrain.business.servlet.page;
+package com.lichsword.nextbrain.nb.business.servlet.page;
 
 
 import com.lichsword.nextbrain.backup.Response;
-import com.lichsword.nextbrain.business.servlet.TempHeader;
+import com.lichsword.nextbrain.nb.business.servlet.TempHeader;
 
 import javax.servlet.*;
 import java.io.IOException;

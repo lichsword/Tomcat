@@ -1,4 +1,4 @@
-package com.lichsword.nextbrain.business.servlet.page;
+package com.lichsword.nextbrain.nb.business.servlet.page;
 
 import com.lichsword.nextbrain.core.page.StaticHttpPage;
 

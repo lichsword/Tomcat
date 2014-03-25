@@ -1,4 +1,4 @@
-package com.lichsword.nextbrain.business.servlet;
+package com.lichsword.nextbrain.nb.business.servlet;
 
 /**
  * Created with IntelliJ IDEA.

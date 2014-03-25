@@ -1,6 +1,6 @@
-package com.lichsword.nextbrain.business.servlet;
+package com.lichsword.nextbrain.nb.business.servlet;
 
-import com.lichsword.nextbrain.business.ArticleManager;
+import com.lichsword.nextbrain.nb.business.ArticleManager;
 import com.lichsword.nextbrain.nb.table.NBArticle;
 import com.lichsword.nextbrain.nb.dialog.AddArticleDialog;
 import com.lichsword.nextbrain.core.view.LinearLayout;

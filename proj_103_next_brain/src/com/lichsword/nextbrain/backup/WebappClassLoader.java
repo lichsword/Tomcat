@@ -1,10 +1,10 @@
 package com.lichsword.nextbrain.backup;
 
-import com.lichsword.nextbrain.business.servlet.DBServlet;
-import com.lichsword.nextbrain.business.servlet.page.ArticlePageServlet;
-import com.lichsword.nextbrain.business.servlet.page.HomePage;
-import com.lichsword.nextbrain.business.servlet.page.MainPageServlet;
-import com.lichsword.nextbrain.business.servlet.page.TestPageServlet;
+import com.lichsword.nextbrain.nb.business.servlet.DBServlet;
+import com.lichsword.nextbrain.nb.business.servlet.page.ArticlePageServlet;
+import com.lichsword.nextbrain.nb.business.servlet.page.HomePage;
+import com.lichsword.nextbrain.nb.business.servlet.page.MainPageServlet;
+import com.lichsword.nextbrain.nb.business.servlet.page.TestPageServlet;
 
 import java.io.File;
 import java.io.IOException;
