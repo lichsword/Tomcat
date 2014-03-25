@@ -57,38 +57,38 @@ public class Request implements ServletRequest {
             e.printStackTrace();
         }
 
-        // Read a set of characters from the socket.
-        StringBuffer requestStringBuffer = new StringBuffer(2048);
-        int i = -1;
-        byte[] buffer = new byte[2048];
+//        // Read a set of characters from the socket.
+//        StringBuffer requestStringBuffer = new StringBuffer(2048);
+//        int i = -1;
+//        byte[] buffer = new byte[2048];
 
-        //----- start read -----
-        try {
-            // reset.
-            if (inputStream.markSupported()) {
-                inputStream.reset();
-                i = inputStream.read(buffer);
-            }// end if
-        } catch (Exception e) {
-            e.printStackTrace();
-            i = -1;
-        }
+//       // ----- start read -----
+//        try {
+//            // reset.
+//            if (inputStream.markSupported()) {
+//                inputStream.reset();
+//                i = inputStream.read(buffer);
+//            }// end if
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//            i = -1;
+//        }
         //----- end read -----
 
-        if (-1 != i) {
-            for (int j = 0; j < i; j++) {
-                requestStringBuffer.append((char) buffer[j]);
-            }
-        } else {
-            System.out.println("[INFO]requestStringBuffer length is -1");
-        }
+//        if (-1 != i) {
+//            for (int j = 0; j < i; j++) {
+//                requestStringBuffer.append((char) buffer[j]);
+//            }
+//        } else {
+//            System.out.println("[INFO]requestStringBuffer length is -1");
+//        }
 
-        System.out.println("[INFO]-----request data start----------");
-        System.out.print(requestStringBuffer.toString());
-        System.out.println("[INFO]-----request data end----------");
+//        System.out.println("[INFO]-----request data start----------");
+//        System.out.print(requestStringBuffer.toString());
+//        System.out.println("[INFO]-----request data end----------");
 
 //        uri = parseUri(requestStringBuffer.toString());
-        System.out.println("uriEnd=" + httpRequestLine.uriEnd);
+//        System.out.println("uriEnd=" + httpRequestLine.uriEnd);
         uri = new String(httpRequestLine.uri, 0, httpRequestLine.uriEnd);
 
     }

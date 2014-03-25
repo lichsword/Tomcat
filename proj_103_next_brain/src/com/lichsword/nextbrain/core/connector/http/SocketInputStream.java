@@ -1,5 +1,6 @@
 package com.lichsword.nextbrain.core.connector.http;
 
+import com.lichsword.nextbrain.core.Log;
 import com.lichsword.nextbrain.core.connector.http.model.HttpRequestLine;
 
 import java.io.EOFException;
@@ -19,6 +20,8 @@ import java.io.InputStream;
  * 我觉得更应该是组合，而非继承自 InputStream
  */
 public class SocketInputStream extends InputStream {
+
+    private static final String TAG = SocketInputStream.class.getSimpleName();
 
     /**
      * CR.
@@ -184,9 +187,11 @@ public class SocketInputStream extends InputStream {
 
         httpRequestLine.uriEnd = readCount - 1;
 
+        Log.d(TAG, "[INFO]method=" + new String(httpRequestLine.method, 0, httpRequestLine.methodEnd));
+        Log.d(TAG, "[INFO]uri=" + new String(httpRequestLine.uri, 0, httpRequestLine.uriEnd));
+
         // Reading protocol
         // TODO can copy SocketInputStream.java line 238-th.
-
     }
 
 
@@ -224,6 +229,7 @@ public class SocketInputStream extends InputStream {
         buffer = null;
     }
 
+
     /**
      * 把 inputStream 的全部字节转存于内部的 buffer.
      * pos = 0
@@ -237,5 +243,9 @@ public class SocketInputStream extends InputStream {
         if (nRead > 0) {
             count = nRead;
         }// end if
+
+        Log.d(TAG, "[INFO]==request message==");
+        Log.d(TAG, "[INFO]\n" + new String(buffer, 0, nRead));
+        Log.d(TAG, "[INFO]===================");
     }
 }
