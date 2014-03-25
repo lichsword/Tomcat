@@ -1,5 +1,8 @@
 package com.lichsword.nextbrain.backup;
 
+import com.lichsword.nextbrain.core.connector.http.SocketInputStream;
+import com.lichsword.nextbrain.core.connector.http.model.HttpRequestLine;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletInputStream;
 import javax.servlet.ServletRequest;
@@ -19,39 +22,75 @@ import java.util.Map;
  * To change this res use File | Settings | File Templates.
  */
 public class Request implements ServletRequest {
-    private InputStream input;
+
+    private InputStream inputStream;
+    private SocketInputStream socketInputStream;
+
     private String uri;
+    /**
+     * Request line buffer.
+     */
+    private HttpRequestLine httpRequestLine = new HttpRequestLine();
 
     public Request(InputStream input) {
-        this.input = input;
+        this.inputStream = input;
+        this.socketInputStream = new SocketInputStream(input, 2048);
     }
 
     public void parse() {
+
+        // reset
+        if (inputStream.markSupported()) {
+            System.out.println("[INFO]mark supported.");
+            try {
+                inputStream.mark(socketInputStream.available() + 1);
+            } catch (IOException e) {
+                e.printStackTrace();
+                System.out.println("[INFO]mark failed.");
+            }
+        }
+
+        // Read request line.
+        try {
+            socketInputStream.readRequestLine(httpRequestLine);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
         // Read a set of characters from the socket.
         StringBuffer requestStringBuffer = new StringBuffer(2048);
-        int i;
+        int i = -1;
         byte[] buffer = new byte[2048];
 
         //----- start read -----
-
         try {
-            i = input.read(buffer);
+            // reset.
+            if (inputStream.markSupported()) {
+                inputStream.reset();
+                i = inputStream.read(buffer);
+            }// end if
         } catch (Exception e) {
             e.printStackTrace();
             i = -1;
         }
-
         //----- end read -----
 
-        for (int j = 0; j < i; j++) {
-            requestStringBuffer.append((char) buffer[j]);
+        if (-1 != i) {
+            for (int j = 0; j < i; j++) {
+                requestStringBuffer.append((char) buffer[j]);
+            }
+        } else {
+            System.out.println("[INFO]requestStringBuffer length is -1");
         }
 
         System.out.println("[INFO]-----request data start----------");
         System.out.print(requestStringBuffer.toString());
         System.out.println("[INFO]-----request data end----------");
 
-        uri = parseUri(requestStringBuffer.toString());
+//        uri = parseUri(requestStringBuffer.toString());
+        System.out.println("uriEnd=" + httpRequestLine.uriEnd);
+        uri = new String(httpRequestLine.uri, 0, httpRequestLine.uriEnd);
+
     }
 
     private String parseUri(String requestString) {

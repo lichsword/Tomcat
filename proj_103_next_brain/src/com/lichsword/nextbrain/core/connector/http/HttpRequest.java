@@ -17,4 +17,20 @@ public class HttpRequest extends Request {
     public HttpRequest(InputStream input) {
         super(input);
     }
+
+    private String statusLine;
+
+    /**
+     * GET/POST...
+     */
+    private String methodName;
+
+    private String uri;
+
+    private String httpVersion;
+
+    @Override
+    public void parse() {
+        super.parse();// TODO
+    }
 }
