@@ -498,9 +498,12 @@ public class SocketInputStream extends InputStream {
 
         // Parse parameters from content.
         String method = new String(httpRequestLine.method, 0, httpRequestLine.methodEnd);
-        if (!"POST".equals(method) || contentLength <= 0) {
+        if (!"POST".equals(method)) {
             Log.d(TAG, "parseParameters.httpRequestLine.method not POST");
-            Log.d(TAG, "Or");
+            return;
+        }// end if
+
+        if (contentLength <= 0) {
             Log.d(TAG, "parseParameters.contenLength <= 0");
             return;
         }// end if

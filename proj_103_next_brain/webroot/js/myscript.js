@@ -37,7 +37,15 @@ $(document).ready(function(){
         // hide dialog first.
         $("#dialog").hide();
         // refresh list.
-        $.post("/servlet/db", { name: "John lichsword 1  2   3\nkernel,hello-world", time: "2pm" },
+        var titleValue = $("#input_title").attr("value");
+        var summaryValue = $("#input_summary").attr("value");
+        var labelsValue = $("#input_labels").attr("value");
+//        $.post("/servlet/db", { name: "John lichsword 1  2   3\nkernel,hello-world", time: "2pm" },
+        $.post("/servlet/db", {
+            title: titleValue,
+            summary:  summaryValue,
+            labels: labelsValue
+        },
         function(data,status){
             var element=document.getElementById("div1");
             $(".div2").append(data);

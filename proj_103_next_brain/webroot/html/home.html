@@ -17,9 +17,11 @@
             <div>
                 <h3>添加记录</h3>
                 <form>
-                    标题<input name="tv_title" type="text"><br>
-                    简介<input name="tv_summary" type="text"><br>
-                    标签<input name="tv_labels" type="text"><br>
+                    <!--name="input_title" 用于表单提交，有id="input_title"可以不用写这个
+                    写了，也没用，只有id 有效-->
+                    标题<input id="input_title" name="input_title" type="text"><br>
+                    简介<input id="input_summary" name="input_summary" type="text"><br>
+                    标签<input id="input_labels" name="input_labels" type="text"><br>
                 </form>
                 <button id="btn_commit_in_dialog" type="button">提交</button>
                 <button id="btn_cancel_in_dialog" type="button">取消</button>
