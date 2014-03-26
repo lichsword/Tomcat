@@ -30,12 +30,19 @@ public final class SqliteDatabase extends DatabaseBase implements ISqlStatement 
 
     @Override
     public boolean insert(String sql) {
-        return false;  //To change body of implemented methods use File | Settings | File Templates.
+        try {
+            Statement statement = getConnection().createStatement();
+            return statement.execute(sql);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
     }
 
     @Override
     public boolean delete(String sql) {
-        return false;  //To change body of implemented methods use File | Settings | File Templates.
+        // TODO
+        return false;
     }
 
     @Override
@@ -52,6 +59,7 @@ public final class SqliteDatabase extends DatabaseBase implements ISqlStatement 
 
     @Override
     public boolean update(String url) {
-        return false;  //To change body of implemented methods use File | Settings | File Templates.
+        // TODO
+        return false;
     }
 }

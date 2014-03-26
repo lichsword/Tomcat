@@ -43,6 +43,10 @@ public class Request implements ServletRequest {
     private HttpHeader[] httpHeaders;
 
     private HashMap httpHeaderMap = new HashMap();
+    /**
+     * Position result.
+     */
+    private HashMap<String, String[]> httpParametersHashMap = new HashMap<String, String[]>();
 
     public Request(InputStream input) {
         this.inputStream = input;
@@ -120,9 +124,9 @@ public class Request implements ServletRequest {
                 e.printStackTrace();
             }
             /**
-             * Parse request parameters(contain post parameters).
+             * Parse request httpParametersHashMap(contain post httpParametersHashMap).
              */
-            socketInputStream.parseParameters(httpRequestLine, getContentLength());
+            socketInputStream.readHttpParameters(httpRequestLine, getContentLength(), httpParametersHashMap);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -186,6 +190,19 @@ public class Request implements ServletRequest {
         } // end if
 
         return null;
+    }
+
+    public String getMethod() {
+        return new String(httpRequestLine.method, 0, httpRequestLine.methodEnd);
+    }
+
+    /**
+     * TODO 要把这一层从Request中取出，扩展成 HashMap 和 Json.
+     *
+     * @return
+     */
+    public HashMap<String, String[]> getHttpParametersHashMap() {
+        return httpParametersHashMap;
     }
 
     /**

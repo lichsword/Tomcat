@@ -42,6 +42,7 @@ $(document).ready(function(){
         var labelsValue = $("#input_labels").attr("value");
 //        $.post("/servlet/db", { name: "John lichsword 1  2   3\nkernel,hello-world", time: "2pm" },
         $.post("/servlet/db", {
+            action: "insert",
             title: titleValue,
             summary:  summaryValue,
             labels: labelsValue

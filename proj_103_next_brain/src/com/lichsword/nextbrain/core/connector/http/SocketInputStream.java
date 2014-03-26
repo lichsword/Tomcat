@@ -81,10 +81,10 @@ public class SocketInputStream extends InputStream {
      */
     protected int pos;
 
-    /**
-     * Position result.
-     */
-    private HashMap<String, String[]> parameters = null;
+//    /**
+//     * Position result.
+//     */
+//    private HashMap<String, String[]> parameters = null;
 
     public SocketInputStream(InputStream inputStream, int bufferSize) {
         this.inputStream = inputStream;
@@ -424,6 +424,87 @@ public class SocketInputStream extends InputStream {
     }
 
     /**
+     * Parse parameters.
+     * GET ?***
+     * POST name:value&name:value
+     */
+    public void readHttpParameters(HttpRequestLine httpRequestLine, int contentLength, HashMap parameters) {
+        if (null == httpRequestLine) {
+            Log.e(TAG, "readHttpParameters.param.httpRequestLine.null");
+            return;
+        }// end if
+
+        // Parse parameters from content.
+        String method = new String(httpRequestLine.method, 0, httpRequestLine.methodEnd);
+        if (!"POST".equals(method)) {
+            Log.d(TAG, "readHttpParameters.httpRequestLine.method not POST");
+            return;
+        }// end if
+
+        if (contentLength <= 0) {
+            Log.d(TAG, "readHttpParameters.contenLength <= 0");
+            return;
+        }// end if
+
+        HashMap<String, String[]> results = parameters;
+        if (null == results) {
+            results = new HashMap<String, String[]>();
+        }// end if
+
+        String encoding = "utf-8";
+
+        try {
+            int max = contentLength;
+            int len = 0;
+            byte buf[] = new byte[contentLength];
+            while (len < max) {
+                int next = 0;
+                System.arraycopy(buffer, pos, buf, 0, contentLength);
+                next = max - len;
+//                next = inputStream.read(buf, len, max - len);
+                if (next < 0) {
+                    break;
+                }// end if
+                len += next;
+            }// end while
+//            inputStream.close();
+            if (len < max) {
+                throw new RuntimeException("Content length mismatch");
+            }// end if
+
+            // format element.
+            RequestUtil.parseParameters(results, buf, encoding);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        // save back.
+        parameters = results;
+
+        // debug print.
+        Set set = parameters.entrySet();
+        Iterator<Entry> iterator = set.iterator();
+        Entry<String, String[]> entry;
+        String entryKey;
+        String[] entryValues;
+        StringBuilder sb;
+        while (iterator.hasNext()) {
+            entry = iterator.next();
+            entryKey = entry.getKey();
+            entryValues = entry.getValue();
+            sb = new StringBuilder();
+            sb.append("\n{\nkey=" + entryKey);
+            sb.append('\n');
+            for (String string : entryValues) {
+                sb.append("value=" + string);
+            }
+            sb.append("\n}");
+            Log.d(TAG, sb.toString());
+        }// end while
+
+    }
+
+    /**
      * fill() && check first byte.
      *
      * @return 首字节 的值
@@ -478,91 +559,4 @@ public class SocketInputStream extends InputStream {
     }
 
 
-    public void parseRequestHeader(HttpHeader[] httpHeaders) {
-        httpHeaders = new HttpHeader[2];
-        // TODO
-
-    }
-
-
-    /**
-     * Parse parameters.
-     * GET ?***
-     * POST name:value&name:value
-     */
-    public void parseParameters(HttpRequestLine httpRequestLine, int contentLength) {
-        if (null == httpRequestLine) {
-            Log.e(TAG, "parseParameters.param.httpRequestLine.null");
-            return;
-        }// end if
-
-        // Parse parameters from content.
-        String method = new String(httpRequestLine.method, 0, httpRequestLine.methodEnd);
-        if (!"POST".equals(method)) {
-            Log.d(TAG, "parseParameters.httpRequestLine.method not POST");
-            return;
-        }// end if
-
-        if (contentLength <= 0) {
-            Log.d(TAG, "parseParameters.contenLength <= 0");
-            return;
-        }// end if
-
-        HashMap<String, String[]> results = parameters;
-        if (null == results) {
-            results = new HashMap<String, String[]>();
-        }// end if
-
-        String encoding = "utf-8";
-
-        try {
-            int max = contentLength;
-            int len = 0;
-            byte buf[] = new byte[contentLength];
-            while (len < max) {
-                int next = 0;
-                System.arraycopy(buffer, pos, buf, 0, contentLength);
-                next = max - len;
-//                next = inputStream.read(buf, len, max - len);
-                if (next < 0) {
-                    break;
-                }// end if
-                len += next;
-            }// end while
-//            inputStream.close();
-            if (len < max) {
-                throw new RuntimeException("Content length mismatch");
-            }// end if
-
-            // format element.
-            RequestUtil.parseParameters(results, buf, encoding);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        // save back.
-        parameters = results;
-
-        Set set = parameters.entrySet();
-        Iterator<Entry> iterator = set.iterator();
-        Entry<String, String[]> entry;
-        String entryKey;
-        String[] entryValues;
-        StringBuilder sb;
-        while (iterator.hasNext()) {
-            entry = iterator.next();
-            entryKey = entry.getKey();
-            entryValues = entry.getValue();
-            sb = new StringBuilder();
-            sb.append("\n{\nkey=" + entryKey);
-            sb.append('\n');
-            for (String string : entryValues) {
-                sb.append("value=" + string);
-            }
-            sb.append("\n}");
-            Log.d(TAG, sb.toString());
-        }
-
-        // TODO
-    }
 }

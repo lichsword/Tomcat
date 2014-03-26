@@ -1,15 +1,19 @@
 package com.lichsword.nextbrain.nb.business.servlet;
 
-import com.lichsword.nextbrain.nb.business.ArticleManager;
-import com.lichsword.nextbrain.nb.table.NBArticle;
-import com.lichsword.nextbrain.nb.dialog.AddArticleDialog;
+import com.lichsword.nextbrain.backup.Request;
+import com.lichsword.nextbrain.core.Log;
+import com.lichsword.nextbrain.core.connector.http.IHttpParameter;
 import com.lichsword.nextbrain.core.view.LinearLayout;
 import com.lichsword.nextbrain.core.view.TableView;
+import com.lichsword.nextbrain.nb.business.ArticleManager;
+import com.lichsword.nextbrain.nb.dialog.AddArticleDialog;
+import com.lichsword.nextbrain.nb.table.NBArticle;
 
 import javax.servlet.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  * Created with IntelliJ IDEA.
@@ -19,6 +23,8 @@ import java.util.ArrayList;
  * To change this res use File | Settings | File Templates.
  */
 public class DBServlet implements Servlet {
+
+    private static final String TAG = DBServlet.class.getSimpleName();
 
     @Override
     public void init(ServletConfig servletConfig) throws ServletException {
@@ -32,14 +38,44 @@ public class DBServlet implements Servlet {
 
     @Override
     public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
+        handleAction(req);
+        refreshTable(res);
+    }
 
-//        Response response = (Response)res;
-//        OutputStream outputStream = response.getOutputStreamOrigin();
-//        if (null != outputStream) {
-//            byte[] bytes = TempHeader.dumpResponseHeaderBytes();
-//            outputStream.write(bytes, 0, bytes.length);
-//        }// end if
+    /**
+     * 依据 action 的类型，执行相关操作。
+     */
+    private void handleAction(ServletRequest req) throws ServletException {
+        if (req instanceof Request) {
+            Request request = (Request) req;
+            String method = request.getMethod();
+            if (method.equals("POST")) {
+                HashMap<String, String[]> map = request.getHttpParametersHashMap();
+                String action = map.get(IHttpParameter.KEY_ACTION)[0];
+                if (action.equals(IHttpParameter.ACTION_INSERT)) {
+                    NBArticle article = new NBArticle();
+                    article.setTitle(map.get("title")[0]);
+                    article.setSummary(map.get("summary")[0]);
+                    article.setLabels(map.get("labels")[0]);
+                    ArticleManager.getInstance().addArticle(article);
+                } else {
+                    Log.d(TAG, "param action not insert: action=" + action);
+                }
+            } else {
+                Log.v(TAG, "method not POST: method=" + method);
+            }
+        } else {
+            throw new ServletException("ServletRequest.classType.Not.Request");
+        }
+    }
 
+    /**
+     * 刷新表格
+     *
+     * @param res
+     * @throws IOException
+     */
+    private void refreshTable(ServletResponse res) throws IOException {
         System.out.println("[INFO]from service");
         PrintWriter out = res.getWriter();
         ArrayList<NBArticle> list = ArticleManager.getInstance().queryAllArticle();

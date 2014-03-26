@@ -59,15 +59,35 @@ public class NBArticle {
         return id;
     }
 
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
     public String getTitle() {
         return title;
+    }
+
+    public void setSummary(String summary) {
+        this.summary = summary;
     }
 
     public String getSummary() {
         return summary;
     }
 
-    public String getLabels(){
+    public void setLabels(String labels) {
+        this.labels = labels;
+    }
+
+    public void setLabels(String[] labels) {
+        StringBuilder sb = new StringBuilder();
+        for (String label : labels) {
+            sb.append(label);
+        }
+        this.labels = sb.toString();
+    }
+
+    public String getLabels() {
         return labels;
     }
 
