@@ -89,9 +89,6 @@ public class DBServlet implements Servlet {
         }
         // set layout
         LinearLayout linearLayout = new LinearLayout();
-        // add dialog
-        AddArticleDialog dialog = new AddArticleDialog();
-        linearLayout.addChildView(dialog);
         // add table
         TableView<NBArticle> tableView = new TableView<NBArticle>(list);
         linearLayout.addChildView(tableView);
