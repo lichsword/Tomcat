@@ -5,8 +5,7 @@ $(document).ready(function(){
     $("#btn_refresh").click(function(){
         $.get("/servlet/db",
         function(data,status){
-            var element=document.getElementById("div1");
-            $(".div2").append(data);
+            $(".div1").html(data);
             console.log(data);
             console.log(status);
         });
@@ -42,16 +41,25 @@ $(document).ready(function(){
         var labelsValue = $("#input_labels").attr("value");
 //        $.post("/servlet/db", { name: "John lichsword 1  2   3\nkernel,hello-world", time: "2pm" },
         $.post("/servlet/db", {
-            action: "insert",
-            title: titleValue,
-            summary:  summaryValue,
-            labels: labelsValue
-        },
-        function(data,status){
-            var element=document.getElementById("div1");
-            $(".div2").append(data);
-            console.log(data);
-            console.log(status);
+                action: "insert",
+                title: titleValue,
+                summary:  summaryValue,
+                labels: labelsValue
+            },
+            function(data,status){
+    //            $(".div2").append(data);
+    //            $(".div2").replaceWith(data);
+                $(".div1").html(data);
+                console.log(data);
+                console.log(status);
         });
+
+/* 这里仍有问题，没有实现动态绑定 */
+//        $("button").live("click",function(){
+////          var id = $(this).attr("data-id");
+//            var id = $(this).data("adcd");
+//            console.log(id);
+//
+//        });
     });
 });

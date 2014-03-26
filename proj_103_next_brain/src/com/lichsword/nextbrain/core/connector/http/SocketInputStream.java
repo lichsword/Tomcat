@@ -551,11 +551,13 @@ public class SocketInputStream extends InputStream {
         int nRead = inputStream.read(buffer, 0, buffer.length);
         if (nRead > 0) {
             count = nRead;
-        }// end if
+            Log.d(TAG, "[INFO]==request message==");
+            Log.d(TAG, "[INFO]\n" + new String(buffer, 0, nRead));
+            Log.d(TAG, "[INFO]===================");
+        } else {
+            Log.d(TAG, "[INFO]nRead=" + nRead);
+        }
 
-        Log.d(TAG, "[INFO]==request message==");
-        Log.d(TAG, "[INFO]\n" + new String(buffer, 0, nRead));
-        Log.d(TAG, "[INFO]===================");
     }
 
 

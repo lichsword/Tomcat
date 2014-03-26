@@ -52,11 +52,10 @@ public class ArticleManager {
     }
 
     public boolean addArticle(NBArticle article) {
-        boolean result = false;
         String sql = "insert into " + NBArticle.TABLE_NAME + " (" + Column.TITLE + ", " + Column.SUMMARY + ", " + Column.LABELS + ")"
                 + " values " + "('" + article.getTitle() + "', '" + article.getSummary() + "', '" + article.getLabels() + "')";
         System.out.println(sql);
-        mDatabase.insert(sql);
+        boolean result = mDatabase.insert(sql);
         return result;
     }
 }
