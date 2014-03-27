@@ -55,7 +55,7 @@ public class TableView<T> extends View {
                 sb.append(String.format("<td>%s</td>", article.getTitle()));
                 sb.append(String.format("<td>%s</td>", article.getSummary()));
                 sb.append(String.format("<td>%s</td>", article.getLabels()));
-                sb.append(String.format("<td>%s</td>", "<button data-adcd='" + idString + "' class=\"item_delete\">删除</button>"));
+                sb.append(String.format("<td>%s</td>", "<button data-id='" + idString + "' class=\"item_delete\">删除</button>"));
                 sb.append("</tr>");
             }
             sb.append("</table>");

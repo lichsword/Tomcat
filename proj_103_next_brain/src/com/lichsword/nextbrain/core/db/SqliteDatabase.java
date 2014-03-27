@@ -41,7 +41,12 @@ public final class SqliteDatabase extends DatabaseBase implements ISqlStatement 
 
     @Override
     public boolean delete(String sql) {
-        // TODO
+        try {
+            Statement statement = getConnection().createStatement();
+            return statement.execute(sql);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         return false;
     }
 

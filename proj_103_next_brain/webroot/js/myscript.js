@@ -53,13 +53,27 @@ $(document).ready(function(){
                 console.log(data);
                 console.log(status);
         });
+    });
 
-/* 这里仍有问题，没有实现动态绑定 */
-//        $("button").live("click",function(){
-////          var id = $(this).attr("data-id");
-//            var id = $(this).data("adcd");
-//            console.log(id);
-//
-//        });
+    /* 这里仍有问题，没有实现动态绑定 */
+    $("button").live("click",function(){
+        // debug print
+//        console.log("clicked");
+        // get id
+//        console.log($(this));
+//        $(this).attr("data-id");
+        var id = $(this).attr("data-id");
+        console.log(id);
+        $.post("/servlet/db", {
+             action: "delete",
+             id: id
+         },
+         function(data, status){
+            $(".div1").html(data);
+            // debug print.
+            console.log(data);
+            console.log(status);
+        });
+
     });
 });

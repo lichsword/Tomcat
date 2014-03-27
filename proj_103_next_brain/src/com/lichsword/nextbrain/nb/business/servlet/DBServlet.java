@@ -6,7 +6,6 @@ import com.lichsword.nextbrain.core.connector.http.IHttpParameter;
 import com.lichsword.nextbrain.core.view.LinearLayout;
 import com.lichsword.nextbrain.core.view.TableView;
 import com.lichsword.nextbrain.nb.business.ArticleManager;
-import com.lichsword.nextbrain.nb.dialog.AddArticleDialog;
 import com.lichsword.nextbrain.nb.table.NBArticle;
 
 import javax.servlet.*;
@@ -49,7 +48,7 @@ public class DBServlet implements Servlet {
         if (req instanceof Request) {
             Request request = (Request) req;
             String method = request.getMethod();
-            if (method.equals("POST")) {
+            if (method.equals(IHttpParameter.METHOD_POST)) {
                 HashMap<String, String[]> map = request.getHttpParametersHashMap();
                 String action = map.get(IHttpParameter.KEY_ACTION)[0];
                 if (action.equals(IHttpParameter.ACTION_INSERT)) {
@@ -58,6 +57,14 @@ public class DBServlet implements Servlet {
                     article.setSummary(map.get("summary")[0]);
                     article.setLabels(map.get("labels")[0]);
                     ArticleManager.getInstance().addArticle(article);
+                } else if (action.equals(IHttpParameter.ACTION_DELETE)) {
+                    String idString = map.get("id")[0];
+                    try {
+                        int id = Integer.valueOf(idString);
+                        ArticleManager.getInstance().delete(id);
+                    } catch (NumberFormatException e) {
+                        e.printStackTrace();
+                    }
                 } else {
                     Log.d(TAG, "param action not insert: action=" + action);
                 }

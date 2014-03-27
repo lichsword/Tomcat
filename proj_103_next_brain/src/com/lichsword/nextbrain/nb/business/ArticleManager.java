@@ -58,4 +58,11 @@ public class ArticleManager {
         boolean result = mDatabase.insert(sql);
         return result;
     }
+
+    public boolean delete(int id) {
+        String sql = "delete from " + NBArticle.TABLE_NAME + " where " + Column.ID + " = " + id;
+        System.out.println(sql);
+        boolean result = mDatabase.delete(sql);
+        return result;
+    }
 }

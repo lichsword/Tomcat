@@ -25,8 +25,8 @@ public class HttpConnecter implements Runnable {
      */
     private boolean shutdown = false;
 
-    private final String HOST = "10.68.177.243";
-//    private final String HOST = "127.0.0.1";
+//    private final String HOST = "10.68.177.243";
+    private final String HOST = "127.0.0.1";
 
     private void await() {
         ServerSocket serverSocket = null;
