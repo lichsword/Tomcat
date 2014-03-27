@@ -1,0 +1,41 @@
+CTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>首页 - 调研跟踪系统</title>
+            <!-- css -->
+                <link href="./css/home.css" rel="stylesheet" type="text/css">
+                    <!-- java script -->
+                        <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js">
+                            </script>
+                                <script type="text/javascript" src="./js/myscript.js"></script>
+                                </head>
+                                <body>
+                                <div id="floater">
+                                    <div id="dialog">
+                                            <div id="dialog-body">
+                                                        <div>
+                                                                        <h3>添加记录</h3>
+                                                                                        <form>
+                                                                                                            <!--name="input_title" 用于表单提交，有id="input_title"可以不用写这个
+                                                                                                                                写了，也没用，只有id 有效-->
+                                                                                                                                                    标题<input id="input_title" name="input_title" type="text"><br>
+                                                                                                                                                                        简介<input id="input_summary" name="input_summary" type="text"><br>
+                                                                                                                                                                                            标签<input id="input_labels" name="input_labels" type="text"><br>
+                                                                                                                                                                                                            </form>
+                                                                                                                                                                                                                            <button id="btn_commit_in_dialog" type="button">提交</button>
+                                                                                                                                                                                                                                            <button id="btn_cancel_in_dialog" type="button">取消</button>
+                                                                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                                                                                </div>
+                                                                                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                                                                                        <div id="layout">
+                                                                                                                                                                                                                                                                                <button id="btn_refresh" type="button">刷新</button>
+                                                                                                                                                                                                                                                                                        <button id="btn_get" type="button">查询</button>
+                                                                                                                                                                                                                                                                                                <button id="btn_add" type="button">新增</button>
+                                                                                                                                                                                                                                                                                                        <button id="btn_delete" type="button">删除</button>
+                                                                                                                                                                                                                                                                                                                <div class="div1"></div>
+                                                                                                                                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                                                                                                                                    </body>
+                                                                                                                                                                                                                                                                                                                    </html>
+

@@ -2,6 +2,7 @@ package com.lichsword.nextbrain.core.page;
 
 import com.lichsword.nextbrain.core.res.HtmlResource;
 
+import javax.servlet.ServletRequest;
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -33,7 +34,12 @@ public class StaticHttpPage extends HttpPage {
     }
 
     @Override
-    public void renderPage(PrintWriter out) {
+    public void onPreRender(ServletRequest servletRequest) {
+        // TODO
+    }
+
+    @Override
+    public void onRenderPage(PrintWriter out) {
         html.write(out);
     }
 }

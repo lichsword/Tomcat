@@ -1,5 +1,6 @@
 package com.lichsword.nextbrain.core.page;
 
+import javax.servlet.ServletRequest;
 import java.io.PrintWriter;
 
 /**
@@ -12,6 +13,7 @@ import java.io.PrintWriter;
  */
 public interface IPage {
 
-    public void renderPage(PrintWriter out);
+    public void onPreRender(ServletRequest servletRequest);
+    public void onRenderPage(PrintWriter out);
 
 }

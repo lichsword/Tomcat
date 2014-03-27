@@ -2,6 +2,7 @@ package com.lichsword.nextbrain.nb.business.servlet.page;
 
 import com.lichsword.nextbrain.core.page.HttpPage;
 
+import javax.servlet.ServletRequest;
 import java.io.PrintWriter;
 
 /**
@@ -20,7 +21,12 @@ public class ArticlePageServlet extends HttpPage {
     }
 
     @Override
-    public void renderPage(PrintWriter out) {
+    public void onPreRender(ServletRequest servletRequest) {
+        // do nothing.
+    }
+
+    @Override
+    public void onRenderPage(PrintWriter out) {
 
         // html struct
         out.println("<!DOCTYPE html>");

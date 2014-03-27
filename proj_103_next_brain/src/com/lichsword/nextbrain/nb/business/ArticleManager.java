@@ -38,11 +38,11 @@ public class ArticleManager {
         try {
             if (null != cursor) {
                 result = new ArrayList<NBArticle>();
-                NBArticle item = null;
+                NBArticle item;
                 while (cursor.next()) {
                     item = new NBArticle(cursor);
                     result.add(item);
-                }
+                }// end if
             }// end if
         } catch (SQLException e) {
             e.printStackTrace();

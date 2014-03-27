@@ -67,7 +67,8 @@ public abstract class HttpPage extends PageBase implements IHttpPage {
 
         // TODO 这个要在下一版本中实现 HttpResponse.
 //                       renderHttpHeader(httpResponse.getOutputStreamOrigin(), headerPool);
-        renderPage(res.getWriter());
+        onPreRender(req);
+        onRenderPage(res.getWriter());
     }
 
     private int contentLength = 0;

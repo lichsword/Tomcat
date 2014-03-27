@@ -63,17 +63,20 @@ $(document).ready(function(){
 //        console.log($(this));
 //        $(this).attr("data-id");
         var id = $(this).attr("data-id");
-        console.log(id);
-        $.post("/servlet/db", {
-             action: "delete",
-             id: id
-         },
-         function(data, status){
-            $(".div1").html(data);
-            // debug print.
-            console.log(data);
-            console.log(status);
-        });
-
+        if(id === undefined){
+            return;// do nothing
+        }else{
+            console.log(id);
+            $.post("/servlet/db", {
+                action: "delete",
+                id: id
+            },
+            function(data, status){
+               $(".div1").html(data);
+               // debug print.
+               console.log(data);
+               console.log(status);
+            });
+        }
     });
 });
