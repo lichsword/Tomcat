@@ -40,8 +40,8 @@ public class TableView<T> extends View {
             sb.append("<table border=\"1\">");
             sb.append("<tr>");
             sb.append(String.format("<th>%s</th>", Column.ID.toString()));
-            sb.append(String.format("<th>%s</th>", Column.TITLE.toString()));
-            sb.append(String.format("<th>%s</th>", Column.SUMMARY.toString()));
+            sb.append(String.format("<th>%s</th>", Column.QUESTION.toString()));
+            sb.append(String.format("<th>%s</th>", Column.DESC.toString()));
             sb.append(String.format("<th>%s</th>", Column.LABELS.toString()));
             sb.append(String.format("<th>%s</th>", "操作"));
             sb.append("</tr>");
@@ -52,8 +52,8 @@ public class TableView<T> extends View {
                 sb.append("<tr>");
                 String idString = String.valueOf(article.getId());
                 sb.append(String.format("<td>%s</td>", idString));
-                sb.append(String.format("<td>%s</td>", article.getTitle()));
-                sb.append(String.format("<td>%s</td>", article.getSummary()));
+                sb.append(String.format("<td>%s</td>", article.getQuestion()));
+                sb.append(String.format("<td>%s</td>", article.getDesc()));
                 sb.append(String.format("<td>%s</td>", article.getLabels()));
                 sb.append(String.format("<td>%s</td>", "<button data-id='" + idString + "' class=\"item_delete\">删除</button>"));
                 sb.append("</tr>");

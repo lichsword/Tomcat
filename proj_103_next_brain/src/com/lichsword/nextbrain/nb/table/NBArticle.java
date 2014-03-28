@@ -16,30 +16,49 @@ public class NBArticle {
 
     public class Column {
         public static final String ID = "_id";
-        public static final String TITLE = "title";
-        public static final String SUMMARY = "summary";
+        public static final String VISIT_LEVEL = "visit_level";
+        public static final String READ_COUNT = "read_count";
+        public static final String STATUS = "status";
+        public static final String QUESTION = "title";
+        public static final String DESC = "desc";
         public static final String LABELS = "labels";
+        public static final String TRUTH = "truth";
+        public static final String PATTERN = "pattern";
+        public static final String REFERENCE = "reference";
+        public static final String EXAMPLE = "example";
+        public static final String CREATE_TIME = "create_time";
+        public static final String MODIFIED_TIME = "modified_time";
     }
 
     static final String Sql_Create = "create table " + TABLE_NAME + "("
             + Column.ID + " int,"
-            + Column.TITLE + " text,"
-            + Column.SUMMARY + " text,"
+            + Column.VISIT_LEVEL + " int,"
+            + Column.READ_COUNT + " int,"
+            + Column.STATUS + " int,"
+            + Column.QUESTION + " text,"
+            + Column.DESC + " text,"
             + Column.LABELS + " text,"
+            + Column.TRUTH + " text,"
+            + Column.PATTERN + " text,"
+            + Column.REFERENCE + " text,"
+            + Column.CREATE_TIME + " text,"
+            + Column.MODIFIED_TIME + " text,"
+            + Column.EXAMPLE + " text"
             + ")";
 
     private int id;
-    private String title;
-    private String summary;
+    private int visitLevel;
+    private int readCount;
+    private int status;
+    private String question;
+    private String desc;
     private String labels;
-    private ExtraData data;
-
-    class ExtraData {
-        private String nature;// 本质
-        private String formula;// 公式
-        private String usage;// 示例
-    }
-
+    private String truth;
+    private String pattern;
+    private String reference;
+    private String example;
+    private String createTime;
+    private String modifiedTime;
 
     public NBArticle() {
     }
@@ -47,8 +66,8 @@ public class NBArticle {
     public NBArticle(ResultSet cursor) {
         try {
             id = cursor.getInt(Column.ID);
-            title = cursor.getString(Column.TITLE);
-            summary = cursor.getString(Column.SUMMARY);
+            question = cursor.getString(Column.QUESTION);
+            desc = cursor.getString(Column.DESC);
             labels = cursor.getString(Column.LABELS);
         } catch (SQLException e) {
             e.printStackTrace();
@@ -59,20 +78,20 @@ public class NBArticle {
         return id;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setQuestion(String question) {
+        this.question = question;
     }
 
-    public String getTitle() {
-        return title;
+    public String getQuestion() {
+        return question;
     }
 
-    public void setSummary(String summary) {
-        this.summary = summary;
+    public void setDesc(String desc) {
+        this.desc = desc;
     }
 
-    public String getSummary() {
-        return summary;
+    public String getDesc() {
+        return desc;
     }
 
     public void setLabels(String labels) {
@@ -91,11 +110,83 @@ public class NBArticle {
         return labels;
     }
 
+    public int getVisitLevel() {
+        return visitLevel;
+    }
+
+    public void setVisitLevel(int visitLevel) {
+        this.visitLevel = visitLevel;
+    }
+
+    public int getReadCount() {
+        return readCount;
+    }
+
+    public void setReadCount(int readCount) {
+        this.readCount = readCount;
+    }
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
+    }
+
+    public String getTruth() {
+        return truth;
+    }
+
+    public void setTruth(String truth) {
+        this.truth = truth;
+    }
+
+    public String getPattern() {
+        return pattern;
+    }
+
+    public void setPattern(String pattern) {
+        this.pattern = pattern;
+    }
+
+    public String getReference() {
+        return reference;
+    }
+
+    public void setReference(String reference) {
+        this.reference = reference;
+    }
+
+    public String getExample() {
+        return example;
+    }
+
+    public void setExample(String example) {
+        this.example = example;
+    }
+
+    public String getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(String createTime) {
+        this.createTime = createTime;
+    }
+
+    public String getModifiedTime() {
+        return modifiedTime;
+    }
+
+    public void setModifiedTime(String modifiedTime) {
+        this.modifiedTime = modifiedTime;
+    }
+
     public String dump() {
         StringBuilder sb = new StringBuilder();
         sb.append("\nid=" + id);
-        sb.append("\ntitle=" + title);
-        sb.append("\nsummary=" + summary);
+        sb.append("\nquestion=" + question);
+        sb.append("\ndesc=" + desc);
         sb.append("\nlabels=" + labels);
         return sb.toString();
     }

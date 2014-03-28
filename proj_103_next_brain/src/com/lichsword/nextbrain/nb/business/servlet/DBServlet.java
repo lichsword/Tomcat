@@ -67,8 +67,9 @@ public class DBServlet extends HttpPage {
                 String action = map.get(IHttpParameter.KEY_ACTION)[0];
                 if (action.equals(IHttpParameter.ACTION_INSERT)) {
                     NBArticle article = new NBArticle();
-                    article.setTitle(map.get("title")[0]);
-                    article.setSummary(map.get("summary")[0]);
+                    // TODO
+                    article.setQuestion(map.get("title")[0]);
+                    article.setDesc(map.get("summary")[0]);
                     article.setLabels(map.get("labels")[0]);
                     ArticleManager.getInstance().addArticle(article);
                 } else if (action.equals(IHttpParameter.ACTION_DELETE)) {

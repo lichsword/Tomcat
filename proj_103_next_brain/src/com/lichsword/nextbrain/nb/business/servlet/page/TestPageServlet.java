@@ -47,7 +47,7 @@ public class TestPageServlet implements Servlet {
         // html struct
         out.println("<HTML>");
         out.println("<HEAD>");
-        out.println("<TITLE>Joe's Tools</TITLE>");
+        out.println("<QUESTION>Joe's Tools</QUESTION>");
         out.println("</HEAD>");
         // header--end
         out.println("<BODY>");

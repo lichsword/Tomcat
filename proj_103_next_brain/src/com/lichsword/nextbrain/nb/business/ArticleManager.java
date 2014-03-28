@@ -52,8 +52,9 @@ public class ArticleManager {
     }
 
     public boolean addArticle(NBArticle article) {
-        String sql = "insert into " + NBArticle.TABLE_NAME + " (" + Column.TITLE + ", " + Column.SUMMARY + ", " + Column.LABELS + ")"
-                + " values " + "('" + article.getTitle() + "', '" + article.getSummary() + "', '" + article.getLabels() + "')";
+        // TODO
+        String sql = "insert into " + NBArticle.TABLE_NAME + " (" + Column.QUESTION + ", " + Column.DESC + ", " + Column.LABELS + ")"
+                + " values " + "('" + article.getQuestion() + "', '" + article.getDesc() + "', '" + article.getLabels() + "')";
         System.out.println(sql);
         boolean result = mDatabase.insert(sql);
         return result;
