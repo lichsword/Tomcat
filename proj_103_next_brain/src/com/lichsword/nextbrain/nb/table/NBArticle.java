@@ -31,6 +31,31 @@ public class NBArticle {
     }
 
     /**
+     * 私有
+     */
+    public static final int VL_PRIVAET = 1;
+
+    /**
+     * 公开
+     */
+    public static final int VL_PUBLIC = 2;
+
+    /**
+     * 未解决
+     */
+    public static final int ST_OPEN = 0;
+
+    /**
+     * 解决
+     */
+    public static final int ST_FIXED = 1;
+
+    /**
+     * 示例：2014-03-29 16:40:32
+     */
+    public static final String TIME_FORMAT = "YYYY-MM-DD hh:mm:ss";
+
+    /**
      * Create Sql not prepared, use exist db file.
      */
     static final String Sql_Create = "create table " + TABLE_NAME + "("

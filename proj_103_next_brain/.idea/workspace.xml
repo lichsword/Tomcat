@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="24807c5a-e593-44b9-9239-5501e57a4204" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lichsword/nextbrain/nb/table/NBArticle.java" afterPath="$PROJECT_DIR$/src/com/lichsword/nextbrain/nb/table/NBArticle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/view/TableView.java" afterPath="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/view/TableView.java" />
     </list>
     <ignored path="proj_01_basic_http_server.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,7 +34,7 @@
     <file path="/ServletProcessor.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395212991911" ignored="false" />
     <file path="/a.dummy" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395903430807" ignored="false" />
     <file path="/NBPoint.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395038367673" ignored="false" />
-    <file path="/NBArticle.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1396083133397" ignored="false" />
+    <file path="/NBArticle.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1396083726183" ignored="false" />
     <file path="/TableArticle.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395043862138" ignored="false" />
     <file path="/DBManager.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395043317297" ignored="false" />
     <file path="/ArticleManager.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395974210210" ignored="false" />
@@ -173,7 +172,7 @@
           <file leaf-file-name="NBArticle.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/nb/table/NBArticle.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="83" column="66" selection-start="2952" selection-end="2952" vertical-scroll-proportion="0.6287129">
+                <state line="53" column="10" selection-start="1357" selection-end="1357" vertical-scroll-proportion="0.18564357">
                   <folding />
                 </state>
               </provider>
@@ -811,7 +810,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/nb/table/NBArticle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="66" selection-start="2952" selection-end="2952" vertical-scroll-proportion="0.6287129">
+        <state line="53" column="10" selection-start="1357" selection-end="1357" vertical-scroll-proportion="0.18564357">
           <folding />
         </state>
       </provider>
