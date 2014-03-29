@@ -19,7 +19,7 @@ public class NBArticle {
         public static final String VISIT_LEVEL = "visit_level";
         public static final String READ_COUNT = "read_count";
         public static final String STATUS = "status";
-        public static final String QUESTION = "title";
+        public static final String QUESTION = "question";
         public static final String DESC = "desc";
         public static final String LABELS = "labels";
         public static final String TRUTH = "truth";
@@ -70,9 +70,18 @@ public class NBArticle {
     public NBArticle(ResultSet cursor) {
         try {
             id = cursor.getInt(Column.ID);
+            visitLevel = cursor.getInt(Column.VISIT_LEVEL);
+            readCount = cursor.getInt(Column.READ_COUNT);
+            status = cursor.getInt(Column.STATUS);
             question = cursor.getString(Column.QUESTION);
             desc = cursor.getString(Column.DESC);
             labels = cursor.getString(Column.LABELS);
+            truth= cursor.getString(Column.TRUTH);
+            pattern = cursor.getString(Column.PATTERN);
+            reference = cursor.getString(Column.REFERENCE);
+            example = cursor.getString(Column.EXAMPLE);
+            createTime = cursor.getString(Column.CREATE_TIME);
+            modifiedTime = cursor.getString(Column.MODIFIED_TIME);
         } catch (SQLException e) {
             e.printStackTrace();
         }
