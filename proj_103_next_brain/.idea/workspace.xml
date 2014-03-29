@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="24807c5a-e593-44b9-9239-5501e57a4204" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/brain.sqlite" afterPath="$PROJECT_DIR$/brain.sqlite" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lichsword/nextbrain/nb/business/ArticleManager.java" afterPath="$PROJECT_DIR$/src/com/lichsword/nextbrain/nb/business/ArticleManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lichsword/nextbrain/nb/business/servlet/DBServlet.java" afterPath="$PROJECT_DIR$/src/com/lichsword/nextbrain/nb/business/servlet/DBServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lichsword/nextbrain/nb/table/NBArticle.java" afterPath="$PROJECT_DIR$/src/com/lichsword/nextbrain/nb/table/NBArticle.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webroot/css/home.css" afterPath="$PROJECT_DIR$/webroot/css/home.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webroot/html/home.html" afterPath="$PROJECT_DIR$/webroot/html/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webroot/js/myscript.js" afterPath="$PROJECT_DIR$/webroot/js/myscript.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="proj_01_basic_http_server.iws" />
@@ -51,7 +47,7 @@
     <file path="/SqliteDatabase.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395904130301" ignored="false" />
     <file path="/DatabaseBase.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395055159022" ignored="false" />
     <file path="/MainPage.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395066357341" ignored="false" />
-    <file path="/home.html" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1396101544751" ignored="false" />
+    <file path="/home.html" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1396105742310" ignored="false" />
     <file path="/View.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395067222839" ignored="false" />
     <file path="/TableView.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1396083004997" ignored="false" />
     <file path="/MainPageServlet.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395124597644" ignored="false" />
@@ -98,7 +94,7 @@
     <file path="/HtmlResource.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395633129476" ignored="false" />
     <file path="/HomePage.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395633328778" ignored="false" />
     <file path="/Dialog.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395645720062" ignored="false" />
-    <file path="/home.css" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395658836422" ignored="false" />
+    <file path="/home.css" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1396105477312" ignored="false" />
     <file path="/HttpRequest.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395717804828" ignored="false" />
     <file path="/Log.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395733612889" ignored="false" />
     <file path="$PROJECT_DIR$/../proj_200_catalina/src/org/apache/catalina/util/ParameterMap.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395734359229" ignored="false" />
@@ -183,10 +179,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DBServlet.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DBServlet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/nb/business/servlet/DBServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="8" selection-start="2409" selection-end="2409" vertical-scroll-proportion="0.54916066">
+            <state line="66" column="7" selection-start="1929" selection-end="1929" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webroot/css/home.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="31" selection-start="244" selection-end="244" vertical-scroll-proportion="0.4676259">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webroot/html/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="19" selection-start="737" selection-end="743" vertical-scroll-proportion="-5.125">
               <folding />
             </state>
           </provider>
@@ -213,7 +227,7 @@
       <file leaf-file-name="myscript.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webroot/js/myscript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="26" selection-start="1720" selection-end="1720" vertical-scroll-proportion="0.0">
+            <state line="48" column="11" selection-start="1639" selection-end="1639" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -247,12 +261,12 @@
         <option value="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/page/StaticHttpPage.java" />
         <option value="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/page/HttpPage.java" />
         <option value="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/view/TableView.java" />
-        <option value="$PROJECT_DIR$/webroot/css/home.css" />
-        <option value="$PROJECT_DIR$/webroot/html/home.html" />
         <option value="$PROJECT_DIR$/webroot/js/myscript.js" />
         <option value="$PROJECT_DIR$/src/com/lichsword/nextbrain/nb/table/NBArticle.java" />
         <option value="$PROJECT_DIR$/src/com/lichsword/nextbrain/nb/business/ArticleManager.java" />
         <option value="$PROJECT_DIR$/src/com/lichsword/nextbrain/nb/business/servlet/DBServlet.java" />
+        <option value="$PROJECT_DIR$/webroot/html/home.html" />
+        <option value="$PROJECT_DIR$/webroot/css/home.css" />
       </list>
     </option>
   </component>
@@ -429,7 +443,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -448,38 +462,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proj_103_next_brain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proj_103_next_brain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proj_103_next_brain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proj_103_next_brain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="business" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -716,7 +698,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16115353" sideWeight="0.68992245" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31007752" sideWeight="0.4995759" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31007752" sideWeight="0.4995759" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3019508" sideWeight="0.66511625" order="3" side_tool="false" content_ui="combo" />
@@ -836,30 +818,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webroot/css/home.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="14" selection-start="354" selection-end="354" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webroot/html/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="37" selection-start="667" selection-end="667" vertical-scroll-proportion="-5.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../android_sdk_kernel_4.2/sources/android-16/java/text/DateFormat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="374" column="24" selection-start="12912" selection-end="12912" vertical-scroll-proportion="0.33168316">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webroot/js/myscript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="26" selection-start="1720" selection-end="1720" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -871,9 +832,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/core/db/SqliteDatabase.java">
+    <entry file="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/nb/business/servlet/DBServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="808" selection-end="808" vertical-scroll-proportion="0.0">
+        <state line="66" column="7" selection-start="1929" selection-end="1929" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -885,9 +846,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/nb/business/servlet/DBServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/core/db/SqliteDatabase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="8" selection-start="2409" selection-end="2409" vertical-scroll-proportion="0.54916066">
+        <state line="34" column="0" selection-start="808" selection-end="808" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webroot/js/myscript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="11" selection-start="1639" selection-end="1639" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webroot/html/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="19" selection-start="737" selection-end="743" vertical-scroll-proportion="-5.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webroot/css/home.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="31" selection-start="244" selection-end="244" vertical-scroll-proportion="0.4676259">
           <folding />
         </state>
       </provider>
