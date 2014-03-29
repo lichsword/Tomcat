@@ -2,18 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24807c5a-e593-44b9-9239-5501e57a4204" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lichsword/nextbrain/nb/business/ArticleManager.java" afterPath="$PROJECT_DIR$/src/com/lichsword/nextbrain/nb/business/ArticleManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lichsword/nextbrain/nb/business/servlet/DBServlet.java" afterPath="$PROJECT_DIR$/src/com/lichsword/nextbrain/nb/business/servlet/DBServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/brain.sqlite" afterPath="$PROJECT_DIR$/brain.sqlite" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lichsword/nextbrain/nb/table/NBArticle.java" afterPath="$PROJECT_DIR$/src/com/lichsword/nextbrain/nb/table/NBArticle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/view/TableView.java" afterPath="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/view/TableView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lichsword/nextbrain/nb/business/servlet/page/TestPageServlet.java" afterPath="$PROJECT_DIR$/src/com/lichsword/nextbrain/nb/business/servlet/page/TestPageServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="proj_01_basic_http_server.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/HttpServer.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1393842427535" ignored="false" />
     <file path="/a.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395579724251" ignored="false" />
-    <file path="/Dummy.txt" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395972394375" ignored="false" />
+    <file path="/Dummy.txt" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1396081340529" ignored="false" />
     <file path="/fragment.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395749426891" ignored="false" />
     <file path="/Request.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395815744056" ignored="false" />
     <file path="/Response.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395562423489" ignored="false" />
@@ -39,7 +36,7 @@
     <file path="/ServletProcessor.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395212991911" ignored="false" />
     <file path="/a.dummy" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395903430807" ignored="false" />
     <file path="/NBPoint.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395038367673" ignored="false" />
-    <file path="/NBArticle.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395974504784" ignored="false" />
+    <file path="/NBArticle.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1396081936484" ignored="false" />
     <file path="/TableArticle.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395043862138" ignored="false" />
     <file path="/DBManager.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395043317297" ignored="false" />
     <file path="/ArticleManager.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395974210210" ignored="false" />
@@ -125,6 +122,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -162,7 +160,6 @@
       </breakpoint>
     </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -175,7 +172,7 @@
       <file leaf-file-name="NBArticle.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/nb/table/NBArticle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="54" selection-start="589" selection-end="589" vertical-scroll-proportion="0.2877698">
+            <state line="29" column="36" selection-start="1018" selection-end="1018" vertical-scroll-proportion="0.3634895">
               <folding />
             </state>
           </provider>
@@ -219,7 +216,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="52" />
+    <option name="x" value="64" />
     <option name="y" value="22" />
     <option name="width" value="1225" />
     <option name="height" value="765" />
@@ -362,24 +359,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proj_103_next_brain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proj_103_next_brain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -397,12 +380,12 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.28359908" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -412,10 +395,10 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/com/lichsword/nextbrain" />
       <recent name="$PROJECT_DIR$/src/com/lichsword/nextbrain/connector" />
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/webroot" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -439,19 +422,6 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -479,6 +449,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -592,8 +575,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="52" y="22" width="1225" height="765" extended-state="0" />
-    <editor active="true" />
+    <frame x="64" y="22" width="1225" height="765" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3262987" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -604,15 +587,15 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31007752" sideWeight="0.5004241" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299389" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31937984" sideWeight="0.4995759" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32792208" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22731128" sideWeight="0.68992245" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22731128" sideWeight="0.6707882" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2544529" sideWeight="0.68992245" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31007752" sideWeight="0.4995759" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2544529" sideWeight="0.6707882" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31007752" sideWeight="0.4995759" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31937984" sideWeight="0.4995759" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3019508" sideWeight="0.66511625" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -769,7 +752,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/nb/table/NBArticle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="54" selection-start="589" selection-end="589" vertical-scroll-proportion="0.2877698">
+        <state line="29" column="36" selection-start="1018" selection-end="1018" vertical-scroll-proportion="0.3634895">
           <folding />
         </state>
       </provider>

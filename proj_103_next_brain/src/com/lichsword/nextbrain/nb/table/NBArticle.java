@@ -30,6 +30,9 @@ public class NBArticle {
         public static final String MODIFIED_TIME = "modified_time";
     }
 
+    /**
+     * Create Sql not prepared, use exist db file.
+     */
     static final String Sql_Create = "create table " + TABLE_NAME + "("
             + Column.ID + " int,"
             + Column.VISIT_LEVEL + " int,"
@@ -41,6 +44,7 @@ public class NBArticle {
             + Column.TRUTH + " text,"
             + Column.PATTERN + " text,"
             + Column.REFERENCE + " text,"
+            + Column.EXAMPLE + " text,"
             + Column.CREATE_TIME + " text,"
             + Column.MODIFIED_TIME + " text,"
             + Column.EXAMPLE + " text"
