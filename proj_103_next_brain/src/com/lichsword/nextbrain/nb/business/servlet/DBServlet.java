@@ -8,14 +8,18 @@ import com.lichsword.nextbrain.core.view.LinearLayout;
 import com.lichsword.nextbrain.core.view.TableView;
 import com.lichsword.nextbrain.nb.business.ArticleManager;
 import com.lichsword.nextbrain.nb.table.NBArticle;
+import com.lichsword.nextbrain.nb.table.NBArticle.Column;
 
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
+import java.util.Random;
 
 /**
  * Created with IntelliJ IDEA.
@@ -67,10 +71,24 @@ public class DBServlet extends HttpPage {
                 String action = map.get(IHttpParameter.KEY_ACTION)[0];
                 if (action.equals(IHttpParameter.ACTION_INSERT)) {
                     NBArticle article = new NBArticle();
-                    // TODO
-                    article.setQuestion(map.get("title")[0]);
-                    article.setDesc(map.get("summary")[0]);
-                    article.setLabels(map.get("labels")[0]);
+                    // start set parameters.
+                    article.setVisitLevel(Integer.valueOf(map.get(Column.VISIT_LEVEL)[0]));
+                    Random random = new Random();
+                    article.setReadCount(random.nextInt());
+                    article.setStatus(Integer.valueOf(map.get(Column.STATUS)[0]));
+                    article.setQuestion(map.get(Column.QUESTION)[0]);
+                    article.setDesc(map.get(Column.DESC)[0]);
+                    article.setLabels(map.get(Column.LABELS)[0]);
+                    article.setTruth(map.get(Column.TRUTH)[0]);
+                    article.setPattern(map.get(Column.PATTERN)[0]);
+                    article.setReference(map.get(Column.REFERENCE)[0]);
+                    article.setExample(map.get(Column.EXAMPLE)[0]);
+                    // auto get current date, format to time string.
+                    SimpleDateFormat sdf = new SimpleDateFormat(NBArticle.TIME_FORMAT);
+                    String date = sdf.format(new Date());
+                    article.setCreateTime(date);
+                    // TODO temp modified same as create time?
+                    article.setModifiedTime(date);
                     ArticleManager.getInstance().addArticle(article);
                 } else if (action.equals(IHttpParameter.ACTION_DELETE)) {
                     String idString = map.get("id")[0];

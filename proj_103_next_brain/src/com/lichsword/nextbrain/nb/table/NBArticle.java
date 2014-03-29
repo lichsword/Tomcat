@@ -53,7 +53,7 @@ public class NBArticle {
     /**
      * 示例：2014-03-29 16:40:32
      */
-    public static final String TIME_FORMAT = "YYYY-MM-DD hh:mm:ss";
+    public static final String TIME_FORMAT = "yyyy-MM-dd HH:mm:ss";
 
     /**
      * Create Sql not prepared, use exist db file.
@@ -69,7 +69,6 @@ public class NBArticle {
             + Column.TRUTH + " text,"
             + Column.PATTERN + " text,"
             + Column.REFERENCE + " text,"
-            + Column.EXAMPLE + " text,"
             + Column.CREATE_TIME + " text,"
             + Column.MODIFIED_TIME + " text,"
             + Column.EXAMPLE + " text"

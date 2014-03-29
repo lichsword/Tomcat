@@ -16,12 +16,19 @@
         <div id="dialog-body">
             <div>
                 <h3>添加记录</h3>
+
                 <form>
                     <!--name="input_title" 用于表单提交，有id="input_title"可以不用写这个
                     写了，也没用，只有id 有效-->
-                    标题<input id="input_title" name="input_title" type="text"><br>
-                    简介<input id="input_summary" name="input_summary" type="text"><br>
-                    标签<input id="input_labels" name="input_labels" type="text"><br>
+                    权限:<input id="input_visit_level" type="text"><br>
+                    状态:<input id="input_status" type="text"><br>
+                    问题:<input id="input_question" type="text"><br>
+                    描述:<input id="input_desc" type="text"><br>
+                    标签:<input id="input_labels" type="text"><br>
+                    本质:<input id="input_truth" type="text"><br>
+                    模式:<input id="input_pattern" type="text"><br>
+                    引用:<input id="input_reference" type="text"><br>
+                    示例:<input id="input_example" type="text"><br>
                 </form>
                 <button id="btn_commit_in_dialog" type="button">提交</button>
                 <button id="btn_cancel_in_dialog" type="button">取消</button>

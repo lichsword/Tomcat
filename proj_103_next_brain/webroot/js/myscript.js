@@ -36,15 +36,27 @@ $(document).ready(function(){
         // hide dialog first.
         $("#dialog").hide();
         // refresh list.
-        var titleValue = $("#input_title").attr("value");
-        var summaryValue = $("#input_summary").attr("value");
+        var visitLevelValue = $("#input_visit_level").attr("value");
+        var statusValue = $("#input_status").attr("value");
+        var questionValue = $("#input_question").attr("value");
+        var descValue = $("#input_desc").attr("value");
         var labelsValue = $("#input_labels").attr("value");
+        var truthValue = $("#input_truth").attr("value");
+        var patternValue = $("#input_pattern").attr("value");
+        var referenceValue = $("#input_reference").attr("value");
+        var exampleValue = $("#input_example").attr("value");
 //        $.post("/servlet/db", { name: "John lichsword 1  2   3\nkernel,hello-world", time: "2pm" },
         $.post("/servlet/db", {
                 action: "insert",
-                title: titleValue,
-                summary:  summaryValue,
-                labels: labelsValue
+                visit_level: visitLevelValue,
+                status:  statusValue,
+                question: questionValue,
+                desc: descValue,
+                labels: labelsValue,
+                truth: truthValue,
+                pattern: patternValue,
+                reference: referenceValue,
+                example: exampleValue
             },
             function(data,status){
     //            $(".div2").append(data);
