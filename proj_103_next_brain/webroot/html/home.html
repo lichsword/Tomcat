@@ -34,8 +34,17 @@
                 <form>
                     <!--name="input_title" 用于表单提交，有id="input_title"可以不用写这个
                     写了，也没用，只有id 有效-->
-                    权限:<input id="input_visit_level" type="text"><br>
-                    状态:<input id="input_status" type="text"><br>
+                    <!--权限:<input id="input_visit_level" type="text"><br>-->
+                    权限:
+                    <select id="input_visit_level">
+                        <option value="1">私有</option>
+                        <option value="2" selected="selected">公开</option>
+                    </select><br>
+                    状态:
+                    <select id="input_status">
+                        <option value="0" selected="selected">打开</option>
+                        <option value="1">关闭</option>
+                    </select><br>
                     问题:<input id="input_question" type="text"><br>
                     描述:<input id="input_desc" type="text"><br>
                     标签:<input id="input_labels" type="text"><br>

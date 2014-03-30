@@ -75,7 +75,7 @@ public class DBServlet extends HttpPage {
                     // start set parameters.
                     article.setVisitLevel(Integer.valueOf(map.get(Column.VISIT_LEVEL)[0]));
                     Random random = new Random();
-                    article.setReadCount(random.nextInt());
+                    article.setReadCount(random.nextInt(1000));
                     article.setStatus(Integer.valueOf(map.get(Column.STATUS)[0]));
                     article.setQuestion(map.get(Column.QUESTION)[0]);
                     article.setDesc(map.get(Column.DESC)[0]);
@@ -136,7 +136,9 @@ public class DBServlet extends HttpPage {
         // add tip text view TODO 这里可以动态设置文案。
         TipTextView tipTextView = new TipTextView();
         tipTextView.setLevel(TipTextView.ERROR);
-        tipTextView.setText("tip text show here");
+        SimpleDateFormat sdf = new SimpleDateFormat(NBArticle.TIME_FORMAT);
+        String currentDate = sdf.format(new Date());
+        tipTextView.setText("当前时间：" + currentDate);
         linearLayout.addChildView(tipTextView);
         // add table
         TableView<NBArticle> tableView = new TableView<NBArticle>(list);

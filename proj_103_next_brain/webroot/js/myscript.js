@@ -61,7 +61,7 @@ $(document).ready(function(){
             function(data,status){
     //            $(".div2").append(data);
     //            $(".div2").replaceWith(data);
-                $(".div1").html(data);
+                $(".div_table").html(data);
                 console.log(data);
                 console.log(status);
         });
@@ -84,7 +84,7 @@ $(document).ready(function(){
                 id: id
             },
             function(data, status){
-               $(".div1").html(data);
+               $(".div_table").html(data);
                // debug print.
                console.log(data);
                console.log(status);
