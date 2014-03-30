@@ -69,3 +69,27 @@
     color:#000000;
     background-color:#EAF2D3;/* 墨绿色 */
 }
+
+/* 错误色 */
+#tip_error {
+    color:#000000;
+    background-color:#FF0000;
+}
+
+/* 警告色 */
+#tip_warning {
+     color:#000000;
+     background-color:#FFFF00;
+}
+
+/* 信息色 TODO 色彩没确认 */
+#tip_info {
+     color:#000000;
+     background-color:#00FF00;
+}
+
+/* 罗嗦色 TODO 色彩没确认 */
+#tip_verbose {
+     color:#000000;
+     background-color:#00FF00;
+}

@@ -1,7 +1,6 @@
 package com.lichsword.nextbrain.core.view;
 
 import com.lichsword.nextbrain.nb.table.NBArticle;
-import com.lichsword.nextbrain.nb.table.NBArticle.Column;
 import com.lichsword.nextbrain.nb.table.NBArticle.ColumnDN;
 
 import java.util.ArrayList;
@@ -62,9 +61,9 @@ public class TableView<T> extends View {
                 NBArticle article = (NBArticle) item;
                 // ------------ set row class
                 // table rows
-                if (0== i % 2){
+                if (0 == i % 2) {
                     sb.append("<tr class=\"even\">");
-                }else{
+                } else {
                     sb.append("<tr class=\"odd\">");
                 }// end if
                 i++;// index inc.
@@ -84,7 +83,7 @@ public class TableView<T> extends View {
                 sb.append(String.format("<td>%s</td>", article.getModifiedTime()));
                 sb.append(String.format("<td>%s</td>", "<button data-id='" + article.getId() + "' class=\"item_delete\">删除</button>"));
                 sb.append("</tr>");
-            }
+            }// end for
             sb.append("</table>");
             return sb.toString();
         }

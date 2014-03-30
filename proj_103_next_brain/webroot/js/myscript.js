@@ -5,7 +5,7 @@ $(document).ready(function(){
     $("#btn_refresh").click(function(){
         $.get("/servlet/db",
         function(data,status){
-            $(".div1").html(data);
+            $(".div_table").html(data);
             console.log(data);
             console.log(status);
         });

@@ -6,6 +6,7 @@ import com.lichsword.nextbrain.core.connector.http.IHttpParameter;
 import com.lichsword.nextbrain.core.page.HttpPage;
 import com.lichsword.nextbrain.core.view.LinearLayout;
 import com.lichsword.nextbrain.core.view.TableView;
+import com.lichsword.nextbrain.core.view.TipTextView;
 import com.lichsword.nextbrain.nb.business.ArticleManager;
 import com.lichsword.nextbrain.nb.table.NBArticle;
 import com.lichsword.nextbrain.nb.table.NBArticle.Column;
@@ -132,6 +133,11 @@ public class DBServlet extends HttpPage {
         }
         // set layout
         LinearLayout linearLayout = new LinearLayout();
+        // add tip text view TODO 这里可以动态设置文案。
+        TipTextView tipTextView = new TipTextView();
+        tipTextView.setLevel(TipTextView.ERROR);
+        tipTextView.setText("tip text show here");
+        linearLayout.addChildView(tipTextView);
         // add table
         TableView<NBArticle> tableView = new TableView<NBArticle>(list);
         linearLayout.addChildView(tableView);
