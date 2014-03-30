@@ -2,6 +2,7 @@ package com.lichsword.nextbrain.core.view;
 
 import com.lichsword.nextbrain.nb.table.NBArticle;
 import com.lichsword.nextbrain.nb.table.NBArticle.Column;
+import com.lichsword.nextbrain.nb.table.NBArticle.ColumnDN;
 
 import java.util.ArrayList;
 
@@ -39,19 +40,19 @@ public class TableView<T> extends View {
             // table column define
             sb.append("<table border=\"1\">");
             sb.append("<tr>");
-            sb.append(String.format("<th>%s</th>", Column.ID.toString()));
-            sb.append(String.format("<th>%s</th>", Column.VISIT_LEVEL.toString()));
-            sb.append(String.format("<th>%s</th>", Column.READ_COUNT.toString()));
-            sb.append(String.format("<th>%s</th>", Column.STATUS.toString()));
-            sb.append(String.format("<th>%s</th>", Column.QUESTION.toString()));
-            sb.append(String.format("<th>%s</th>", Column.DESC.toString()));
-            sb.append(String.format("<th>%s</th>", Column.LABELS.toString()));
-            sb.append(String.format("<th>%s</th>", Column.TRUTH.toString()));
-            sb.append(String.format("<th>%s</th>", Column.PATTERN.toString()));
-            sb.append(String.format("<th>%s</th>", Column.REFERENCE.toString()));
-            sb.append(String.format("<th>%s</th>", Column.EXAMPLE.toString()));
-            sb.append(String.format("<th>%s</th>", Column.CREATE_TIME.toString()));
-            sb.append(String.format("<th>%s</th>", Column.MODIFIED_TIME.toString()));
+            sb.append(String.format("<th>%s</th>", ColumnDN.ID.toString()));
+            sb.append(String.format("<th>%s</th>", ColumnDN.VISIT_LEVEL.toString()));
+            sb.append(String.format("<th>%s</th>", ColumnDN.READ_COUNT.toString()));
+            sb.append(String.format("<th>%s</th>", ColumnDN.STATUS.toString()));
+            sb.append(String.format("<th>%s</th>", ColumnDN.QUESTION.toString()));
+            sb.append(String.format("<th>%s</th>", ColumnDN.DESC.toString()));
+            sb.append(String.format("<th>%s</th>", ColumnDN.LABELS.toString()));
+            sb.append(String.format("<th>%s</th>", ColumnDN.TRUTH.toString()));
+            sb.append(String.format("<th>%s</th>", ColumnDN.PATTERN.toString()));
+            sb.append(String.format("<th>%s</th>", ColumnDN.REFERENCE.toString()));
+            sb.append(String.format("<th>%s</th>", ColumnDN.EXAMPLE.toString()));
+            sb.append(String.format("<th>%s</th>", ColumnDN.CREATE_TIME.toString()));
+            sb.append(String.format("<th>%s</th>", ColumnDN.MODIFIED_TIME.toString()));
             sb.append(String.format("<th>%s</th>", "操作"));
             sb.append("</tr>");
 

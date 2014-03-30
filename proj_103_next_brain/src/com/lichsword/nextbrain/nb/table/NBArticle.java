@@ -31,6 +31,25 @@ public class NBArticle {
     }
 
     /**
+     * Column Display Name
+     */
+    public class ColumnDN{
+        public static final String ID = "ID";
+        public static final String VISIT_LEVEL = "权限";
+        public static final String READ_COUNT = "阅读";
+        public static final String STATUS = "状态";
+        public static final String QUESTION = "问题";
+        public static final String DESC = "描述";
+        public static final String LABELS = "标签";
+        public static final String TRUTH = "本质";
+        public static final String PATTERN = "范式";
+        public static final String REFERENCE = "引用参考";
+        public static final String EXAMPLE = "示例";
+        public static final String CREATE_TIME = "创建日期";
+        public static final String MODIFIED_TIME = "最新修改";
+    }
+
+    /**
      * 私有
      */
     public static final int VL_PRIVAET = 1;
