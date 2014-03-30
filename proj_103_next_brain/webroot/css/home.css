@@ -45,3 +45,27 @@
         width: 400px;
      */
 }
+
+/* 表格的列头一行 */
+#tb_question th{
+    font-size:1.1em;
+    text-align:left;
+    padding-top:5px;
+    padding-bottom:4px;
+    background-color:#A7C942;
+    color:#ffffff;
+}
+
+/* 表格的奇数行 */
+#tb_question tr.odd td
+{
+    color:#000000;
+    background-color:#FFFFFF;/* 白色 */
+}
+
+/* 表格的偶数行 */
+#tb_question tr.even td
+{
+    color:#000000;
+    background-color:#EAF2D3;/* 墨绿色 */
+}

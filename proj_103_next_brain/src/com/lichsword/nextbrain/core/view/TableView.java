@@ -38,7 +38,7 @@ public class TableView<T> extends View {
             StringBuilder sb = new StringBuilder();
 
             // table column define
-            sb.append("<table border=\"1\">");
+            sb.append("<table id=\"tb_question\" border=\"1\">");
             sb.append("<tr>");
             sb.append(String.format("<th>%s</th>", ColumnDN.ID.toString()));
             sb.append(String.format("<th>%s</th>", ColumnDN.VISIT_LEVEL.toString()));
@@ -56,10 +56,19 @@ public class TableView<T> extends View {
             sb.append(String.format("<th>%s</th>", "操作"));
             sb.append("</tr>");
 
+            int i = 0;
             for (T item : list) {
+
                 NBArticle article = (NBArticle) item;
+                // ------------ set row class
                 // table rows
-                sb.append("<tr>");
+                if (0== i % 2){
+                    sb.append("<tr class=\"even\">");
+                }else{
+                    sb.append("<tr class=\"odd\">");
+                }// end if
+                i++;// index inc.
+                // ------------
                 sb.append(String.format("<td>%d</td>", article.getId()));
                 sb.append(String.format("<td>%d</td>", article.getVisitLevel()));
                 sb.append(String.format("<td>%d</td>", article.getReadCount()));
