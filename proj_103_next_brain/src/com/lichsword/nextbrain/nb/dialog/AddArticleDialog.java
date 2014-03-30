@@ -9,6 +9,7 @@ import com.lichsword.nextbrain.core.view.View;
  * Time: 下午10:47
  * <p/>
  * TODO
+ * @deprecated
  */
 public class AddArticleDialog extends View {
 

@@ -8,8 +8,8 @@ import com.lichsword.nextbrain.core.view.LinearLayout;
 import com.lichsword.nextbrain.core.view.TableView;
 import com.lichsword.nextbrain.core.view.TipTextView;
 import com.lichsword.nextbrain.nb.business.ArticleManager;
-import com.lichsword.nextbrain.nb.table.NBArticle;
-import com.lichsword.nextbrain.nb.table.NBArticle.Column;
+import com.lichsword.nextbrain.nb.model.NBArticle;
+import com.lichsword.nextbrain.nb.model.NBArticle.Column;
 
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
@@ -140,7 +140,7 @@ public class DBServlet extends HttpPage {
         String currentDate = sdf.format(new Date());
         tipTextView.setText("当前时间：" + currentDate);
         linearLayout.addChildView(tipTextView);
-        // add table
+        // add model
         TableView<NBArticle> tableView = new TableView<NBArticle>(list);
         linearLayout.addChildView(tableView);
         // out html

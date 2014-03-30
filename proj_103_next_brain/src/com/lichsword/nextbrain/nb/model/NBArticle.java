@@ -1,4 +1,4 @@
-package com.lichsword.nextbrain.nb.table;
+package com.lichsword.nextbrain.nb.model;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -77,7 +77,7 @@ public class NBArticle {
     /**
      * Create Sql not prepared, use exist db file.
      */
-    static final String Sql_Create = "create table " + TABLE_NAME + "("
+    static final String Sql_Create = "create model " + TABLE_NAME + "("
             + Column.ID + " int,"
             + Column.VISIT_LEVEL + " int,"
             + Column.READ_COUNT + " int,"

@@ -1,8 +1,8 @@
 package com.lichsword.nextbrain.nb.business;
 
 import com.lichsword.nextbrain.core.db.SqliteDatabase;
-import com.lichsword.nextbrain.nb.table.NBArticle;
-import com.lichsword.nextbrain.nb.table.NBArticle.Column;
+import com.lichsword.nextbrain.nb.model.NBArticle;
+import com.lichsword.nextbrain.nb.model.NBArticle.Column;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

@@ -1,4 +1,4 @@
-package com.lichsword.nextbrain.nb.table;
+package com.lichsword.nextbrain.nb.model;
 
 /**
  * Created with IntelliJ IDEA.

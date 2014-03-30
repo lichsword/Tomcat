@@ -1,7 +1,7 @@
 package com.lichsword.nextbrain.core.view;
 
-import com.lichsword.nextbrain.nb.table.NBArticle;
-import com.lichsword.nextbrain.nb.table.NBArticle.ColumnDN;
+import com.lichsword.nextbrain.nb.model.NBArticle;
+import com.lichsword.nextbrain.nb.model.NBArticle.ColumnDN;
 
 import java.util.ArrayList;
 
@@ -36,7 +36,7 @@ public class TableView<T> extends View {
         if (object instanceof Object) {
             StringBuilder sb = new StringBuilder();
 
-            // table column define
+            // model column define
             sb.append("<table id=\"tb_question\" border=\"1\">");
             sb.append("<tr>");
             sb.append(String.format("<th>%s</th>", ColumnDN.ID.toString()));
@@ -60,7 +60,7 @@ public class TableView<T> extends View {
 
                 NBArticle article = (NBArticle) item;
                 // ------------ set row class
-                // table rows
+                // model rows
                 if (0 == i % 2) {
                     sb.append("<tr class=\"even\">");
                 } else {
@@ -69,9 +69,11 @@ public class TableView<T> extends View {
                 i++;// index inc.
                 // ------------
                 sb.append(String.format("<td>%d</td>", article.getId()));
-                sb.append(String.format("<td>%d</td>", article.getVisitLevel()));
+                String visitLevelString = (NBArticle.VL_PRIVAET == article.getVisitLevel() ? "私有" : "公开");
+                sb.append(String.format("<td>%s</td>", visitLevelString));
                 sb.append(String.format("<td>%d</td>", article.getReadCount()));
-                sb.append(String.format("<td>%d</td>", article.getStatus()));
+                String statusString = (NBArticle.ST_FIXED == article.getStatus() ? "已解决" : "未解决");
+                sb.append(String.format("<td>%s</td>", statusString));
                 sb.append(String.format("<td>%s</td>", article.getQuestion()));
                 sb.append(String.format("<td>%s</td>", article.getDesc()));
                 sb.append(String.format("<td>%s</td>", article.getLabels()));
