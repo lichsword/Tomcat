@@ -2,7 +2,6 @@ package com.lichsword.nextbrain.backup;
 
 import com.lichsword.nextbrain.nb.business.servlet.DBServlet;
 import com.lichsword.nextbrain.nb.business.servlet.TipServlet;
-import com.lichsword.nextbrain.nb.business.servlet.page.ArticlePageServlet;
 import com.lichsword.nextbrain.nb.business.servlet.page.HomePage;
 import com.lichsword.nextbrain.nb.business.servlet.page.MainPageServlet;
 import com.lichsword.nextbrain.nb.business.servlet.page.TestPageServlet;
@@ -38,8 +37,6 @@ public class WebappClassLoader extends URLClassLoader {
         addServeletMapping("/servlet/tip", TipServlet.class.getCanonicalName());
         addServeletMapping("/servlet/home", MainPageServlet.class.getCanonicalName());
         addServeletMapping("/servlet-home", HomePage.class.getCanonicalName());
-        addServeletMapping("/servlet-article", ArticlePageServlet.class.getCanonicalName());
-//        addServeletMapping("/article", ArticlePageServlet.class.getCanonicalName());
     }
 
     public static WebappClassLoader getInstance() {
