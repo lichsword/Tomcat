@@ -38,7 +38,7 @@ public class DBServlet extends HttpPage {
          * TODO 这里写死，总会遇到网页内容达到上限而只显示一半的问题, P1 解决.
          * ArticlePage 同样有这个问题
          */
-        setContentLength(10000); // TODO must be right real count.
+        setContentLength(100000); // TODO must be right real count.
         setContentType("text/html");
     }
 
@@ -124,7 +124,7 @@ public class DBServlet extends HttpPage {
         System.out.println("[INFO]from service");
         ArrayList<NBArticle> list = ArticleManager.getInstance().queryAllArticle();
         if (null == list || 0 == list.size()) return;
-
+        Log.d(TAG, "refreshTable, list.size=" + list.size());
 //        out.println("size=" + list.size());
         for (NBArticle item : list) {
             System.out.println(item.dump());

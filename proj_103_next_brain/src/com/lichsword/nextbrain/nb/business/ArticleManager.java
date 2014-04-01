@@ -31,6 +31,17 @@ public class ArticleManager {
         return sInstance;
     }
 
+    /**
+     * 把单引号 转义为 双单引号
+     * TODO 高级的方法是使用存储过程 或 参数化语句，并防止注入。
+     *
+     * @param string
+     * @return
+     */
+    private String escapeString(String string) {
+        return string.replaceAll("'", "''");
+    }
+
     public ArrayList<NBArticle> queryAllArticle() {
         ArrayList<NBArticle> result = null;
         ResultSet cursor = mDatabase.query("select * from article");
@@ -73,15 +84,15 @@ public class ArticleManager {
                 + article.getVisitLevel() + ", "
                 + article.getReadCount() + ", "
                 + article.getStatus() + ", "
-                + "'" + article.getQuestion() + "', "
-                + "'" + article.getDesc() + "', "
-                + "'" + article.getLabels() + "', "
-                + "'" + article.getTruth() + "', "
-                + "'" + article.getPattern() + "', "
-                + "'" + article.getReference() + "', "
-                + "'" + article.getExample() + "', "
-                + "'" + article.getCreateTime() + "', "
-                + "'" + article.getModifiedTime() + "'"
+                + "'" + escapeString(article.getQuestion()) + "', "
+                + "'" + escapeString(article.getDesc()) + "', "
+                + "'" + escapeString(article.getLabels()) + "', "
+                + "'" + escapeString(article.getTruth()) + "', "
+                + "'" + escapeString(article.getPattern()) + "', "
+                + "'" + escapeString(article.getReference()) + "', "
+                + "'" + escapeString(article.getExample()) + "', "
+                + "'" + escapeString(article.getCreateTime()) + "', "
+                + "'" + escapeString(article.getModifiedTime()) + "'"
                 + ")";
         System.out.println(sql);
         boolean result = mDatabase.insert(sql);

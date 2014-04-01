@@ -15,6 +15,8 @@ import java.sql.Statement;
  */
 public final class SqliteDatabase extends DatabaseBase implements ISqlStatement {
 
+    private static final String TAG = SqliteDatabase.class.getSimpleName();
+
     private SqliteDatabase(IDriver driver) {
         super(driver);
     }
@@ -64,6 +66,8 @@ public final class SqliteDatabase extends DatabaseBase implements ISqlStatement 
 
     @Override
     public boolean update(String url) {
+//        String safeSql = formatSafeSql(sql);
+//        Log.d(TAG, "safe sql=" + safeSql);
         // TODO
         return false;
     }
