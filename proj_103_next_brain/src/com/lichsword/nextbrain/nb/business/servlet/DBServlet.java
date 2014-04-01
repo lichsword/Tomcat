@@ -136,9 +136,9 @@ public class DBServlet extends HttpPage {
         // add tip text view TODO 这里可以动态设置文案。
         TipTextView tipTextView = new TipTextView();
         tipTextView.setLevel(TipTextView.ERROR);
-        SimpleDateFormat sdf = new SimpleDateFormat(NBArticle.TIME_FORMAT);
-        String currentDate = sdf.format(new Date());
-        tipTextView.setText("当前时间：" + currentDate);
+
+        String env = getEnv(list);
+        tipTextView.setText(env);
         linearLayout.addChildView(tipTextView);
         // add model
         TableView<NBArticle> tableView = new TableView<NBArticle>(list);
@@ -150,5 +150,15 @@ public class DBServlet extends HttpPage {
         out.close();
     }
 
+    private String getEnv(ArrayList<NBArticle> list) {
+        StringBuilder sb = new StringBuilder();
+        SimpleDateFormat sdf = new SimpleDateFormat(NBArticle.TIME_FORMAT);
+        String currentDate = sdf.format(new Date());
+        sb.append(String.format("当前时间：%s", currentDate));
+        sb.append("    ");
+        int recordCount = (null != list) ? list.size() : 0;
+        sb.append(String.format("记录总数：%d", recordCount));
 
+        return sb.toString();
+    }
 }
