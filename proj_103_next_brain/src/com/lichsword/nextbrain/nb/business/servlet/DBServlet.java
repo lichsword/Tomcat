@@ -135,7 +135,7 @@ public class DBServlet extends HttpPage {
         LinearLayout linearLayout = new LinearLayout();
         // add tip text view TODO 这里可以动态设置文案。
         TipTextView tipTextView = new TipTextView();
-        tipTextView.setLevel(TipTextView.ERROR);
+        tipTextView.setLevel(TipTextView.INFO);
 
         String env = getEnv(list);
         tipTextView.setText(env);

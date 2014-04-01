@@ -39,6 +39,7 @@ public class TableView<T> extends View {
             // model column define
             sb.append("<table id=\"tb_question\" border=\"1\">");
             sb.append("<tr>");
+            sb.append(String.format("<th>%s</th>", "序号"));
             sb.append(String.format("<th>%s</th>", ColumnDN.ID.toString()));
             sb.append(String.format("<th>%s</th>", ColumnDN.VISIT_LEVEL.toString()));
             sb.append(String.format("<th>%s</th>", ColumnDN.READ_COUNT.toString()));
@@ -68,6 +69,7 @@ public class TableView<T> extends View {
                 }// end if
                 i++;// index inc.
                 // ------------
+                sb.append(String.format("<td>%d</td>", i));
                 sb.append(String.format("<td>%d</td>", article.getId()));
                 String visitLevelString = (NBArticle.VL_PRIVAET == article.getVisitLevel() ? "私有" : "公开");
                 sb.append(String.format("<td>%s</td>", visitLevelString));
