@@ -11,6 +11,7 @@ import com.lichsword.nextbrain.backup.HttpConnecter;
 public class Bootstrap {
 
     public static void main(String[] argvs){
+
         HttpConnecter connector = new HttpConnecter();
         connector.run();
     }
