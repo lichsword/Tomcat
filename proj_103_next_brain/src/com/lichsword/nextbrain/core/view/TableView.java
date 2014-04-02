@@ -76,13 +76,13 @@ public class TableView<T> extends View {
                 sb.append(String.format("<td>%d</td>", article.getReadCount()));
                 String statusString = (NBArticle.ST_FIXED == article.getStatus() ? "已解决" : "未解决");
                 sb.append(String.format("<td>%s</td>", statusString));
-                sb.append(String.format("<td>%s</td>", article.getQuestion()));
-                sb.append(String.format("<td>%s</td>", article.getDesc()));
-                sb.append(String.format("<td>%s</td>", article.getLabels()));
-                sb.append(String.format("<td>%s</td>", article.getTruth()));
-                sb.append(String.format("<td>%s</td>", article.getPattern()));
-                sb.append(String.format("<td>%s</td>", article.getReference()));
-                sb.append(String.format("<td>%s</td>", article.getExample()));
+                sb.append(String.format("<td>%s</td>", ellipsesString(article.getQuestion(), LIMIT)));
+                sb.append(String.format("<td>%s</td>", ellipsesString(article.getDesc(), LIMIT)));
+                sb.append(String.format("<td>%s</td>", ellipsesString(article.getLabels(), LIMIT)));
+                sb.append(String.format("<td>%s</td>", ellipsesString(article.getTruth(), LIMIT)));
+                sb.append(String.format("<td>%s</td>", ellipsesString(article.getPattern(), LIMIT)));
+                sb.append(String.format("<td>%s</td>", ellipsesString(article.getReference(), LIMIT)));
+                sb.append(String.format("<td>%s</td>", ellipsesString(article.getExample(), LIMIT)));
                 sb.append(String.format("<td>%s</td>", article.getCreateTime()));
                 sb.append(String.format("<td>%s</td>", article.getModifiedTime()));
                 sb.append(String.format("<td>%s</td>", "<button data-id='" + article.getId() + "' class=\"item_delete\">删除</button>"));
@@ -93,5 +93,27 @@ public class TableView<T> extends View {
         }
         return null;
     }
+
+    private final int LIMIT = 15;
+
+
+    /**
+     * 以省略号字符显示
+     *
+     * @param string
+     * @param limit
+     * @return
+     */
+    public String ellipsesString(String string, int limit) {
+        StringBuilder sb = new StringBuilder();
+        if (string.length() > limit) {
+            sb.append(string.substring(0, limit));
+            sb.append("...");
+        } else {
+            sb.append(string);
+        }
+        return sb.toString();
+    }
+
 
 }
