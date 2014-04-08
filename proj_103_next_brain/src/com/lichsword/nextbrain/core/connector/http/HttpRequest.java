@@ -10,7 +10,7 @@ import java.io.InputStream;
  * Date: 14-3-24
  * Time: 下午7:32
  * <p/>
- * TODO
+ * TODO 还未启用,暂由 Request 类完成工作
  */
 public class HttpRequest extends Request {
 

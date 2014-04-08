@@ -2,12 +2,26 @@ $(document).ready(function(){
 
     $("#dialog").hide();
 
-    $("#btn_refresh").click(function(){
+    $("#btn_mode_table").click(function(){
         $.get("/servlet/db",
         function(data,status){
             $(".div_table").html(data);
             console.log(data);
             console.log(status);
+        });
+    });
+
+    $("#btn_mode_card").click(function(){
+        $.post("/servlet/db", {
+                action: "query",
+                mode: "card"
+            },
+            function(data,status){
+    //            $(".div2").append(data);
+    //            $(".div2").replaceWith(data);
+                $(".div_table").html(data);
+                console.log(data);
+                console.log(status);
         });
     });
 

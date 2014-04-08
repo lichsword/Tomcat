@@ -71,26 +71,7 @@ public class DBServlet extends HttpPage {
                 HashMap<String, String[]> map = request.getHttpParametersHashMap();
                 String action = map.get(IHttpParameter.KEY_ACTION)[0];
                 if (action.equals(IHttpParameter.ACTION_INSERT)) {
-                    NBArticle article = new NBArticle();
-                    // start set parameters.
-                    article.setVisitLevel(Integer.valueOf(map.get(Column.VISIT_LEVEL)[0]));
-                    Random random = new Random();
-                    article.setReadCount(random.nextInt(1000));
-                    article.setStatus(Integer.valueOf(map.get(Column.STATUS)[0]));
-                    article.setQuestion(map.get(Column.QUESTION)[0]);
-                    article.setDesc(map.get(Column.DESC)[0]);
-                    article.setLabels(map.get(Column.LABELS)[0]);
-                    article.setTruth(map.get(Column.TRUTH)[0]);
-                    article.setPattern(map.get(Column.PATTERN)[0]);
-                    article.setReference(map.get(Column.REFERENCE)[0]);
-                    article.setExample(map.get(Column.EXAMPLE)[0]);
-                    // auto get current date, format to time string.
-                    SimpleDateFormat sdf = new SimpleDateFormat(NBArticle.TIME_FORMAT);
-                    String date = sdf.format(new Date());
-                    article.setCreateTime(date);
-                    // TODO temp modified same as create time?
-                    article.setModifiedTime(date);
-                    ArticleManager.getInstance().addArticle(article);
+                    doInsert(map);
                 } else if (action.equals(IHttpParameter.ACTION_DELETE)) {
                     String idString = map.get("id")[0];
                     try {
@@ -108,6 +89,29 @@ public class DBServlet extends HttpPage {
         } else {
             throw new ServletException("ServletRequest.classType.Not.Request");
         }
+    }
+
+    private boolean doInsert(HashMap<String, String[]> map) {
+        NBArticle article = new NBArticle();
+        // start set parameters.
+        article.setVisitLevel(Integer.valueOf(map.get(Column.VISIT_LEVEL)[0]));
+        Random random = new Random();
+        article.setReadCount(random.nextInt(1000));
+        article.setStatus(Integer.valueOf(map.get(Column.STATUS)[0]));
+        article.setQuestion(map.get(Column.QUESTION)[0]);
+        article.setDesc(map.get(Column.DESC)[0]);
+        article.setLabels(map.get(Column.LABELS)[0]);
+        article.setTruth(map.get(Column.TRUTH)[0]);
+        article.setPattern(map.get(Column.PATTERN)[0]);
+        article.setReference(map.get(Column.REFERENCE)[0]);
+        article.setExample(map.get(Column.EXAMPLE)[0]);
+        // auto get current date, format to time string.
+        SimpleDateFormat sdf = new SimpleDateFormat(NBArticle.TIME_FORMAT);
+        String date = sdf.format(new Date());
+        article.setCreateTime(date);
+        // TODO temp modified same as create time?
+        article.setModifiedTime(date);
+        return ArticleManager.getInstance().addArticle(article);
     }
 
     /**
