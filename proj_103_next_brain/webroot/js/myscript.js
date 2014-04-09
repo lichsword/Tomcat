@@ -11,6 +11,10 @@ $(document).ready(function(){
 //        });
 //    });
 
+
+    $().dropdown('toggle');
+    $('.dropdown-toggle').dropdown();
+
     $("#btn_mode_table").click(function(){
         $.post("/servlet/db", {
                 action: "query",

@@ -38,31 +38,68 @@
         <!--dialog background end-->
 
         <!--dialog body start-->
-        <div id="dialog-body">
-            <div>
-                <h3>添加记录</h3>
+        <div id="dialog-body" class="panel panel-default">
+            <div class="panel-heading">添加记录</div>
+            <div class="panel-body">
+                <form role="form">
+                    <div class="form-group">
+                        <!--name="input_title" 用于表单提交，有id="input_title"可以不用写这个
+                        写了，也没用，只有id 有效-->
+                        <!--权限:<input id="input_visit_level" type="text"><br>-->
+                        <p class="navbar-text">权限:</p>
 
-                <form>
-                    <!--name="input_title" 用于表单提交，有id="input_title"可以不用写这个
-                    写了，也没用，只有id 有效-->
-                    <!--权限:<input id="input_visit_level" type="text"><br>-->
-                    权限:
-                    <select id="input_visit_level">
-                        <option value="1">私有</option>
-                        <option value="2" selected="selected">公开</option>
-                    </select><br>
-                    状态:
-                    <select id="input_status">
-                        <option value="0" selected="selected">未解决</option>
-                        <option value="1">已解决</option>
-                    </select><br>
-                    问题:<input id="input_question" type="text"><br>
-                    描述:<input id="input_desc" type="text"><br>
-                    标签:<input id="input_labels" type="text"><br>
-                    本质:<input id="input_truth" type="text"><br>
-                    模式:<input id="input_pattern" type="text"><br>
-                    引用:<input id="input_reference" type="text"><br>
-                    示例:<input id="input_example" type="text"><br>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                Dropdown
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Dropdown link</a></li>
+                                <li><a href="#">Dropdown link</a></li>
+                            </ul>
+                        </div>
+                        <!-- Single button -->
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+                                <span class="caret"></span>
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                        <div class="btn-group">
+                        <select id="input_visit_level">
+                            <option value="1">私有</option>
+                            <option value="2" selected="selected">公开</option>
+                        </select><br>
+
+                        <p class="navbar-text">状态:</p>
+                        <select id="input_status">
+                            <option value="0" selected="selected">未解决</option>
+                            <option value="1">已解决</option>
+                        </select>
+
+                        <p class="navbar-text">问题:</p><input id="input_question" type="text">
+
+                        <p class="navbar-text">描述:</p><input id="input_desc" type="text">
+
+                        <p class="navbar-text">标签:</p><input id="input_labels" type="text">
+
+                        <p class="navbar-text">本质:</p><input id="input_truth" type="text">
+
+                        <p class="navbar-text">模式:</p><input id="input_pattern" type="text">
+
+                        <p class="navbar-text">引用:</p><input id="input_reference" type="text">
+
+                        <p class="navbar-text">示例:</p><input id="input_example" type="text">
+                    </div>
                 </form>
                 <button id="btn_commit_in_dialog" type="button">提交</button>
                 <button id="btn_cancel_in_dialog" type="button">取消</button>
