@@ -5,9 +5,11 @@ import com.lichsword.nextbrain.core.Log;
 import com.lichsword.nextbrain.core.connector.http.IHttpParameter;
 import com.lichsword.nextbrain.core.page.HttpPage;
 import com.lichsword.nextbrain.core.view.LinearLayout;
+import com.lichsword.nextbrain.core.view.ListView;
 import com.lichsword.nextbrain.core.view.TableView;
 import com.lichsword.nextbrain.core.view.TipTextView;
 import com.lichsword.nextbrain.nb.business.ArticleManager;
+import com.lichsword.nextbrain.nb.business.impl.NBDisplayEvn;
 import com.lichsword.nextbrain.nb.model.NBArticle;
 import com.lichsword.nextbrain.nb.model.NBArticle.Column;
 
@@ -54,7 +56,20 @@ public class DBServlet extends HttpPage {
     @Override
     public void onRenderPage(PrintWriter out) {
         try {
-            refreshTable(out);
+            int mode = NBDisplayEvn.getInstance().getMode();
+            switch (mode) {
+                case NBDisplayEvn.MODE_TABLE:
+                    refreshTable(out);
+                    break;
+                case NBDisplayEvn.MODE_CARD:
+                    refreshCard(out);
+                    break;
+                case NBDisplayEvn.MODE_GRAPH:
+                    break;
+                default:
+                    refreshTable(out);
+                    break;
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -73,15 +88,11 @@ public class DBServlet extends HttpPage {
                 if (action.equals(IHttpParameter.ACTION_INSERT)) {
                     doInsert(map);
                 } else if (action.equals(IHttpParameter.ACTION_DELETE)) {
-                    String idString = map.get("id")[0];
-                    try {
-                        int id = Integer.valueOf(idString);
-                        ArticleManager.getInstance().delete(id);
-                    } catch (NumberFormatException e) {
-                        e.printStackTrace();
-                    }
+                    doDelete(map);
+                } else if (action.equals(IHttpParameter.ACTION_QUERY)) {
+                    doQuery(map);
                 } else {
-                    Log.d(TAG, "param action not insert: action=" + action);
+                    Log.d(TAG, "param action not support action: " + action);
                 }
             } else {
                 Log.v(TAG, "method not POST: method=" + method);
@@ -114,6 +125,40 @@ public class DBServlet extends HttpPage {
         return ArticleManager.getInstance().addArticle(article);
     }
 
+    private boolean doDelete(HashMap<String, String[]> map) {
+        boolean result = true;
+        String idString = map.get("id")[0];
+        try {
+            int id = Integer.valueOf(idString);
+            result = ArticleManager.getInstance().delete(id);
+        } catch (NumberFormatException e) {
+            e.printStackTrace();
+            result = false;
+        }
+        return result;
+    }
+
+    private boolean doQuery(HashMap<String, String[]> map) {
+        String mode = map.get("mode")[0];
+        NBDisplayEvn displayEvn = NBDisplayEvn.getInstance();
+        if (mode.equals("table")) {
+            Log.d(TAG, "table mode");
+            displayEvn.setMode(NBDisplayEvn.MODE_TABLE);
+        } else if (mode.equals("card")) {
+            Log.d(TAG, "card mode");
+            displayEvn.setMode(NBDisplayEvn.MODE_CARD);
+        } else if (mode.equals("graph")) {
+            Log.d(TAG, "graph mode");
+            displayEvn.setMode(NBDisplayEvn.MODE_GRAPH);
+        } else {
+            Log.d(TAG, "default mode");
+            displayEvn.setMode(NBDisplayEvn.MODE_TABLE);
+        }
+        Log.d(TAG, "mode value=" + displayEvn.getMode());
+        // TODO define reture value?
+        return true;
+    }
+
     /**
      * 刷新表格
      *
@@ -125,15 +170,15 @@ public class DBServlet extends HttpPage {
     }
 
     private void refreshTable(PrintWriter out) throws IOException {
-        System.out.println("[INFO]from service");
+        Log.d(TAG, "[INFO]from service");
         ArrayList<NBArticle> list = ArticleManager.getInstance().queryAllArticle();
         if (null == list || 0 == list.size()) return;
         Log.d(TAG, "refreshTable, list.size=" + list.size());
 //        out.println("size=" + list.size());
         for (NBArticle item : list) {
-            System.out.println(item.dump());
+            Log.d(TAG, item.dump());
 //            out.println(item.dump());
-            System.out.println("[INFO]row=" + item.dump() + "\n");
+            Log.d(TAG, "[INFO]row=" + item.dump() + "\n");
         }
         // set layout
         LinearLayout linearLayout = new LinearLayout();
@@ -154,6 +199,27 @@ public class DBServlet extends HttpPage {
         out.close();
     }
 
+    private void refreshCard(PrintWriter out) {
+        ArrayList<NBArticle> list = ArticleManager.getInstance().queryAllArticle();
+
+        LinearLayout linearLayout = new LinearLayout();
+        // add tip text view TODO 这里可以动态设置文案。
+        TipTextView tipTextView = new TipTextView();
+        tipTextView.setLevel(TipTextView.INFO);
+
+        String env = getEnv(list);
+        tipTextView.setText(env);
+        linearLayout.addChildView(tipTextView);
+        // add model
+        ListView listView = new ListView(list);
+        linearLayout.addChildView(listView);
+        // out html
+//        out.print(TempHeader.dumpResponseHeaderString());
+        out.print(linearLayout.html());
+        out.flush();
+        out.close();
+    }
+
     private String getEnv(ArrayList<NBArticle> list) {
         StringBuilder sb = new StringBuilder();
         SimpleDateFormat sdf = new SimpleDateFormat(NBArticle.TIME_FORMAT);
@@ -165,4 +231,5 @@ public class DBServlet extends HttpPage {
 
         return sb.toString();
     }
+
 }
