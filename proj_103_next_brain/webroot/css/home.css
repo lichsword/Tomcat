@@ -70,6 +70,24 @@
     background-color:#EAF2D3;/* 墨绿色 */
 }
 
+/* 卡片的标题 */
+#card_question h1
+{
+     color:#259
+}
+
+/* 卡片的描述 */
+#card_question h2
+{
+    color:#999
+}
+
+/* 卡片的描述 */
+#card_question h5
+{
+    color:#999
+}
+
 /* 错误色 */
 #tip_error {
     color:#000000;/* 黑色 */

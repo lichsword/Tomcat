@@ -2,12 +2,26 @@ $(document).ready(function(){
 
     $("#dialog").hide();
 
+//    $("#btn_mode_table").click(function(){
+//        $.get("/servlet/db",
+//        function(data,status){
+//            $(".div_table").html(data);
+//            console.log(data);
+//            console.log(status);
+//        });
+//    });
+
     $("#btn_mode_table").click(function(){
-        $.get("/servlet/db",
-        function(data,status){
-            $(".div_table").html(data);
-            console.log(data);
-            console.log(status);
+        $.post("/servlet/db", {
+                action: "query",
+                mode: "table"
+            },
+            function(data,status){
+    //            $(".div2").append(data);
+    //            $(".div2").replaceWith(data);
+                $(".div_table").html(data);
+                console.log(data);
+                console.log(status);
         });
     });
 
