@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24807c5a-e593-44b9-9239-5501e57a4204" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/view/TableView.java" afterPath="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/view/TableView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/view/TipTextView.java" afterPath="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/view/TipTextView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webroot/images/atom-128.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webroot/images/atom-256.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webroot/images/atom-32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webroot/images/atom-400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webroot/images/atom-48.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webroot/images/atom-64.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webroot/images/atom-72.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webroot/html/home.html" afterPath="$PROJECT_DIR$/webroot/html/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="proj_01_basic_http_server.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,7 +52,7 @@
     <file path="/SqliteDatabase.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1396337532703" ignored="false" />
     <file path="/DatabaseBase.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395055159022" ignored="false" />
     <file path="/MainPage.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395066357341" ignored="false" />
-    <file path="/home.html" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1397033928248" ignored="false" />
+    <file path="/home.html" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1397035229263" ignored="false" />
     <file path="/View.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395067222839" ignored="false" />
     <file path="/TableView.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1397033233538" ignored="false" />
     <file path="/MainPageServlet.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395124597644" ignored="false" />
@@ -250,10 +256,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DBServlet.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="DBServlet.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/nb/business/servlet/DBServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="185" column="43" selection-start="6783" selection-end="6783" vertical-scroll-proportion="0.0">
+            <state line="199" column="24" selection-start="7266" selection-end="7266" vertical-scroll-proportion="0.55256724">
               <folding>
                 <element signature="e#7034#7045#0" expanded="true" />
               </folding>
@@ -279,10 +285,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="home.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webroot/html/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="22" selection-start="897" selection-end="897" vertical-scroll-proportion="0.19480519">
+            <state line="11" column="44" selection-start="495" selection-end="495" vertical-scroll-proportion="4.375">
               <folding />
             </state>
           </provider>
@@ -493,78 +499,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="webroot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proj_103_next_brain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proj_103_next_brain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webroot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proj_103_next_brain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proj_103_next_brain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webroot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proj_103_next_brain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proj_103_next_brain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webroot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proj_103_next_brain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proj_103_next_brain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -605,11 +539,11 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/webroot/images" />
       <recent name="$PROJECT_DIR$/webroot/js" />
       <recent name="$PROJECT_DIR$/webroot" />
       <recent name="$PROJECT_DIR$/webroot/css" />
       <recent name="$PROJECT_DIR$/webroot/cdn" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.lichsword.nextbrain.nb" />
@@ -970,12 +904,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/nb/business/servlet/DBServlet.java">
+    <entry file="file://$PROJECT_DIR$/webroot/html/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="185" column="43" selection-start="6783" selection-end="6783" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#7034#7045#0" expanded="true" />
-          </folding>
+        <state line="11" column="44" selection-start="495" selection-end="495" vertical-scroll-proportion="4.375">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -986,10 +918,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webroot/html/home.html">
+    <entry file="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/nb/business/servlet/DBServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="22" selection-start="897" selection-end="897" vertical-scroll-proportion="0.19480519">
-          <folding />
+        <state line="199" column="24" selection-start="7266" selection-end="7266" vertical-scroll-proportion="0.55256724">
+          <folding>
+            <element signature="e#7034#7045#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
