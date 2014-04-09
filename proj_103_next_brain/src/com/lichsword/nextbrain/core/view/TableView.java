@@ -37,7 +37,14 @@ public class TableView<T> extends View {
             StringBuilder sb = new StringBuilder();
 
             // model column define
-            sb.append("<table id=\"tb_question\" border=\"1\">");
+            /**
+             * 表格类选择器如下：(Bootstrap)
+             *
+             * table-bordered 带边框
+             * table-striped 带条纹
+             * table-hover 鼠标悬停
+             */
+            sb.append("<table class=\"table table-bordered table-striped table-hover\">");
             sb.append("<tr>");
             sb.append(String.format("<th>%s</th>", "序号"));
             sb.append(String.format("<th>%s</th>", ColumnDN.ID.toString()));
