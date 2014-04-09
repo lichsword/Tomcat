@@ -40,10 +40,16 @@ public class TipTextView extends TextView {
     @Override
     public String html() {
         StringBuilder sb = new StringBuilder();
-        sb.append(String.format("<h4 id=\"%s\">%s</h4>", getLevelCssName(level), getText()));
+        sb.append(String.format("<span class=\"help-block\">%s</h4>", getText()));
         return sb.toString();
     }
 
+    /**
+     * @deprecated
+     *
+     * @param level
+     * @return
+     */
     private String getLevelCssName(int level) {
         String cssName;
         switch (level) {

@@ -92,7 +92,7 @@ public class TableView<T> extends View {
                 sb.append(String.format("<td>%s</td>", ellipsesString(article.getExample(), LIMIT)));
                 sb.append(String.format("<td>%s</td>", article.getCreateTime()));
                 sb.append(String.format("<td>%s</td>", article.getModifiedTime()));
-                sb.append(String.format("<td>%s</td>", "<button data-id='" + article.getId() + "' class=\"item_delete\">删除</button>"));
+                sb.append(String.format("<td>%s</td>", "<button data-id='" + article.getId() + "' class=\"btn btn-default\">删除</button>"));
                 sb.append("</tr>");
             }// end for
             sb.append("</table>");
