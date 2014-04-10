@@ -2,6 +2,7 @@ $(document).ready(function(){
 
     $("#dialog").hide();
 
+    /*这个 get 方法被 post 替代了，但不要删除，供以后的 get 方法参考用。 */
 //    $("#btn_mode_table").click(function(){
 //        $.get("/servlet/db",
 //        function(data,status){
@@ -11,9 +12,9 @@ $(document).ready(function(){
 //        });
 //    });
 
-
     $().dropdown('toggle');
     $('.dropdown-toggle').dropdown();
+    $('#menu').dropdown('toggle')
 
     $("#btn_mode_table").click(function(){
         $.post("/servlet/db", {
@@ -57,6 +58,24 @@ $(document).ready(function(){
     $("#btn_delete").click(function(){
         console.log("clicked btn_delete.");
         alert("you clicked delete button");
+    });
+
+    /**
+     * #list-visit li 表示：id 为 list-visit 的 子 li 元素
+     * 进行动态绑定 click 事件.
+     */
+    $("#list-visit li").live("click",function(){
+        console.log("you select <li> element");
+        var value = $(this).attr("data-value");
+        console.log(value);
+        $("#selected-visit").html(value);
+    });
+
+    $("#list-status li").live("click", function(){
+        console.log("you select <li> element");
+        var value = $(this).attr("data-value");
+        console.log(value);
+        $("#selected-status").html(value);
     });
 
     $("#btn_cancel_in_dialog").click(function(){
