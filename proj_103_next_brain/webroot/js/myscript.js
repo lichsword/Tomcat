@@ -16,6 +16,50 @@ $(document).ready(function(){
     $('.dropdown-toggle').dropdown();
     $('#menu').dropdown('toggle')
 
+    $('#mytab a').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+
+        var text = $(this).text();
+        console.log(text);
+
+        if(text==="表格"){
+            console.log("是表格");
+            // 刷新显示表格
+            $.post("/servlet/db", {
+                    action: "query",
+                    mode: "table"
+                },
+                function(data,status){
+                    $(".div_table").html(data);
+                    console.log(data);
+                    console.log(status);
+            });
+        }else if(text==="卡片"){
+            console.log("是卡片");
+            // 刷新显示卡片列表
+            $.post("/servlet/db", {
+                    action: "query",
+                    mode: "card"
+                },
+                function(data,status){
+                    $(".div_table").html(data);
+                    console.log(data);
+                    console.log(status);
+            });
+        }else if(text==="云图"){
+            console.log("是云图");
+        }else if(text==="新增"){
+            console.log("弹出新增对话框");
+            $("#dialog").show();
+        }else{
+            console.log("不识别的tab");
+        }
+
+    })
+
+/*
+    // 废弃，但不删除，因为这个知识别没入库。
     $("#btn_mode_table").click(function(){
         $.post("/servlet/db", {
                 action: "query",
@@ -29,7 +73,9 @@ $(document).ready(function(){
                 console.log(status);
         });
     });
+*/
 
+/*
     $("#btn_mode_card").click(function(){
         $.post("/servlet/db", {
                 action: "query",
@@ -43,6 +89,7 @@ $(document).ready(function(){
                 console.log(status);
         });
     });
+*/
 
     $("#btn_get").click(function(){
         console.log("clicked.");
