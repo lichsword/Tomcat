@@ -19,31 +19,39 @@
 </head>
 <body>
 <!--导航条 start-->
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="navbar-header">
-        <a class="navbar-brand" href="#">NeXT-B</a>
 
-        <ul id="mytab" class="nav nav-pills nav-tabs">
-            <li class="active"><a href="#">表格</a></li>
-            <li><a href="#">卡片</a></li>
-            <li><a href="#">云图</a></li>
-            <li><a href="#">新增</a></li>
-        </ul>
+<!--role="banner" 可以让导航全屏宽-->
+<div class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+        <!--class="collapse navbar-collapse bs-navbar-collapse"-->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">NeXT-B</a>
+            <!--navbar-nav 可以让导航元素一行排行，而不是多行-->
+            <ul id="mytab" class="nav navbar-nav">
+                <li class="active"><a>表格</a></li>
+                <li><a>卡片</a></li>
+                <li><a>云图</a></li>
+            </ul>
 
-        <!--<button id="btn_mode_table" type="button" class="navbar-toggle navbar-left">表格模式</button>-->
-        <!--<button id="btn_mode_card" type="button" class="btn btn-default btn-sm">卡片模式</button>-->
-        <!--<button id="btn_mode_graph" type="button" class="btn btn-default btn-sm">云图模式</button>-->
-        <!--<button id="btn_get" type="button" class="btn btn-default btn-sm">查询</button>-->
-        <!--<button id="btn_add" type="button" class="btn btn-default btn-sm">新增</button>-->
-        <!--<button id="btn_delete" type="button" class="btn btn-default btn-sm">删除</button>-->
-    </div>
-</nav>
+            <!--下面的id定义暂时不要删除，等入记录后，再删除，目前还有参考价值-->
+            <!--<button id="btn_mode_table" type="button" class="navbar-toggle navbar-left">表格模式</button>-->
+            <!--<button id="btn_mode_card" type="button" class="btn btn-default btn-sm">卡片模式</button>-->
+            <!--<button id="btn_mode_graph" type="button" class="btn btn-default btn-sm">云图模式</button>-->
+            <!--<button id="btn_get" type="button" class="btn btn-default btn-sm">查询</button>-->
+            <!--<button id="btn_add" type="button" class="btn btn-default btn-sm">新增</button>-->
+            <!--<button id="btn_delete" type="button" class="btn btn-default btn-sm">删除</button>-->
+        </div>
+        <button id="btn_add" type="button" class="btn btn-default navbar-btn navbar-right">新增</button>
+    </nav>
+</div>
 <!--导航条 end-->
 <br/><br/><br/>
+
 <div id="floater">
     <div id="layout">
         <div class="div_tip"></div>
-        <img src="./images/atom-64.png" alt="logo-atom" class="img-circle">
+        <!--这个 atom 图很丑，暂时不使用-->
+        <!--<img src="./images/atom-64.png" alt="logo-atom" class="img-circle">-->
         <div class="div_table"></div>
     </div>
 
