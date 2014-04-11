@@ -99,27 +99,3 @@
 {
     color:#999
 }
-
-/* 错误色 */
-#tip_error {
-    color:#000000;/* 黑色 */
-    background-color:#FF0000;/* 红色 */
-}
-
-/* 警告色 */
-#tip_warning {
-     color:#000000;/* 黑色 */
-     background-color:#EAF2D3;/* 淡绿色 */
-}
-
-/* 信息色 */
-#tip_info {
-     color:#FFFFFF;/* 白色 */
-     background-color:#A7C942;/* 浅绿 */
-}
-
-/* 罗嗦色 */
-#tip_verbose {
-     color:#000000;/* 黑色 */
-     background-color:gray; /* 灰色 */
-}

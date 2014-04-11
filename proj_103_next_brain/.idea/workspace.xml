@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24807c5a-e593-44b9-9239-5501e57a4204" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/view/ListView.java" afterPath="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/view/ListView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/view/TableView.java" afterPath="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/view/TableView.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webroot/css/home.css" afterPath="$PROJECT_DIR$/webroot/css/home.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webroot/html/home.html" afterPath="$PROJECT_DIR$/webroot/html/home.html" />
     </list>
     <ignored path="proj_01_basic_http_server.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -253,7 +250,7 @@
       <file leaf-file-name="home.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webroot/css/home.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="11" selection-start="1498" selection-end="1498" vertical-scroll-proportion="3.984375">
+            <state line="96" column="6" selection-start="1445" selection-end="1445" vertical-scroll-proportion="0.609375">
               <folding />
             </state>
           </provider>
@@ -309,8 +306,8 @@
         <option value="$PROJECT_DIR$/webroot/js/myscript.js" />
         <option value="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/view/ListView.java" />
         <option value="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/view/TableView.java" />
-        <option value="$PROJECT_DIR$/webroot/css/home.css" />
         <option value="$PROJECT_DIR$/webroot/html/home.html" />
+        <option value="$PROJECT_DIR$/webroot/css/home.css" />
       </list>
     </option>
   </component>
@@ -917,7 +914,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webroot/css/home.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="11" selection-start="1498" selection-end="1498" vertical-scroll-proportion="3.984375">
+        <state line="96" column="6" selection-start="1445" selection-end="1445" vertical-scroll-proportion="0.609375">
           <folding />
         </state>
       </provider>
