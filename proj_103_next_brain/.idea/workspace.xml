@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24807c5a-e593-44b9-9239-5501e57a4204" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/brain.sqlite" afterPath="$PROJECT_DIR$/brain.sqlite" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webroot/html/home.html" afterPath="$PROJECT_DIR$/webroot/html/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webroot/js/myscript.js" afterPath="$PROJECT_DIR$/webroot/js/myscript.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="proj_01_basic_http_server.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,7 +47,7 @@
     <file path="/SqliteDatabase.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1396337532703" ignored="false" />
     <file path="/DatabaseBase.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395055159022" ignored="false" />
     <file path="/MainPage.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395066357341" ignored="false" />
-    <file path="/home.html" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1397207711916" ignored="false" />
+    <file path="/home.html" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1397209674854" ignored="false" />
     <file path="/View.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395067222839" ignored="false" />
     <file path="/TableView.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1397033233538" ignored="false" />
     <file path="/MainPageServlet.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395124597644" ignored="false" />
@@ -52,7 +55,7 @@
     <file path="/ArticlePageServlet.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395919903718" ignored="false" />
     <file path="/AddArticleDialog.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1396191690585" ignored="false" />
     <file path="/LinearLayout.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395200777449" ignored="false" />
-    <file path="/myscript.js" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1397196766465" ignored="false" />
+    <file path="/myscript.js" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1397209812879" ignored="false" />
     <file path="/HttpConnector.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395215423748" ignored="false" />
     <file path="$PROJECT_DIR$/../proj_200_catalina/src/Bootstrap.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395220370999" ignored="false" />
     <file path="/HttpProcessor.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395396707483" ignored="false" />
@@ -227,19 +230,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="home.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webroot/html/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="38" selection-start="2387" selection-end="2387" vertical-scroll-proportion="0.32258064">
+            <state line="143" column="48" selection-start="7712" selection-end="7732" vertical-scroll-proportion="-11.75">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myscript.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="myscript.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webroot/js/myscript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="36" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.0">
+            <state line="161" column="60" selection-start="5085" selection-end="5085" vertical-scroll-proportion="0.5574572">
               <folding />
             </state>
           </provider>
@@ -277,8 +280,8 @@
         <option value="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/view/TableView.java" />
         <option value="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/view/TipTextView.java" />
         <option value="$PROJECT_DIR$/webroot/css/home.css" />
-        <option value="$PROJECT_DIR$/webroot/js/myscript.js" />
         <option value="$PROJECT_DIR$/webroot/html/home.html" />
+        <option value="$PROJECT_DIR$/webroot/js/myscript.js" />
       </list>
     </option>
   </component>
@@ -851,13 +854,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webroot/js/myscript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="36" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/nb/business/servlet/DBServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="88" column="74" selection-start="2959" selection-end="2959" vertical-scroll-proportion="0.0">
@@ -867,7 +863,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webroot/html/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="38" selection-start="2387" selection-end="2387" vertical-scroll-proportion="0.32258064">
+        <state line="143" column="48" selection-start="7712" selection-end="7732" vertical-scroll-proportion="-11.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webroot/js/myscript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="161" column="60" selection-start="5085" selection-end="5085" vertical-scroll-proportion="0.5574572">
           <folding />
         </state>
       </provider>

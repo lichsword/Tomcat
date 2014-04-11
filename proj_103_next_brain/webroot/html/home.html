@@ -41,33 +41,23 @@
             <!--<button id="btn_add" type="button" class="btn btn-default btn-sm">新增</button>-->
             <!--<button id="btn_delete" type="button" class="btn btn-default btn-sm">删除</button>-->
         </div>
-        <button id="btn_add" type="button" class="btn btn-default navbar-btn navbar-right">新增</button>
+         <!--由 bootstrap javascript 插件的模态对话框实现了，这里的旧方案供参考，暂不删除 -->
+        <!--<button id="btn_add" type="button" class="btn btn-default navbar-btn navbar-right"-->
+                <!--data-toggle="modal" data-target="#addModalDialog">新增</button>-->
+        <button id="btn_add" class="btn btn-default navbar-btn navbar-right"
+                data-toggle="modal" data-target="#addModalDialog">新增</button>
     </nav>
 </div>
-<!--导航条 end-->
-<br/><br/><br/>
 
-<div id="floater">
-    <div id="layout">
-        <div class="div_tip"></div>
-        <!--这个 atom 图很丑，暂时不使用-->
-        <!--<img src="./images/atom-64.png" alt="logo-atom" class="img-circle">-->
-        <div class="div_table"></div>
-    </div>
-
-    <div id="dialog">
-        <!--dialog background start-->
-        <div id="dialog-bg"></div>
-        <!--dialog background end-->
-
-        <!--面板 start-->
-        <div class="panel panel-default" id="dialog-body">
-            <!--面板标题 start -->
-            <div class="panel-heading">添加记录</div>
-            <!--面板标题 end -->
-
-            <!--面板内容 start-->
-            <div class="panel-body">
+<!-- Modal -->
+<div class="modal fade" id="addModalDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">添加记录</h4>
+            </div>
+            <div class="modal-body">
                 <form role="form">
                     <!--表格组 start -->
                     <div class="form-group">
@@ -111,7 +101,6 @@
                                 </ul>
                             </div>
                         </div>
-                        状态下拉组 end
                         <div class="input-group">
                             <span class="input-group-addon">问题:</span>
                             <input id="input_question" type="text" class="form-control" placeholder="问题是什么？">
@@ -144,11 +133,40 @@
                             <span class="input-group-addon">示例:</span>
                             <input id="input_example" type="text" class="form-control" placeholder="相关参考示例...">
                         </div>
-                        <button id="btn_commit_in_dialog" class="btn btn-default navbar-btn" type="button">提交</button>
-                        <button id="btn_cancel_in_dialog" class="btn btn-default navbar-btn" type="button">取消</button>
                     </div>
                     <!--表格组 end -->
                 </form>
+            </div>
+            <div class="modal-footer">
+                <!--<span class="label label-info">Tip：点击“提交”完成新增记录，点击“取消”则放弃操作。</span>-->
+                <!--<div class="alert alert-success">Tip：点击“提交”完成新增记录，点击“取消”则放弃操作。</div>-->
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button id="btn_commit_in_dialog" type="button" class="btn btn-primary">提交</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!--导航条 end-->
+<br/><br/><br/>
+
+<div id="floater">
+    <div id="layout">
+        <div class="div_tip"></div>
+        <!--这个 atom 图很丑，暂时不使用-->
+        <!--<img src="./images/atom-64.png" alt="logo-atom" class="img-circle">-->
+        <div class="div_table"></div>
+    </div>
+
+    <div id="dialog">
+        <!--面板 start-->
+        <div class="panel panel-default" id="dialog-body">
+            <!--面板标题 start -->
+            <div class="panel-heading">添加记录</div>
+            <!--面板标题 end -->
+
+            <!--面板内容 start-->
+            <div class="panel-body">
+
 
             </div>
             <!--面板内容 end-->

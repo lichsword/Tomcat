@@ -96,11 +96,12 @@ $(document).ready(function(){
         alert("you clicked get button from out js.");
     });
 
-    $("#btn_add").click(function(){
-        console.log("clicked.");
-//        alert("you clicked add button");
-        $("#dialog").show();
-    });
+    /* 由 bootstrap javascript 插件的模态对话框实现了，这里的旧方案供参考，暂不删除 */
+//    $("#btn_add").click(function(){
+//        console.log("clicked.");
+////        alert("you clicked add button");
+//        $("#dialog").show();
+//    });
 
     $("#btn_delete").click(function(){
         console.log("clicked btn_delete.");
@@ -127,10 +128,11 @@ $(document).ready(function(){
         $("#btn-selected-status").attr("data-value", value);
     });
 
-    $("#btn_cancel_in_dialog").click(function(){
-        console.log("clicked btn_cancel_in_dialog.");
-        $("#dialog").hide();
-    });
+/* bootstrap 的模态对话框自动实现了取消关闭对话框功能，以下代码方案供参考学习，暂时不删除 */
+//    $("#btn_cancel_in_dialog").click(function(){
+//        console.log("clicked btn_cancel_in_dialog.");
+//        $("#dialog").hide();
+//    });
 
     $("#btn_commit_in_dialog").click(function(){
         // hide dialog first.
@@ -166,6 +168,8 @@ $(document).ready(function(){
                 console.log(data);
                 console.log(status);
         });
+
+        $('#addModalDialog').modal('toggle')
     });
 
     /* 这里仍有问题，没有实现动态绑定 */
