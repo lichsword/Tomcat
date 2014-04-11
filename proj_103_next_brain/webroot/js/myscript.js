@@ -68,14 +68,14 @@ $(document).ready(function(){
         console.log("you select <li> element");
         var value = $(this).attr("data-value");
         console.log(value);
-        $("#selected-visit").html(value);
+        $("#btn-selected-visit").html(value);
     });
 
     $("#list-status li").live("click", function(){
         console.log("you select <li> element");
         var value = $(this).attr("data-value");
         console.log(value);
-        $("#selected-status").html(value);
+        $("#btn-selected-status").html(value);
     });
 
     $("#btn_cancel_in_dialog").click(function(){
