@@ -100,6 +100,10 @@
     color:#999
 }
 
+#btn_add{
+    margin-right: 20px;
+}
+
 /*  ---------- 点击返回到顶部 start ----------- */
 p#back-to-top{
       position:fixed;
