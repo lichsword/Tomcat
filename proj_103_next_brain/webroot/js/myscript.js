@@ -16,6 +16,24 @@ $(document).ready(function(){
     $('.dropdown-toggle').dropdown();
     $('#menu').dropdown('toggle')
 
+    /**
+     * 刷新显示表格
+     */
+    function loadTable(){
+        $.post("/servlet/db", {
+                action: "query",
+                mode: "table"
+            },
+            function(data,status){
+                $(".div_table").html(data);
+                console.log(data);
+                console.log(status);
+        });
+    }
+
+    // 默认是显示表格
+    loadTable();
+
     $('#mytab a').click(function (e) {
         e.preventDefault()
         $(this).tab('show')
@@ -25,16 +43,7 @@ $(document).ready(function(){
 
         if(text==="表格"){
             console.log("是表格");
-            // 刷新显示表格
-            $.post("/servlet/db", {
-                    action: "query",
-                    mode: "table"
-                },
-                function(data,status){
-                    $(".div_table").html(data);
-                    console.log(data);
-                    console.log(status);
-            });
+            loadTable();
         }else if(text==="卡片"){
             console.log("是卡片");
             // 刷新显示卡片列表
