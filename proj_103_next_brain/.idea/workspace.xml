@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="24807c5a-e593-44b9-9239-5501e57a4204" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webroot/css/home.css" afterPath="$PROJECT_DIR$/webroot/css/home.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webroot/html/home.html" afterPath="$PROJECT_DIR$/webroot/html/home.html" />
     </list>
     <ignored path="proj_01_basic_http_server.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -92,7 +91,7 @@
     <file path="/HtmlResource.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395633129476" ignored="false" />
     <file path="/HomePage.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395633328778" ignored="false" />
     <file path="/Dialog.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395645720062" ignored="false" />
-    <file path="/home.css" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1397213665039" ignored="false" />
+    <file path="/home.css" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1397213967116" ignored="false" />
     <file path="/HttpRequest.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1396954711618" ignored="false" />
     <file path="/Log.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395733612889" ignored="false" />
     <file path="$PROJECT_DIR$/../proj_200_catalina/src/org/apache/catalina/util/ParameterMap.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395734359229" ignored="false" />
@@ -248,19 +247,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="home.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webroot/html/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="51" selection-start="2459" selection-end="2459" vertical-scroll-proportion="0.5241935">
+            <state line="34" column="45" selection-start="1485" selection-end="1485" vertical-scroll-proportion="-0.625">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="home.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webroot/css/home.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="19" selection-start="1485" selection-end="1485" vertical-scroll-proportion="-11.16">
+            <state line="58" column="0" selection-start="781" selection-end="781" vertical-scroll-proportion="0.375">
               <folding />
             </state>
           </provider>
@@ -307,8 +306,8 @@
         <option value="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/view/ListView.java" />
         <option value="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/view/TableView.java" />
         <option value="$PROJECT_DIR$/webroot/js/myscript.js" />
-        <option value="$PROJECT_DIR$/webroot/css/home.css" />
         <option value="$PROJECT_DIR$/webroot/html/home.html" />
+        <option value="$PROJECT_DIR$/webroot/css/home.css" />
       </list>
     </option>
   </component>
@@ -940,16 +939,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webroot/css/home.css">
+    <entry file="file://$PROJECT_DIR$/webroot/html/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="19" selection-start="1485" selection-end="1485" vertical-scroll-proportion="-11.16">
+        <state line="34" column="45" selection-start="1485" selection-end="1485" vertical-scroll-proportion="-0.625">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webroot/html/home.html">
+    <entry file="file://$PROJECT_DIR$/webroot/css/home.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="51" selection-start="2459" selection-end="2459" vertical-scroll-proportion="0.5241935">
+        <state line="58" column="0" selection-start="781" selection-end="781" vertical-scroll-proportion="0.375">
           <folding />
         </state>
       </provider>

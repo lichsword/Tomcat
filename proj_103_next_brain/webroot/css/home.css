@@ -5,8 +5,58 @@
     height: 100%;
     background-color:#50FFFFFF;
 }
+
+#dialog-bg {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    //background-color: gray;
+    //background-color: #808080;
+    //background-color: rgb(255, 255, 255);
+}
+
+#dialog-bg {
+    opacity: 0.5;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    //background-color: #808080;
+    //background-color: rgb(255, 255, 255);
+}
+
+
+#dialog-body {
+    opacity: 1.0;
+    position:absolute;
+    width:550px;
+
+    top:20%;
+    left:50%;
+    margin-left:-275px;
+    background-color: white;
+}
+
+//卡片的标题
+#card_question h1
+{
+     color:#259
+}
+
+// 卡片的描述
+#card_question h2
+{
+    color:#999
+}
+
+// 卡片的描述
+#card_question h5
+{
+    color:#999
+}
 */
 
+/* 内文内容的4向边距 */
 #content{
     /* nothing */
     float: left;
@@ -17,92 +67,11 @@
     padding : 50px 20px 10px 20px;
 }
 
-/*
-#dialog-bg {
-    position:absolute;
-    width: 100%;
-    height: 100%;
-    //background-color: gray;
-    //background-color: #808080;
-    //background-color: rgb(255, 255, 255);
-}
-*/
-
-/*
-#dialog-bg {
-    opacity: 0.5;
-    position:absolute;
-    width: 100%;
-    height: 100%;
-    background-color: gray;
-    //background-color: #808080;
-    //background-color: rgb(255, 255, 255);
-}
-*/
-
-
-#dialog-body {
-    opacity: 1.0;
-    position:absolute;
-    width:550px;
-    /*height:300px;*/
-
-    top:20%;
-    left:50%;
-    /*margin-top:50px;*/
-    margin-left:-275px;
-    background-color: white;
-     /*margin-left: auto;*/
-     /*margin-right: auto;*/
-     /*width: 400px;*/
-}
-
-
-/* 表格的列头一行 */
-#tb_question th{
-    font-size:1.1em;
-    text-align:left;
-    padding-top:5px;
-    padding-bottom:4px;
-    background-color:#A7C942;
-    color:#ffffff;
-}
-
-/* 表格的奇数行 */
-#tb_question tr.odd td
-{
-    color:#000000;
-    background-color:#FFFFFF;/* 白色 */
-}
-
-/* 表格的偶数行 */
-#tb_question tr.even td
-{
-    color:#000000;
-    background-color:#EAF2D3;/* 墨绿色 */
-}
-
-/* 卡片的标题 */
-#card_question h1
-{
-     color:#259
-}
-
-/* 卡片的描述 */
-#card_question h2
-{
-    color:#999
-}
-
-/* 卡片的描述 */
-#card_question h5
-{
-    color:#999
-}
-
+/* 导航栏中的“新增”按钮的右边距 */
 #btn_add{
     margin-right: 20px;
 }
+
 
 /*  ---------- 点击返回到顶部 start ----------- */
 p#back-to-top{
@@ -110,6 +79,7 @@ p#back-to-top{
       bottom:100px;
       right:80px;
 }
+
 p#back-to-top a{
       text-align:center;
       text-decoration:none;
@@ -122,9 +92,11 @@ p#back-to-top a{
       -webkit-transition:color 1s;
       -o-transition:color 1s;
 }
+
 p#back-to-top a:hover{
       color:#979797;
 }
+
 p#back-to-top a span{
       /*background:#d1d1d1 url("./images/arrow-up.png") no-repeat center center;*/
       background:#d1d1d1;
