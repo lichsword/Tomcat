@@ -41,16 +41,18 @@
             <!--<button id="btn_add" type="button" class="btn btn-default btn-sm">新增</button>-->
             <!--<button id="btn_delete" type="button" class="btn btn-default btn-sm">删除</button>-->
         </div>
-         <!--由 bootstrap javascript 插件的模态对话框实现了，这里的旧方案供参考，暂不删除 -->
+        <!--由 bootstrap javascript 插件的模态对话框实现了，这里的旧方案供参考，暂不删除 -->
         <!--<button id="btn_add" type="button" class="btn btn-default navbar-btn navbar-right"-->
-                <!--data-toggle="modal" data-target="#addModalDialog">新增</button>-->
+        <!--data-toggle="modal" data-target="#addModalDialog">新增</button>-->
         <button id="btn_add" class="btn btn-default navbar-btn navbar-right"
-                data-toggle="modal" data-target="#addModalDialog">新增</button>
+                data-toggle="modal" data-target="#addModalDialog">新增
+        </button>
     </nav>
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="addModalDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="addModalDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -143,37 +145,19 @@
                 <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
                 <button id="btn_commit_in_dialog" type="button" class="btn btn-primary">提交</button>
             </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-<!--导航条 end-->
-<br/><br/><br/>
-
-<div id="floater">
-    <div id="layout">
-        <div class="div_tip"></div>
-        <!--这个 atom 图很丑，暂时不使用-->
-        <!--<img src="./images/atom-64.png" alt="logo-atom" class="img-circle">-->
-        <div class="div_table"></div>
-    </div>
-
-    <div id="dialog">
-        <!--面板 start-->
-        <div class="panel panel-default" id="dialog-body">
-            <!--面板标题 start -->
-            <div class="panel-heading">添加记录</div>
-            <!--面板标题 end -->
-
-            <!--面板内容 start-->
-            <div class="panel-body">
-
-
-            </div>
-            <!--面板内容 end-->
-            <div class="panel-footer">Tip：点击“提交”完成新增记录，点击“取消”则放弃操作。</div>
         </div>
-        <!--面板 end-->
+        <!-- /.modal-content -->
     </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<!--导航条 end-->
+
+<div id="content">
+    <div class="div_tip"></div>
+    <!--这个 atom 图很丑，暂时不使用-->
+    <!--<img src="./images/atom-64.png" alt="logo-atom" class="img-circle">-->
+    <div class="div_table"></div>
 </div>
 </body>
 </html>

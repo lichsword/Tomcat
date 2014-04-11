@@ -48,11 +48,11 @@ public class ListView<T> extends View {
             String statusString = (NBArticle.ST_FIXED == article.getStatus() ? "已解决" : "未解决");
             sb.append(String.format("<p>状态：%s</p>", statusString));
             sb.append(String.format("<h1>问题：%s</h1>", article.getQuestion()));
-            sb.append(String.format("<h2>描述：%s</h2>", article.getDesc()));
+            sb.append(String.format("<h2>描述：%s</h1>", article.getDesc()));
             sb.append(String.format("<p>标签：%s</p>", article.getLabels()));
             sb.append(String.format("<p>本质：%s</p>", article.getTruth()));
             sb.append(String.format("<p>模式：%s</p>", article.getPattern()));
-            sb.append(String.format("<p>引用：%s</p>", article.getReference()));
+            sb.append(String.format("<blockquote><p>引用：%s</p></blockquote>", article.getReference()));
             sb.append(String.format("<p>示例：%s</p>", article.getExample()));
             sb.append(String.format("<h5>创建时间：%s</h5>", article.getCreateTime()));
             sb.append(String.format("<h5>最新修改：%s</h5>", article.getModifiedTime()));
