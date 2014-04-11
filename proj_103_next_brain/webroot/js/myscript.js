@@ -69,6 +69,7 @@ $(document).ready(function(){
         var value = $(this).attr("data-value");
         console.log(value);
         $("#btn-selected-visit").html(value);
+        $("#btn-selected-visit").attr("data-value", value);
     });
 
     $("#list-status li").live("click", function(){
@@ -76,6 +77,7 @@ $(document).ready(function(){
         var value = $(this).attr("data-value");
         console.log(value);
         $("#btn-selected-status").html(value);
+        $("#btn-selected-status").attr("data-value", value);
     });
 
     $("#btn_cancel_in_dialog").click(function(){
@@ -87,8 +89,8 @@ $(document).ready(function(){
         // hide dialog first.
         $("#dialog").hide();
         // refresh list.
-        var visitLevelValue = $("#input_visit_level").attr("value");
-        var statusValue = $("#input_status").attr("value");
+        var visitLevelValue = $("#btn-selected-visit").attr("data-value");
+        var statusValue = $("#btn-selected-status").attr("data-value");
         var questionValue = $("#input_question").attr("value");
         var descValue = $("#input_desc").attr("value");
         var labelsValue = $("#input_labels").attr("value");
@@ -96,6 +98,7 @@ $(document).ready(function(){
         var patternValue = $("#input_pattern").attr("value");
         var referenceValue = $("#input_reference").attr("value");
         var exampleValue = $("#input_example").attr("value");
+
 //        $.post("/servlet/db", { name: "John lichsword 1  2   3\nkernel,hello-world", time: "2pm" },
         $.post("/servlet/db", {
                 action: "insert",

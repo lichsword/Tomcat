@@ -52,15 +52,15 @@
                             <p class="navbar-text">权限:</p>
 
                             <div class="btn-group">
-                                <button id="btn-selected-visit" type="button" class="btn btn-default">公开</button>
+                                <button id="btn-selected-visit" data-value="2" type="button" class="btn btn-default">公开</button>
                                 <button id="input_visit_level" type="button" class="btn btn-default dropdown-toggle"
                                         data-toggle="dropdown">
                                     <span class="caret"></span>
                                     <span class="sr-only">Toggle Dropdown</span>
                                 </button>
                                 <ul id="list-visit" class="dropdown-menu" role="menu">
-                                    <li data-value="私有"><a>私有</a></li>
-                                    <li data-value="公开"><a>公开</a></li>
+                                    <li data-value="1"><a>私有</a></li>
+                                    <li data-value="2"><a>公开</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -71,15 +71,15 @@
                             <p class="navbar-text">状态:</p>
 
                             <div class="btn-group">
-                                <button id="btn-selected-status" type="button" class="btn btn-default">已解决</button>
+                                <button id="btn-selected-status" data-value="1" type="button" class="btn btn-default">已解决</button>
                                 <button id="input_status" type="button" class="btn btn-default dropdown-toggle"
                                         data-toggle="dropdown">
                                     <span class="caret"></span>
                                     <span class="sr-only">Toggle Dropdown</span>
                                 </button>
                                 <ul id="list-status" class="dropdown-menu" role="menu">
-                                    <li data-value="未解决"><a>未解决</a></li>
-                                    <li data-value="已解决"><a>已解决</a></li>
+                                    <li data-value="0"><a>未解决</a></li>
+                                    <li data-value="1"><a>已解决</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -91,6 +91,10 @@
                         <div class="input-group">
                             <span class="input-group-addon">描述:</span>
                             <input id="input_desc" type="text" class="form-control" placeholder="问题的描述？">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon">标签:</span>
+                            <input id="input_labels" type="text" class="form-control" placeholder="问题的描述？">
                         </div>
 
                         <div class="input-group">
