@@ -42,7 +42,7 @@ public class ListView<T> extends View {
             i++;
 //            sb.append(String.format("<p>序号：%d</p>", i));
             sb.append(String.format("<span class=\"badge\">%d</span>", i));
-            sb.append(String.format("<p>ID：%d</p>", article.getId()));
+
 
 //            String visitLevelString = (NBArticle.VL_PRIVAET == article.getVisitLevel() ? "私有" : "公开");
 //            sb.append(String.format("<p>权限：%s</p>", visitLevelString));
@@ -51,12 +51,16 @@ public class ListView<T> extends View {
 //            String statusString = (NBArticle.ST_FIXED == article.getStatus() ? "已解决" : "未解决");
 //            sb.append(String.format("<p>状态：%s</p>", statusString));
             sb.append("<div class=\"row\">");
-            sb.append(String.format("<div class=\"col-md-9\">问题：%s</div>", article.getQuestion()));
+            sb.append(String.format("<div class=\"col-md-7\">问题：%s</div>", article.getQuestion()));
             sb.append(String.format(
                     "<div class=\"col-md-1\">"
-                    + "<span class=\"glyphicon glyphicon-eye-open\">%d</span>"
+                    + "<span class=\"glyphicon glyphicon-eye-open\"> %d</span>"
                     + "</div>", article.getReadCount()));
             int visitLevel = article.getVisitLevel();
+            sb.append(String.format(
+                    "<div class=\"col-md-1\">"
+                    + "ID<span class=\"badge\">%d</span>"
+                    + "</div>", article.getId()));
             if (NBArticle.VL_PRIVAET == visitLevel) {
                 // "私有"显示“锁”图标，否则不显示
                 sb.append(
@@ -77,7 +81,7 @@ public class ListView<T> extends View {
             }// end if
 
             sb.append("</div>");
-            sb.append(String.format("<h3>描述：%s</h3>", article.getDesc()));
+            sb.append(String.format("<h5>描述：%s</h5>", article.getDesc()));
             sb.append(String.format("<p>标签：%s</p>", article.getLabels()));
             sb.append(String.format("<p>本质：%s</p>", article.getTruth()));
             sb.append(String.format("<p>模式：%s</p>", article.getPattern()));
