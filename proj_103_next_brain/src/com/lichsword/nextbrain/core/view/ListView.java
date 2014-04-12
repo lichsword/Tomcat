@@ -35,7 +35,7 @@ public class ListView<T> extends View {
 
         StringBuilder sb = new StringBuilder();
 
-        sb.append("<div id=\"card_question\">");
+        sb.append("<div>");
         int i = 0;
         for (T item : list) {
             NBArticle article = (NBArticle) item;
@@ -43,20 +43,48 @@ public class ListView<T> extends View {
 //            sb.append(String.format("<p>序号：%d</p>", i));
             sb.append(String.format("<span class=\"badge\">%d</span>", i));
             sb.append(String.format("<p>ID：%d</p>", article.getId()));
-            String visitLevelString = (NBArticle.VL_PRIVAET == article.getVisitLevel() ? "私有" : "公开");
-            sb.append(String.format("<p>权限：%s</p>", visitLevelString));
-            sb.append(String.format("<p>阅读：%d<p>", article.getReadCount()));
-            String statusString = (NBArticle.ST_FIXED == article.getStatus() ? "已解决" : "未解决");
-            sb.append(String.format("<p>状态：%s</p>", statusString));
-            sb.append(String.format("<h1>问题：%s</h1>", article.getQuestion()));
-            sb.append(String.format("<h2>描述：%s</h1>", article.getDesc()));
+
+//            String visitLevelString = (NBArticle.VL_PRIVAET == article.getVisitLevel() ? "私有" : "公开");
+//            sb.append(String.format("<p>权限：%s</p>", visitLevelString));
+
+
+//            String statusString = (NBArticle.ST_FIXED == article.getStatus() ? "已解决" : "未解决");
+//            sb.append(String.format("<p>状态：%s</p>", statusString));
+            sb.append("<div class=\"row\">");
+            sb.append(String.format("<div class=\"col-md-9\">问题：%s</div>", article.getQuestion()));
+            sb.append(String.format(
+                    "<div class=\"col-md-1\">"
+                    + "<span class=\"glyphicon glyphicon-eye-open\">%d</span>"
+                    + "</div>", article.getReadCount()));
+            int visitLevel = article.getVisitLevel();
+            if (NBArticle.VL_PRIVAET == visitLevel) {
+                // "私有"显示“锁”图标，否则不显示
+                sb.append(
+                    "<div class=\"col-md-1\">"
+                    + "<span class=\"glyphicon glyphicon-lock\"></span>"
+                    + "</div>"
+                );
+            }// end if
+
+            int status = article.getStatus();
+            if (NBArticle.ST_FIXED != status) {
+                // "未解决"则显示“锁”图标，否则不显示
+                sb.append(
+                    "<div class=\"col-md-1\">"
+                    + "<span class=\"glyphicon glyphicon-question-sign\"></span>"
+                    + "</div>"
+                );
+            }// end if
+
+            sb.append("</div>");
+            sb.append(String.format("<h3>描述：%s</h3>", article.getDesc()));
             sb.append(String.format("<p>标签：%s</p>", article.getLabels()));
             sb.append(String.format("<p>本质：%s</p>", article.getTruth()));
             sb.append(String.format("<p>模式：%s</p>", article.getPattern()));
             sb.append(String.format("<blockquote><p>引用：%s</p></blockquote>", article.getReference()));
             sb.append(String.format("<p>示例：%s</p>", article.getExample()));
-            sb.append(String.format("<h5>创建时间：%s</h5>", article.getCreateTime()));
-            sb.append(String.format("<h5>最新修改：%s</h5>", article.getModifiedTime()));
+//            sb.append(String.format("<h5>创建时间：%s</h5>", article.getCreateTime()));
+            sb.append(String.format("<span class=\"badge\">%s</span>", article.getModifiedTime()));
             sb.append("<br><hr/><br>");
         }// end for
         sb.append("</div>");
