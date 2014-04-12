@@ -40,7 +40,8 @@ public class ListView<T> extends View {
         for (T item : list) {
             NBArticle article = (NBArticle) item;
             i++;
-            sb.append(String.format("<p>序号：%d</p>", i));
+//            sb.append(String.format("<p>序号：%d</p>", i));
+            sb.append(String.format("<span class=\"badge\">%d</span>", i));
             sb.append(String.format("<p>ID：%d</p>", article.getId()));
             String visitLevelString = (NBArticle.VL_PRIVAET == article.getVisitLevel() ? "私有" : "公开");
             sb.append(String.format("<p>权限：%s</p>", visitLevelString));
