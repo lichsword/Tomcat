@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="24807c5a-e593-44b9-9239-5501e57a4204" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/view/ListView.java" afterPath="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/view/ListView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/view/TipTextView.java" afterPath="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/view/TipTextView.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webroot/css/home.css" afterPath="$PROJECT_DIR$/webroot/css/home.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="proj_01_basic_http_server.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -94,7 +92,7 @@
     <file path="/HtmlResource.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395633129476" ignored="false" />
     <file path="/HomePage.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395633328778" ignored="false" />
     <file path="/Dialog.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395645720062" ignored="false" />
-    <file path="/home.css" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1397382578205" ignored="false" />
+    <file path="/home.css" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1397395073768" ignored="false" />
     <file path="/HttpRequest.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1396954711618" ignored="false" />
     <file path="/Log.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395733612889" ignored="false" />
     <file path="$PROJECT_DIR$/../proj_200_catalina/src/org/apache/catalina/util/ParameterMap.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1395734359229" ignored="false" />
@@ -108,7 +106,7 @@
     <file path="/TipTextView.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1397033769160" ignored="false" />
     <file path="/TipServlet.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1396179413056" ignored="false" />
     <file path="/NBDisplayEvn.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1397027432336" ignored="false" />
-    <file path="/ListView.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1397381725106" ignored="false" />
+    <file path="/ListView.java" changelist="24807c5a-e593-44b9-9239-5501e57a4204" time="1397394766008" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,10 +228,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ListView.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ListView.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/core/view/ListView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="28" selection-start="3330" selection-end="3330" vertical-scroll-proportion="0.0">
+            <state line="67" column="56" selection-start="2924" selection-end="2924" vertical-scroll-proportion="0.53351206">
               <folding />
             </state>
           </provider>
@@ -287,16 +285,16 @@
       <file leaf-file-name="home.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webroot/css/home.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="18" selection-start="1179" selection-end="1179" vertical-scroll-proportion="0.0">
+            <state line="94" column="23" selection-start="1335" selection-end="1335" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TipTextView.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TipTextView.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/core/view/TipTextView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="68" selection-start="842" selection-end="842" vertical-scroll-proportion="0.32901555">
+            <state line="42" column="68" selection-start="842" selection-end="842" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -342,14 +340,14 @@
         <option value="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/view/TableView.java" />
         <option value="$PROJECT_DIR$/webroot/js/myscript.js" />
         <option value="$PROJECT_DIR$/webroot/html/home.html" />
-        <option value="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/view/ListView.java" />
-        <option value="$PROJECT_DIR$/webroot/css/home.css" />
         <option value="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/view/TipTextView.java" />
+        <option value="$PROJECT_DIR$/webroot/css/home.css" />
+        <option value="$PROJECT_DIR$/src/com/lichsword/nextbrain/core/view/ListView.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="727" />
+    <option name="x" value="361" />
     <option name="y" value="22" />
     <option name="width" value="1228" />
     <option name="height" value="760" />
@@ -574,24 +572,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proj_103_next_brain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proj_103_next_brain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -808,8 +788,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="727" y="22" width="1228" height="760" extended-state="0" />
-    <editor active="false" />
+    <frame x="361" y="22" width="1228" height="760" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3262295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -950,13 +930,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webroot/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="365" column="1" selection-start="4872" selection-end="4872" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webroot/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="3640" selection-start="3788" selection-end="3788" vertical-scroll-proportion="0.0">
@@ -985,23 +958,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/core/view/ListView.java">
+    <entry file="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/core/view/TipTextView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="28" selection-start="3330" selection-end="3330" vertical-scroll-proportion="0.0">
+        <state line="42" column="68" selection-start="842" selection-end="842" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webroot/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="365" column="1" selection-start="4872" selection-end="4872" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webroot/css/home.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="18" selection-start="1179" selection-end="1179" vertical-scroll-proportion="0.0">
+        <state line="94" column="23" selection-start="1335" selection-end="1335" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/core/view/TipTextView.java">
+    <entry file="file://$PROJECT_DIR$/src/com/lichsword/nextbrain/core/view/ListView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="68" selection-start="842" selection-end="842" vertical-scroll-proportion="0.32901555">
+        <state line="67" column="56" selection-start="2924" selection-end="2924" vertical-scroll-proportion="0.53351206">
           <folding />
         </state>
       </provider>

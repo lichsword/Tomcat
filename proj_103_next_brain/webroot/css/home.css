@@ -81,6 +81,26 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
     color: #000000;
 }
 
+#index{
+    margin: 10px 5px 15px -20px;
+}
+
+#ref{
+    color: #3CA6E6;
+}
+
+#modified-time, #article-id, #read-count, #visit, #status{
+    color: #999;
+}
+
+.color-gray{
+    color: #999;
+}
+
+#content-question, #content-desc, #content-labels, #content-truth, #content-pattern, #content-example{
+    color:#737373;
+}
+
 /*  ---------- 点击返回到顶部 start ----------- */
 p#back-to-top{
       position:fixed;
