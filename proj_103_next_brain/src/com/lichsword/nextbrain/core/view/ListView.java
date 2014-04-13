@@ -35,7 +35,7 @@ public class ListView<T> extends View {
 
         StringBuilder sb = new StringBuilder();
 
-        sb.append("<div>");
+        sb.append("<div id=\"card_item\">");
         int i = 0;
         for (T item : list) {
             NBArticle article = (NBArticle) item;
@@ -89,7 +89,7 @@ public class ListView<T> extends View {
             sb.append(String.format("<p>示例：%s</p>", article.getExample()));
 //            sb.append(String.format("<h5>创建时间：%s</h5>", article.getCreateTime()));
             sb.append(String.format("<span class=\"badge\">%s</span>", article.getModifiedTime()));
-            sb.append("<br><hr/><br>");
+            sb.append("<hr/>");
         }// end for
         sb.append("</div>");
         return sb.toString();  // TODO

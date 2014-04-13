@@ -72,6 +72,14 @@
     margin-right: 20px;
 }
 
+#card_item{
+    margin-left: 80px;
+    margin-right: 100px;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+    color: #000000;
+}
 
 /*  ---------- 点击返回到顶部 start ----------- */
 p#back-to-top{

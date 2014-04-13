@@ -40,7 +40,7 @@ public class TipTextView extends TextView {
     @Override
     public String html() {
         StringBuilder sb = new StringBuilder();
-        sb.append(String.format("<span class=\"help-block\">%s</h4>", getText()));
+        sb.append(String.format("<span class=\"help-block\">%s</span>", getText()));
         return sb.toString();
     }
 
