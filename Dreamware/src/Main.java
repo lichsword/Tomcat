@@ -19,7 +19,10 @@ import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.graphics.Point;
 import org.eclipse.swt.graphics.Rectangle;
 import org.eclipse.swt.layout.FillLayout;
+import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.*;
+
+import java.awt.*;
 
 
 /**
@@ -46,11 +49,36 @@ public class Main {
         shell.setText("window.title");
         setShellSize(instance, shell);
         shell.open();
+        centerScreen(shell);
         while (!shell.isDisposed()) {
             if (!display.readAndDispatch()) display.sleep();
         }
         instance.dispose();
         display.dispose();
+    }
+
+    private static void centerScreen(Shell shell) {
+        // x,y 随意，后面会居中
+        shell.setBounds(0, 0, 400, 300);
+
+        //获取屏幕高度和宽度
+        int screenH = Toolkit.getDefaultToolkit().getScreenSize().height;
+        int screenW = Toolkit.getDefaultToolkit().getScreenSize().width;
+        //获取对象窗口高度和宽度
+        int shellH = shell.getBounds().height;
+        int shellW = shell.getBounds().width;
+
+        //如果对象窗口高度超出屏幕高度，则强制其与屏幕等高
+        if (shellH > screenH)
+            shellH = screenH;
+
+        //如果对象窗口宽度超出屏幕宽度，则强制其与屏幕等宽
+        if (shellW > screenW)
+            shellW = screenW;
+
+        //定位对象窗口坐标
+        shell.setLocation(((screenW - shellW) / 2), ((screenH - shellH) / 2));
+
     }
 
     /**
@@ -113,35 +141,33 @@ public class Main {
         text3.setText("text 3333");
 
         // create sashes
-        final Sash vSash = new Sash(sashComp, SWT.VERTICAL);
+        final Sash vSash1 = new Sash(sashComp, SWT.VERTICAL);
         final Sash hSash = new Sash(sashComp, SWT.HORIZONTAL);
 
-
-
-           /* Add the listeners */
+        /* Add the listeners */
         hSash.addSelectionListener(new SelectionAdapter() {
             public void widgetSelected(SelectionEvent event) {
-                Rectangle rect = vSash.getParent().getClientArea();
+                Rectangle rect = vSash1.getParent().getClientArea();
                 event.y = Math.min(Math.max(event.y, SASH_LIMIT), rect.height - SASH_LIMIT);
                 if (event.detail != SWT.DRAG) {
                     hSash.setBounds(event.x, event.y, event.width, event.height);
-                    layout(sashComp, hSash, vSash, text1, text2, text3);
+                    layout(sashComp, hSash, vSash1, text1, text2, text3);
                 }
             }
         });
-        vSash.addSelectionListener(new SelectionAdapter() {
+        vSash1.addSelectionListener(new SelectionAdapter() {
             public void widgetSelected(SelectionEvent event) {
-                Rectangle rect = vSash.getParent().getClientArea();
+                Rectangle rect = vSash1.getParent().getClientArea();
                 event.x = Math.min(Math.max(event.x, SASH_LIMIT), rect.width - SASH_LIMIT);
                 if (event.detail != SWT.DRAG) {
-                    vSash.setBounds(event.x, event.y, event.width, event.height);
-                    layout(sashComp, hSash, vSash, text1, text2, text3);
+                    vSash1.setBounds(event.x, event.y, event.width, event.height);
+                    layout(sashComp, hSash, vSash1, text1, text2, text3);
                 }
             }
         });
         sashComp.addControlListener(new ControlAdapter() {
             public void controlResized(ControlEvent event) {
-                resized(sashComp, hSash, vSash, text1, text2, text3);
+                resized(sashComp, hSash, vSash1, text1, text2, text3);
             }
         });
     }
@@ -159,7 +185,6 @@ public class Main {
         text1.setBounds(0, 0, vSashBounds.x, hSashBounds.y);
         text2.setBounds(vSashBounds.x + vSashBounds.width, 0, clientArea.width - (vSashBounds.x + vSashBounds.width), hSashBounds.y);
         text3.setBounds(0, hSashBounds.y + hSashBounds.height, clientArea.width, clientArea.height - (hSashBounds.y + hSashBounds.height));
-
         /**
          * If the horizontal sash has been moved then the vertical sash is
          * either too long or too short and its size must be adjusted.
@@ -177,21 +202,21 @@ public class Main {
         Rectangle clientArea = sashComp.getClientArea();
 
         /*
-        * Make list 1 half the width and half the height of the tab leaving room for the sash.
-        * Place list 1 in the top left quadrant of the tab.
+        * Make text 1 1/4 the width and half the height of the tab leaving room for the sash.
+        * Place text 1 in the top left quadrant of the tab.
         */
         Rectangle text1Bounds = new Rectangle(0, 0, (clientArea.width - SASH_WIDTH) / 2, (clientArea.height - SASH_WIDTH) / 2);
         text1.setBounds(text1Bounds);
 
         /*
-        * Make list 2 half the width and half the height of the tab leaving room for the sash.
-        * Place list 2 in the top right quadrant of the tab.
+        * Make text 2 2/4 the width and half the height of the tab leaving room for the sash.
+        * Place text 2 in the top right quadrant of the tab.
         */
         text2.setBounds(text1Bounds.width + SASH_WIDTH, 0, clientArea.width - (text1Bounds.width + SASH_WIDTH), text1Bounds.height);
 
         /*
-        * Make the text area the full width and half the height of the tab leaving room for the sash.
-        * Place the text area in the bottom half of the tab.
+        * Make text 2 1/4 the width and half the height of the tab leaving room for the sash.
+        * Place text 2 in the top right quadrant of the tab.
         */
         text3.setBounds(0, text1Bounds.height + SASH_WIDTH, clientArea.width, clientArea.height - (text1Bounds.height + SASH_WIDTH));
 
